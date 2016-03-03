@@ -1,0 +1,30 @@
+* {
+    font-size: 18;
+}
+body {
+    background-color: lightgrey;
+}
+h1 {
+    text-align: center;
+    font-size: 26;
+}
+hr {
+    color:grey;  
+}
+p {
+    padding: 0 10px;
+}
+.maxfoto {
+    width: 40%;
+    margin: 0 auto;
+}
+p.foto {
+    text-align: center;
+}
+#CV_blank{
+    padding: 58px;
+    width: 35%;
+    height: 80%;
+    background-color: white;
+    margin: 0 0 0 29%; 
+}
