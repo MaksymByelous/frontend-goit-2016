@@ -1,0 +1,46 @@
+* {
+    font-size: 18;
+    line-height: 1.5;
+}
+body {
+    background-color: lightgrey;
+}
+h1 {
+    text-align: center;
+    font-size: 26;
+}
+hr {
+    color:grey;  
+}
+p {
+    padding: 0 10px;
+    margin: 0.5;
+}
+li {
+    line-height: 1.5;
+}
+.maxfoto {
+    width: 40%;
+    margin: 0 auto;
+}
+p.foto {
+    text-align: center;
+}
+.saynobr {
+    display: block; 
+}
+#CV_blank{
+    padding: 58px;
+    width: 35%;
+    height: 80%;
+    background-color: white;
+    margin: 0 0 0 29%; 
+}
+.reasons {
+    
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+.contacts {
+    border-bottom: 1px solid grey;
+} 
