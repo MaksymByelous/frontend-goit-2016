@@ -10,7 +10,7 @@ h1 {
     font-size: 26;
 }
 hr {
-    color:grey;  
+    color:grey;
 }
 p {
     padding: 0 10px;
@@ -27,20 +27,20 @@ p.foto {
     text-align: center;
 }
 .saynobr {
-    display: block; 
+    display: block;
 }
 #CV_blank{
     padding: 58px;
     width: 630px;
     height: 800px;
     background-color: white;
-    margin: 0 0 0 29%; 
+    margin: 0 0 0 29%;
 }
 .reasons {
-    
+
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
 }
 .contacts {
     border-bottom: 1px solid grey;
-} 
+}
