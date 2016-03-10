@@ -1,5 +1,5 @@
 * {
-    font-size: 18;
+    font-size: 18 px;
     line-height: 1.5;
 }
 body {
@@ -14,13 +14,13 @@ hr {
 }
 p {
     padding: 0 10px;
-    margin: 0.5;
+    margin: 1;
 }
 li {
     line-height: 1.5;
 }
 .maxfoto {
-    width: 40%;
+    width: 250px;
     margin: 0 auto;
 }
 p.foto {
@@ -34,7 +34,7 @@ p.foto {
     width: 630px;
     height: 800px;
     background-color: white;
-    margin: 0 0 0 29%;
+    margin: 0 auto;
 }
 .reasons {
 
