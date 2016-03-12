@@ -1,0 +1,86 @@
+body {
+  background: lightgrey;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 50px;
+  border: 1px solid lightgrey;
+  font-family: Trebuchet MS;
+}
+h1 {
+  font-size: 56px;
+  margin-bottom: 35px;
+}
+.mainmenu {
+  background-color: darkslategray;
+  padding: 15px;
+  margin-bottom: 35px;
+
+}
+.mainmenu li {
+  display: inline;
+  padding: 10px 40px;
+  color: white;
+  font-size: 22px;
+}
+.mainmenu li:first-child {
+  padding: 10px 60px 10px 0px;
+}
+.mainmenu li:hover {
+  background-color: black;
+  border-left: 1px solid white;
+}
+.productsmenu {
+  float: left;
+}
+.productsmenu li {
+  width: 260px;
+  border: 1px solid grey;
+  margin-bottom: -1px;
+  padding: 10px;
+  font-size: 20px;
+  color: grey;
+}
+.productsmenu li:hover {
+  padding-left: 20px;
+  width: 250px;
+  background-color: lightblue;
+  font-weight: bold;
+  color: black;
+}
+img {
+  width: 850px;
+  border: 1px solid lightgrey;
+  float: right;
+}
+.bikedescription {
+  clear: both;
+  width: 800px;
+  margin-left: 320px;
+  padding: 50px;
+  line-height: 2;
+  color: grey;
+  display: block;
+}
+.footermenu {
+  background-color: lightgrey;
+  padding: 10px;
+}
+.footermenu li {
+  display: inline;
+  padding: 10px 40px;
+  color: black;
+  font-size: 20px;
+  color: grey;
+}
+.footermenu li:first-child {
+  padding: 10px 60px 10px 0px;
+}
+.footermenu li:last-child {
+  padding: 10px 0px 10px 330px;
+}
+.footermenu li:hover {
+  text-decoration: underline;
+}
