@@ -76,9 +76,13 @@ content: "";
 display: block;
 clear: both;
 }
+.footer {
+  height: 50px;
+  background-color: lightgrey;
+}
 .footermenu {
   float: left;
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   padding: 5px;
 }
 .footermenu li {
@@ -95,7 +99,7 @@ clear: both;
 }
 .rightreserved {
   float: right;
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   padding: 15px 0px;
   color: grey;
 }
