@@ -82,7 +82,6 @@ clear: both;
 }
 .footermenu {
   float: left;
-  /*background-color: lightgrey;*/
   padding: 5px;
 }
 .footermenu li {
@@ -99,7 +98,6 @@ clear: both;
 }
 .rightreserved {
   float: right;
-  /*background-color: lightgrey;*/
-  padding: 15px 0px;
+  padding: 15px;
   color: grey;
 }
