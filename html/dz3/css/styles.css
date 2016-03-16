@@ -55,10 +55,20 @@ h1 {
   color: black;
   background: #ccc;
 }
+.contentbar {
+  overflow: hidden;
+}
 .detailedcontent {
   float: right;
   width: 750px;
 }
+/*.contentbar::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}*/
 img {
   width:700px;
   border: 1px solid lightgrey;
