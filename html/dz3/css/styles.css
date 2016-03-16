@@ -62,13 +62,13 @@ h1 {
   float: right;
   width: 750px;
 }
-/*.contentbar::after{
+.contentbar::after{
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
-}*/
+}
 img {
   width:700px;
   border: 1px solid lightgrey;
@@ -80,11 +80,6 @@ img {
   line-height: 2;
   color: grey;
   display: block;
-}
-.clearfix:after {
-content: "";
-display: block;
-clear: both;
 }
 .footer {
   height: 50px;
