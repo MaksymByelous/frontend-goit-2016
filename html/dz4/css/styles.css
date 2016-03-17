@@ -1,0 +1,138 @@
+body {
+  background-image: url(../images/bodybackground.jpg);
+}
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 10px black;
+  -moz-box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px black;
+}
+.header{
+  height: 170px;
+  background-image: url(../images/headbackground.jpg);
+  position: relative;
+}
+.contacts {
+  float: right;
+  padding: 15px 25px;
+  color: #00BFFF;
+  font-size: 14px;
+}
+.countriesbar {
+  float: right;
+  position: absolute;
+  top: 90px;
+  right: 25px;
+}
+.countries li {
+  display: inline-block;
+  text-align: center;
+}
+.countries li a {
+  display: block;
+  padding-top: 55px;
+  font-size: 10px;
+  width: 50px;
+}
+.india {
+  background-image: url(../images/india.jpg);
+}
+.tibet {
+  background-image: url(../images/tibet.jpg);
+}
+.nepal {
+  background-image: url(../images/nepal.jpg);
+}
+.butan {
+  background-image: url(../images/butan.jpg);
+}
+.shrilanka {
+  background-image: url(../images/shrilanka.jpg);
+}
+.maldivi {
+  background-image: url(../images/maldivi.jpg);
+}
+.moreYpalmi {
+  display: block;
+  margin: 0px auto;
+}
+.mainmenu {
+  background-color: black;
+}
+.mainmenu >li{
+  display: inline-block;
+}
+.mainmenu a,
+.submenu a {
+  display: block;
+  padding: 10px 30px;
+  border: 0px;
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+ul.mainmenu >li{
+  position: relative;
+}
+.mainmenu li:hover .submenu{
+  display: block;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+.submenu >li {
+  display: block;
+}
+ul.submenu >li >a:hover {
+  text-decoration: none;
+}
+.menutriangle {
+  height: 10px;
+}
+h1 {
+  font-size: 18px;
+  color: #4F4F4F;
+  text-align: center;
+  padding-top: 10px;
+}
+.content p {
+  color: grey;
+}
+.content::after {
+  content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.articleleft {
+  float: left;
+  width: 200px;
+}
+.articlecenter {
+  padding-left: 10px;
+  float: left;
+  width: 580px;
+}
+.articleright {
+  float: left;
+  width: 200px;
+}
+.content p {
+  padding: 10px;
+}
+.content {
+  background-image: url(../images/colomnback.jpg);
+}
+.footer {
+    padding: 10px;
+}
+.copyright {
+  text-align: center;
+  color: white;
+}
