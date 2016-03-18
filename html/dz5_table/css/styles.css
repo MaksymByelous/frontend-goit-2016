@@ -1,0 +1,53 @@
+body {
+background: lightgrey;
+}
+table {
+  margin: 0 auto;
+}
+td {
+  padding: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.9);
+}
+.row2 {
+  height: 60px;
+}
+.row4 {
+  height: 60px;
+}
+.item53 {
+  width: 50px;
+}
+.item11,
+.item13,
+.item21,
+.item41,
+.item46,
+.item47,
+.item53,
+.item54,
+.item64,
+.item71,
+.item82
+ {
+  background-color: rgba(255, 255, 255, 1.0);
+}
+.item22 {
+  background-color: rgba(255, 60, 20, 0.8);
+}
+.item65 {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+.item51,
+.item52,
+.item62,
+.item63,
+.item72
+ {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.item16,
+.item26,
+.item61
+ {
+  background-color: rgba(254, 246, 91, 0.8);
+}
