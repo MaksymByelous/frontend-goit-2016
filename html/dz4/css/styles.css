@@ -10,20 +10,35 @@ body {
 }
 .header{
   height: 170px;
-  background-image: url(../images/headbackground.jpg);
-  position: relative;
+  background-color: #fff;
+}
+.header::after {
+  content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.logopalma {
+  float: left;
+}
+.palma {
+  height: 168px;
+}
+.headinfo {
+  float: right;
+  padding-right: 25px;
 }
 .contacts {
   float: right;
-  padding: 15px 25px;
+  padding: 15px 0px;
   color: #00BFFF;
   font-size: 14px;
 }
 .countriesbar {
   float: right;
-  position: absolute;
-  top: 90px;
-  right: 25px;
+  padding-top: 15px;
+  clear: both;
 }
 .countries li {
   display: inline-block;
@@ -31,31 +46,11 @@ body {
 }
 .countries li a {
   display: block;
-  padding-top: 55px;
   font-size: 10px;
   width: 50px;
 }
-.india {
-  background-image: url(../images/india.jpg);
-}
-.tibet {
-  background-image: url(../images/tibet.jpg);
-}
-.nepal {
-  background-image: url(../images/nepal.jpg);
-}
-.butan {
-  background-image: url(../images/butan.jpg);
-}
-.shrilanka {
-  background-image: url(../images/shrilanka.jpg);
-}
-.maldivi {
-  background-image: url(../images/maldivi.jpg);
-}
 .moreYpalmi {
-  display: block;
-  margin: 0px auto;
+  margin: -3px auto;
 }
 .mainmenu {
   background-color: black;
@@ -63,6 +58,13 @@ body {
 .mainmenu >li{
   display: inline-block;
 }
+.arrow:after {
+    content: url(../images/menutriangle.jpg);
+    display: block;
+    right: 5px;
+    top: 10px;
+    position: absolute;
+  }
 .mainmenu a,
 .submenu a {
   display: block;
