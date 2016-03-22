@@ -11,56 +11,61 @@
 }
 body {
   background-color: black;
-  font-family: helveticaneuecyrlight, helvetica;
-  /*my font dosnt work!!*/
-}
-.wrapper {
-  margin: 0 auto;
   background-image: url(../images/bodybackground.jpg);
-  width: 1000px;
-  height: 800px;
+  font-family: helveticaneuecyrlight, helvetica;
+  background-size: cover;
 }
-header {
-  height: 27px;
-  background-color: rgb(7, 81, 144);
+.headwrapper {
+  width: 1000px;
+  margin: 0 auto;
 }
 .mainmenu {
-  float: right;
+  text-align: right;
+  background-color: rgb(7, 81, 144);
+  width: 100%;
 }
 .mainmenu li {
   display: inline-block;
-  float: left;
+
   padding-top: 5px;
 }
 .mainmenu li a {
   color: rgb(92, 175, 231);
   padding: 5px;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .mainmenu li a:hover {
   color: white;
   background-color: rgb(78, 171, 218);
-  padding: 6.5px 5px;
+  padding: 6px 5px;
 }
 .mainmenu .ofertas {
   border-left: 1px solid rgb(92, 175, 231);
-  padding-bottom: 2px;
-  padding-top: 5px;
+  padding: 5px 0px 2px 30px;
+  background-image: url(../images/flagback.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 .mainmenu .ofertas:hover {
   color: white;
   background-color: rgb(78, 171, 218);
-  padding-bottom: 4px;
-  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-top: 5px;
 }
-.menucloser {
+li.menucloser {
   background-color: rgb(78, 171, 218);
   color: white;
-  padding: 6px 5px;
+  padding: 7px 5px;
+}
+.menucloser a:hover {
+  background-color: rgb(78, 171, 218);
+  color: white;
+  padding: 7px 5px;
 }
 .menucloser span {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 .mainmenu .refitem {
   color: white;
@@ -68,41 +73,44 @@ header {
 }
 .cadastre {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 450px;
-  height: 550px;
+  width: 560px;
   margin: 100px auto;
+  clear: both;
 }
 .cadastretop {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border-bottom: 1px solid white;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 .formconainer {
   text-align: center;
 }
 .fbbuttom {
   height: 15px;
-  padding-right: 5px;
+  padding-right: 10px;
+}
+.strelka {
+  padding: 0 5px;
 }
 .fb {
   padding: 2px 5px ;
   margin: 30px auto 10px auto;
   background: linear-gradient(to top, rgb(45, 64, 120), rgb(59, 87, 152));
-  width: 220px;
+  width: 275px;
   border-radius: 5px;
   border-top: 1px solid rgb(117, 138, 181);
   }
 .loginfb {
   display: inline-block;
-  padding: 5px 5px 7px 30px;
+  padding: 5px 5px 7px 45px;
   color: white;
   border-left: 1px solid rgb(117, 138, 181);
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .ou {
-  width: 230px;
+  width: 275px;
   padding: 15px 0 5px 0;
   margin: 0 auto;
   color: lightgrey;
@@ -110,7 +118,7 @@ header {
 .line1,
 .line2 {
   float: left;
-  width: 95px;
+  width: 115px;
   margin-top: 5px;
   border-top: 1px solid grey;
   border-bottom: 1px solid black;
@@ -118,7 +126,7 @@ header {
 .ouline {
   float: left;
   padding: 0 10px;
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 .ou::after {
   content: ".";
@@ -132,7 +140,7 @@ form {
 
 }
 .formconainer .myinput {
-  width: 210px;
+  width: 275px;
   background-color: rgba(15, 15, 15, 0.7);
   border-top: 0px;
   border-left: 0px;
@@ -140,14 +148,13 @@ form {
   border-bottom: 1px solid rgb(90, 90, 90);
   padding: 5px 10px;
   color: lightgrey;
-  font-size: 0.7em;
+  font-size: 0.9em;
   margin: 10px 0;
 }
-.formconainer .myinput:focus {
-  background-color: rgba(27, 82, 136);
-  box-shadow: 0 0 10px rgb(80,140,180,);
+.myinput:focus {
+  background: rgba(27, 82, 136, 0.7);
+  box-shadow: 0 0 10px rgba(120,180,215, 0.8);
 }
-
 footer {
   text-align: center;
   color: lightgrey;
@@ -159,12 +166,13 @@ footer {
   color: white;
   padding: 5px;
   margin: 5px 0;
+  font-size: 1.0em;
 }
 .forcheckbox {
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 .checkbox {
-  width: 230px;
+  width: 300px;
   margin: 0 auto;
 }
 .checkbox form {
@@ -176,7 +184,7 @@ footer {
   width: 305px;
   margin: 0 auto;
   padding-top: 10px;
-  font-size: 0.6em;
+  font-size: 0.7em;
   line-height: 1.5;
   color: lightgrey;
 }
