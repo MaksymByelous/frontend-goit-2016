@@ -23,11 +23,11 @@ body {
   text-align: right;
   background-color: rgb(7, 81, 144);
   width: 100%;
+  padding: 5px;
 }
 .mainmenu li {
   display: inline-block;
-
-  padding-top: 5px;
+  /*padding-top: 5px;*/
 }
 .mainmenu li a {
   color: rgb(92, 175, 231);
@@ -38,11 +38,11 @@ body {
 .mainmenu li a:hover {
   color: white;
   background-color: rgb(78, 171, 218);
-  padding: 6px 5px;
+  padding: 9px 5px;
 }
 .mainmenu .ofertas {
   border-left: 1px solid rgb(92, 175, 231);
-  padding: 5px 0px 2px 30px;
+  padding: 7px 0px 5px 30px;
   background-image: url(../images/flagback.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,13 +51,12 @@ body {
 .mainmenu .ofertas:hover {
   color: white;
   background-color: rgb(78, 171, 218);
-  padding-bottom: 6px;
-  padding-top: 5px;
+  padding: 11px 0px 8px 41px;
 }
 li.menucloser {
   background-color: rgb(78, 171, 218);
   color: white;
-  padding: 7px 5px;
+  padding: 7px 5px 5px 0px;
 }
 .menucloser a:hover {
   background-color: rgb(78, 171, 218);
