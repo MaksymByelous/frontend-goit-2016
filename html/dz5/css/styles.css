@@ -12,22 +12,20 @@
 body {
   background-color: black;
   background-image: url(../images/bodybackground.jpg);
-  font-family: helveticaneuecyrlight, helvetica;
+  font-family: helveticaneuecyrlight, helvetica, arial sans-serif;
   background-size: cover;
 }
 .headwrapper {
-  width: 1000px;
   margin: 0 auto;
 }
 .mainmenu {
   text-align: right;
   background-color: rgb(7, 81, 144);
   width: 100%;
-  padding: 5px;
 }
 .mainmenu li {
   display: inline-block;
-  /*padding-top: 5px;*/
+  padding: 10px 0px;
 }
 .mainmenu li a {
   color: rgb(92, 175, 231);
@@ -41,27 +39,22 @@ body {
   padding: 9px 5px;
 }
 .mainmenu .ofertas {
+  color: white;
+  background: url(../images/flag3.png) center left no-repeat;
+  padding-left: 25px;
   border-left: 1px solid rgb(92, 175, 231);
-  padding: 7px 0px 5px 30px;
-  background-image: url(../images/flagback.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-
 }
 .mainmenu .ofertas:hover {
-  color: white;
-  background-color: rgb(78, 171, 218);
-  padding: 11px 0px 8px 41px;
+  padding-left: 25px;
 }
 li.menucloser {
   background-color: rgb(78, 171, 218);
   color: white;
-  padding: 7px 5px 5px 0px;
+  padding: 10px;
 }
 .menucloser a:hover {
   background-color: rgb(78, 171, 218);
   color: white;
-  padding: 7px 5px;
 }
 .menucloser span {
     font-size: 1em;
@@ -103,10 +96,13 @@ li.menucloser {
   }
 .loginfb {
   display: inline-block;
-  padding: 5px 5px 7px 45px;
+  padding: 5px 5px 7px 25px;
   color: white;
   border-left: 1px solid rgb(117, 138, 181);
   font-size: 1em;
+}
+.loginfb__bold {
+  font-weight: bold;
 }
 .ou {
   width: 275px;
@@ -180,7 +176,7 @@ footer {
 }
 .forsubmit {
   display: block;
-  width: 305px;
+  width: 350px;
   margin: 0 auto;
   padding-top: 10px;
   font-size: 0.7em;
