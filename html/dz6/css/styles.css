@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(40, 40, 40);
+  font-family: Tahoma sans-serif;
+}
+header,
+footer,
+aside,
+nav,
+section,
+main {
+  display: block;
+}
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 15px 45px 0px 45px;
+  background-color: white;
+}
+
+.shini {
+  height: 100px;
+}
