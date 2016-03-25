@@ -20,7 +20,8 @@ body {
 }
 .mainmenu {
   text-align: right;
-  background-color: rgb(7, 81, 144);
+  /*background-color: rgb(7, 81, 144);*/
+  background-image: url(../images/mainmenuback.png);
   width: 100%;
 }
 .mainmenu li {
