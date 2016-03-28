@@ -112,13 +112,13 @@ li.menucloser {
   margin: 0 auto;
   color: lightgrey;
   background-color: none;
+  vertical-align: inherit;
 }
 .ouline::after,
 .ouline::before {
-  display: block;
+  display: inline-block;;
   content: "";
-  width: 125px;
-  margin-top: 5px;
+  width: 115px;
   border-top: 1px solid grey;
   border-bottom: 1px solid black;
 }
@@ -132,8 +132,6 @@ li.menucloser {
   border-bottom: 1px solid black;
 }*/
 .ouline {
-  /*float: left;*/
-  padding: 0 10px;
   font-size: 0.9em;
 }
 /*.ou::after {
