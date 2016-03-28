@@ -46,7 +46,7 @@ body {
   border-left: 1px solid rgb(92, 175, 231);
 }
 .mainmenu .ofertas:hover {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 li.menucloser {
   background: linear-gradient(to bottom, rgb(80, 175, 220), rgb(46, 122, 196));
