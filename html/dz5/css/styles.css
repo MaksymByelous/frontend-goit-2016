@@ -112,35 +112,23 @@ li.menucloser {
   margin: 0 auto;
   color: lightgrey;
   background-color: none;
-  vertical-align: inherit;
 }
 .ouline::after,
 .ouline::before {
-  display: inline-block;;
+  display: inline-block;
+  vertical-align: middle;
   content: "";
   width: 115px;
   border-top: 1px solid grey;
   border-bottom: 1px solid black;
 }
-
-/*.line1,
-.line2 {
-  float: left;
-  width: 115px;
-  margin-top: 5px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid black;
-}*/
 .ouline {
   font-size: 0.9em;
 }
-/*.ou::after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}*/
+.ouword {
+  display: inline-block;
+  padding: 0px 5px;
+}
 form {
   padding: 10px;
 }
