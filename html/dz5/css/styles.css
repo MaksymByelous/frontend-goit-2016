@@ -42,7 +42,7 @@ body {
 .mainmenu .ofertas {
   color: white;
   background: url(../images/flag3.png) center left no-repeat;
-  padding-left: 25px;
+  padding-left: 30px;
   border-left: 1px solid rgb(92, 175, 231);
 }
 .mainmenu .ofertas:hover {
@@ -111,30 +111,40 @@ li.menucloser {
   padding: 20px 0 5px 0;
   margin: 0 auto;
   color: lightgrey;
+  background-color: none;
 }
-.line1,
+.ouline::after,
+.ouline::before {
+  display: block;
+  content: "";
+  width: 125px;
+  margin-top: 5px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid black;
+}
+
+/*.line1,
 .line2 {
   float: left;
   width: 115px;
   margin-top: 5px;
   border-top: 1px solid grey;
   border-bottom: 1px solid black;
-}
+}*/
 .ouline {
-  float: left;
+  /*float: left;*/
   padding: 0 10px;
   font-size: 0.9em;
 }
-.ou::after {
+/*.ou::after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
-}
+}*/
 form {
   padding: 10px;
-
 }
 .formconainer .myinput {
   width: 275px;
@@ -152,25 +162,25 @@ form {
   background: rgba(27, 82, 136, 0.7);
   box-shadow: 0 0 10px rgba(120,180,215, 0.8);
 }
-footer {
+/*footer {
   text-align: center;
   color: lightgrey;
-}
+}*/
 .submitbuttom {
   background: linear-gradient(to top, rgb(45, 122, 196), rgb(107, 184, 231));
   border-radius: 2px;
   border: 0px;
   color: white;
   padding: 5px;
-  margin: 5px 0;
+  margin: 15px 0 5px 0px ;
   font-size: 1.0em;
 }
 .forcheckbox {
   font-size: 0.9em;
+  color: lightgrey;
 }
 .checkbox {
-  width: 300px;
-  margin: 0 auto;
+  padding-right: 40px;
 }
 .checkbox form {
   text-align: left;
@@ -179,7 +189,7 @@ footer {
 .forsubmit {
   display: block;
   width: 350px;
-  margin: 0 auto;
+  margin: 0px auto;
   padding-top: 10px;
   font-size: 0.7em;
   line-height: 1.5;
