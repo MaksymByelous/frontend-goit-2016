@@ -11,18 +11,18 @@
 
       <header>
         <div class="telefons">
-          (044)123-45-67  (044) 567-89-10
+          (044)123-45-67  (044)567-89-10
         </div>
         <div class="registration">
-
-          <form class="" action="index.html" method="post">
-            <img class="class="logmen" src="images/icon-logmen.png" alt="" />
-            <input class="reginput" type="text" name="name" value="" placeholder="логин">
-            <input class="reginput" type="text" name="name" value="" placeholder="пароль">
-            <input type="button" name="name" value="вход">
-            <input type="button" name="name" value="регистрация">
-            <a class="forgetpass" href="#">забыли пароль?</a>
+          <img class="logmen" src="images/icon-logmen.png" alt="" />
+          <form class="regform" action="index.html" method="post">
+            <input class="inputlogin" type="text" name="name" value="" placeholder="логин">
+            <input class="inputpass" type="text" name="name" value="" placeholder="пароль">
+            <input class="enterbutton" type="button" name="enter" value="вход">
+            <input class="regbutton" type="button" name="registration" value="регистрация">
           </form>
+          <a class="forgetpass" href="#">забыли пароль?</a>
+
         </div>
         <div class="icons">
           <a href="#"><img src="images/icon-home.png" alt="" /></a>
@@ -33,44 +33,445 @@
       <div class="zazorlogo">
         <img src="images/zazor_head.png" alt="" />
       </div>
-
-
+<!-- главное меню -->
       <div class="topnav">
         <nav>
-          главное меню
+          <ul class="ulmainmenu">
+            <li><a class="mainmenu" href="#"> О КОМПАНИ </a></li>
+            <li><a class="mainmenu" href="#"> ОПЛАТА </a></li>
+            <li class="dostavka"><a class="mainmenu" href="#"> ДОСТАВКА </a></li>
+            <li class="statii"><a class="mainmenu" href="#"> СТАТЬИ </a></li>
+            <li class="contakti"><a class="mainmenu" href="#"> КОНТАКТЫ </a></li>
+          </ul>
         </nav>
-        счетчики товаров и денег
+        <div class="topnav_balance">
+          <span class="balanceword">товаров:</span>
+          <span class="balancefigure">0</span>
+          <span class="balanceword__sum">на сумму:</span>
+          <span class="balancefigure">0,00 грн</span>
+        </div>
       </div>
 
       <section class="findfilters">
-        три блока фильтров
+<!-- первый блок поиска -->
+        <div class="findbycar">
+          <div class="topper">
+            <span class="disc">Диски:</span>
+            <span class="bycar">Поиск по автомобилю</span>
+            <span class="tyres">Шины:</span>
+          </div>
+          <div class="floatcontainer">
+
+          <table class="searchtitle">
+            <tr><td>Марка <span>авто:</span>
+                </td>
+            </tr>
+            <tr><td class="doudle">Модель <span>автомобиля:</span>
+                </td>
+            </tr>
+            <tr><td class="doudle">Год выпуска <span>автомобиля:</span>
+                </td>
+            </tr>
+            <tr><td class="lowitem">Комплектация:
+                </td>
+            </tr>
+          </table>
+
+          <form class="" action="index.html" method="post">
+            <div class="searchdiscbycar">
+
+            <select class="discbyauto" name="AutoMarka" id="avmarka">
+              <option value=""></option>
+              <option value="mers">mers</option>
+              <option value="citroen">cupe:citroennnn</option>
+            </select>
+            <select class="discbyauto" name="Model">
+              <option value=""></option>
+              <option value="qube">qube</option>
+              <option value="triangle">treeestriangleee</option>
+            </select>
+            <select class="discbyauto" name="Year">
+              <option value=""></option>
+              <option value="1956">-195600</option>
+              <option value="2134">2134</option>
+            </select>
+            <select class="discbyauto" name="Complitacia">
+              <option value="nissan"></option>
+              <option value="sucks">sucks</option>
+              <option value="cool">superpupcooooll</option>
+            </select>
+            </div>
+
+            <table class="searchtitle__tyres">
+              <tr><td>Марка <span>авто:</span>
+                  </td>
+              </tr>
+              <tr><td class="doudle">Модель <span>автомобиля:</span>
+                  </td>
+              </tr>
+              <tr><td class="doudle">Год выпуска <span>автомобиля:</span>
+                  </td>
+              </tr>
+              <tr><td class="lowitem">Комплектация:
+                  </td>
+              </tr>
+            </table>
+
+            <div class="searchtyresbycar">
+            <select class="tyresbyauto" name="AutoMarka">
+              <option value=""></option>
+              <option value="mers">mers</option>
+              <option value="citroen">cupe:citroennnn</option>
+            </select>
+            <select class="tyresbyauto" name="Model">
+              <option value=""></option>
+              <option value="qube">qube</option>
+              <option value="triangle">treeestriangleee</option>
+            </select>
+            <select class="tyresbyauto" name="Year">
+              <option value=""></option>
+              <option value="1956">-195600</option>
+              <option value="2134">2134</option>
+            </select>
+            <select class="tyresbyauto" name="Complitacia">
+              <option value="nissan"></option>
+              <option value="sucks">sucks</option>
+              <option value="cool">superpupcooooll</option>
+            </select>
+            </div>
+            </div>
+            <input class="searchbuttonbyauto" type="submit" name="name" value="поиск...">
+          </form>
+        </div>
+
+ <!-- второй блок поиска -->
+
+        <div class="findbycar__tyres">
+          <div class="topper">
+            <span class="">поиск шин</span>
+          </div>
+          <div class="floatcontainer">
+
+          <table class="searchtitle__size">
+            <tr><td class="sizetitle">Размер:
+                </td>
+            </tr>
+            <tr><td class="radius">R
+                </td>
+            </tr>
+            <tr><td class="sizetitle">Сезон:
+                </td>
+            </tr>
+          </table>
+
+          <form class="" action="index.html" method="post">
+            <div class="searchdiscbycar">
+
+            <select class="discbyauto__tyreswidth" name="tyreswidth">
+              <option value="145">145</option>
+              <option value="234">234</option>
+              <option value="235">235</option>
+            </select>
+            <span class="desh">/</span>
+            <select class="discbyauto__tyresheight" name="tyresheight">
+              <option value="">     </option>
+              <option value="qube">50</option>
+              <option value="triangle">60</option>
+            </select>
+            <select class="discbyauto__tyresradius" name="radius">
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="23">23</option>
+            </select>
+            <div class="checkbox-leto">
+              <input class="checkbox" type="checkbox" name="leto" value="leto" id="leto">
+              <label for="leto">лето</label>
+            </div>
+            <div class="checkbox-zima">
+              <input class="checkbox" type="checkbox" name="zima" value="zima" id="zima">
+              <label for="zima">зима</label>
+            </div>
+            <div class="checkbox-vsesezon">
+              <input class="checkbox" type="checkbox" name="vsesezon" value="vsesezon" id="vsesezon">
+              <label for="vsesezon">всесез</label>
+            </div>
+            </div>
+            <input class="searchbuttonbyauto" type="submit" name="name" value="поиск...">
+          </form>
+        </div>
+        </div>
+
+ <!-- третий блок поиска -->
+
+        <div class="findbycar__diski">
+
+          <div class="floatcontainer">
+            <div class="topper__diski">
+              <span class="disc">поиск дисков</span>
+            </div>
+
+            <table class="searchtitle__diski">
+            <tr><td>Диаметр <span>диска:</span>
+                </td>
+            </tr>
+            <tr><td class="doudle__diski">Количество <span>крепежных отверстий:</span>
+              </td>
+            </tr>
+            <tr><td class="doudle__diski__3">Диаметр <span>расположенных крепежных отверстий:</span>
+                </td>
+            </tr>
+          </table>
+
+          <form class="" action="index.html" method="post">
+            <div class="searchdiscbycar">
+
+            <select class="discbyauto" name="AutoMarka" id="avmarka">
+            <option value="14">14</option>
+            <option value="mers">mers</option>
+            <option value="citroen">citroenn</option>
+            </select>
+            <select class="discbyauto__krepez" name="Model">
+              <option value="3">3</option>
+              <option value="qube">qube</option>
+              <option value="triangle">triangle</option>
+            </select>
+            <select class="discbyauto__diamotverstiy" name="Year">
+              <option value="12">12</option>
+              <option value="1956">1956</option>
+              <option value="213465;">213465;</option>
+            </select>
+            </div>
+
+            <div class="dtso">
+              <table class="searchtitle__tyres__diski">
+                <tr><td class="doudle__diski">ДЦО <br><span>(диаметр центрального отверстия):</span>
+                  </td>
+                </tr>
+              </table>
+              <select class="tyresbyauto__diski" name="Model">
+                <option value="12">12</option>
+                <option value="">121223</option>
+                <option value="">123121;</option>
+              </select>
+              <table class="searchtitle__tyres__diski__et">
+                <tr><td class="doudle__diski">ЕТ <br><span>(вылет диска):</span>
+                  </td>
+                </tr>
+              </table>
+              <select class="tyresbyauto__vilet" name="Year">
+                <option value="12">12</option>
+                <option value="1956">19560</option>
+                <option value="2134">2134</option>
+              </select>
+            </div>
+                <input class="searchbuttonbyauto__d" type="submit" name="name" value="поиск...">
+            </form>
+          </div>
+          </div>
        </section>
+
+
 
       <main>
 
         <aside class="products">
+            <h1 class="sidebarhead">КАТАЛОГ ПРОДУКЦИИ</h1>
+          <div class="leftside">
+            <h1 class="sidebarULtops">ШИНЫ</h1>
+            <ul class="sidebar">
+              <li><a href="#">Наименование 1</a></li>
+              <li><a href="#">Наименование 2</a></li>
+              <li><a href="#">Наименование 3</a></li>
+              <li><a href="#">Наименование 4</a></li>
+            </ul>
+            <h1 class="sidebarULtops">ДИСКИ</h1>
+            <ul class="sidebar">
+              <li><a href="#">Наименование 1</a></li>
+              <li><a href="#">Наименование 2</a></li>
+              <li><a href="#">Наименование 3</a></li>
+              <li><a href="#">Наименование 4</a></li>
+            </ul>
+            <h1 class="sidebarULtops">БОЛТЫ</h1>
+            <ul class="sidebar">
+              <li><a href="#">Наименование 1</a></li>
+              <li><a href="#">Наименование 2</a></li>
+              <li><a href="#">Наименование 3</a></li>
+              <li><a href="#">Наименование 4</a></li>
+            </ul>
+          </div>
           </aside>
 
-        <section>
-           шины результат фильтра
-           <figure>
-             <figcaption>
-                Goodyear
+        <section class="kartinki">
+
+          <div class="line1">
+            <figure>
+              <figcaption>
+                 Goodyear
+                 <p>
+                   Ultra Grip Extreme
+                 </p>
+               </figcaption>
+              <img class="shini"src=images/goodyear.png alt="">
+              <figcaption>
+                <span>90.00 <span class="uah">грн.</span></span>
               </figcaption>
-             <img class="shini"src=images/goodyear.png alt="">
-             <figcaption>
-               90 грн
-             </figcaption>
-             <figure>
+            </figure>
+
+             <figure class="secondcolomn">
+                <figcaption>
+                   Nokian
+                   <p>
+                     Hakkapeliitta R
+                   </p>
+                 </figcaption>
+                <img class="shini"src=images/nokian.png alt="">
+                <figcaption>
+                  <span>115.00 <span class="uah">грн.</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="thirdcolomn">
+                <figcaption>
+                  Hankook
+                  <p>
+                    K 708 155/65 R14
+                  </p>
+                </figcaption>
+               <img class="shini"src=images/hankook.png alt="">
+               <figcaption>
+               <span>393.00 <span class="uah"> грн.</span></span>
+                </figcaption>
+              </figure>
+          </div>
+
+          <div class="line2">
+            <figure>
+              <figcaption>
+                 Goodyear
+                 <p>
+                   Ultra Grip Extreme
+                 </p>
+               </figcaption>
+              <img class="shini"src=images/goodyear.png alt="">
+              <figcaption>
+                <span>90.00 <span class="uah"> грн.</span></span>
+              </figcaption>
+            </figure>
+
+             <figure class="secondcolomn">
+                <figcaption>
+                  Nokian
+                  <p>
+                    Hakkapeliitta R
+                  </p>
+                </figcaption>
+               <img class="shini"src=images/nokian.png alt="">
+               <figcaption>
+                 <span>115.00 <span class="uah"> грн.</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="thirdcolomn">
+                <figcaption>
+                  Hankook
+                  <p>
+                    K 708 155/65 R14
+                  </p>
+                </figcaption>
+               <img class="shini"src=images/hankook.png alt="">
+               <figcaption>
+               <span>393.00 <span class="uah"> грн.</span></span>
+                </figcaption>
+              </figure>
+          </div>
+          <div class="line3">
+            <figure>
+              <figcaption>
+                 Goodyear
+                 <p>
+                   Ultra Grip Extreme
+                 </p>
+               </figcaption>
+              <img class="shini"src=images/goodyear.png alt="">
+              <figcaption>
+                <span>90.00 <span class="uah">грн.</span></span>
+              </figcaption>
+            </figure>
+
+             <figure class="secondcolomn">
+                <figcaption>
+                  Nokian
+                  <p>
+                    Hakkapeliitta R
+                  </p>
+                </figcaption>
+               <img class="shini"src=images/nokian.png alt="">
+               <figcaption>
+                 <span>115.00 <span class="uah"> грн.</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="thirdcolomn">
+                <figcaption>
+                   Hankook
+                   <p>
+                     K 708 155/65 R14
+                   </p>
+                 </figcaption>
+                <img class="shini"src=images/hankook.png alt="">
+                <figcaption>
+                <span>393.00 <span class="uah"> грн.</span></span>
+                </figcaption>
+              </figure>
+          </div>
+
+
          </section>
 
         <aside class="products__brands">
+          <h1 class="sidebarhead">БРЕНДЫ</h1>
+        <div class="righttside">
+          <h1 class="sidebarULtops">ШИНЫ</h1>
+
+          <form class="rightbar" action="index.html" method="post">
+            <input id="shini1" type="checkbox" name="" value="brand1" >
+            <label for="shini1">Бренд 1</label>
+            <input id="shini2" type="checkbox" name="" value="brand2" >
+            <label for="shini2">Бренд 2</label>
+            <input id="shini3" type="checkbox" name="" value="brand3" >
+            <label for="shini3">Бренд 3</label>
+
+            <h1 class="sidebarULtops">ДИСКИ</h1>
+
+            <input id="diski1" type="checkbox" name="" value="brand1" >
+            <label for="diski1">Бренд 1</label>
+            <input id="diski2" type="checkbox" name="" value="brand2" >
+            <label for="diski2">Бренд 2</label>
+            <input id="diski3" type="checkbox" name="" value="brand3" >
+            <label for="diski3">Бренд 3</label>
+
+            <input class="vibrat" type="button" name="name" value="ВЫБРАТЬ">
+
+        </form>
+        </div>
           </aside>
 
       </main>
-
+      <div class="image-brands">
+        <img class="tyres_brands" src="images/tireslogos.png" alt="tyres-brands" />
+      </div>
       <footer>
-        логотипы и дубликат главного меню
+
+          <ul class="footer_ulmainmenu">
+            <li><a class="footer_kompaniya" href="#"> О компании </a></li>
+            <li><a class="footer_dostavka" href="#"> Доставка </a></li>
+            <li><a class="footer_statii" href="#"> Статьи </a></li>
+            <li><a class="footer_kontakti" href="#"> Контакты </a></li>
+          </ul>
+
+        <p class="copyright">
+          Создание сайта &copy; Global Vision
+        </p>
       </footer>
 
 
