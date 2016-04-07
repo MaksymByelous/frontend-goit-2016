@@ -660,24 +660,23 @@ footer {
 }
 .footer_kompaniya {
   padding-right: 12px;
-  margin-left: 5px
 }
 .footer_dostavka {
   border-left: 2px solid rgb(106, 120, 130);
   border-right: 2px solid rgb(106, 120, 130);
-  padding: 0px 12px 0px 14px;
+  padding: 0px 13px 0px 14px;
 }
 .footer_statii {
     border-right: 1px solid rgb(106, 120, 130);
     padding: 0px 10px 0px 10px;
 }
 .footer_kontakti {
-  padding-left: 13px;
+  padding-left: 12px;
 }
 .copyright {
   color: rgb(117, 69, 66);
   text-align: center;
   font-family: Arial;
   font-size: 10px;
-  padding-top: 4px;
+  padding: 6px 5px 0px 0px;
 }
