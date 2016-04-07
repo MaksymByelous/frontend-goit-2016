@@ -59,7 +59,7 @@ header {
   padding: 0px 1px 1px 3px
 }
 .inputlogin {
-  margin-left: -2px;
+  margin-left: 2px;
 }
 .inputpass {
   margin-left: 2px;
@@ -156,8 +156,8 @@ ul.ulmainmenu {
 .topnav_balance {
   float: right;
   background: url(../images/basket.png) center left no-repeat;
-  background-position: -3px 0px;
-  padding: 0px 8px 0px 25px;
+  background-position: -2px 0px;
+  padding: 0px 8px 0px 33px;
   margin-top: 2px;
 }
 .balanceword {
@@ -177,6 +177,9 @@ ul.ulmainmenu {
   color: rgb(127, 134, 138);
   padding-right: 9px;
 }
+
+/*ПЕРВЫЙ БЛОК ПОИСКА*/
+
 .floatcontainer {
   margin-top: 2px;
 }
@@ -205,12 +208,12 @@ ul.ulmainmenu {
   padding: 2px 20px 2px 2px;
 }
 .topper>span.bycar {
-  padding: 2px 20px 2px 40px;
+  padding: 2px 20px 2px 42px;
   font-family: Arial;
   font-size: 13.5px;
 }
 .topper>span.tyres {
-  padding: 2px 0px 2px 45px;
+  padding: 2px 0px 2px 53px;
 }
 .tyresbyauto,
 .discbyauto {
@@ -244,7 +247,7 @@ table span {
 }
 .searchtitle__tyres {
   float: left;
-  margin-left: 28px;
+  margin-left: 25px;
   margin-top: 4px;
 }
 .searchtyresbycar {
