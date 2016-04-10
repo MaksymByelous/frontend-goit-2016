@@ -20,27 +20,24 @@ header {
 }
 .telefons {
   background: url(../images/telefon.png) center left no-repeat;
-  padding: 0px 15px 0px 28px;
+  padding: 2px 15px 2px 28px;
   float: left;
   font-family: Arial;
   font-size: 19px;
   color: rgb(126, 135, 138);
   vertical-align: middle;
-  margin-top: 3px;
+  margin-top: 1px;
   margin-left: -2px;
-}
-.logmen {
-  display: inline-block;
-  float: left;
 }
 .regform {
   display: inline-block;
   float: left;
+  padding: 0px 0px 5px 19px;
+  background: url(../images/icon-logmen.png) center left no-repeat;
 }
 .registration {
-  height: 25px;
   float: left;
-  background: linear-gradient(to top, rgb(12, 51, 87), rgb(31, 102, 133)) ;
+  background: linear-gradient(to top, rgb(12, 51, 87), rgb(31, 102, 133));
   padding: 0px 10px 0px 5px;
   border-radius: 3px;
   margin-top: -2px;
@@ -53,7 +50,7 @@ header {
   margin-top: 3px;
   height: 15px;
   border: 1px solid rgb(108, 126, 140);
-  font-family: "Lucida Sans";
+  font-family: "Lucida Sans", sans-serif;
   font-size: 12px;
   color: rgb(151, 162, 166);;
   padding: 0px 1px 1px 3px
@@ -64,38 +61,37 @@ header {
 .inputpass {
   margin-left: 2px;
 }
-.enterbutton,
-.regbutton {
-  background: none;
-  border: none;
-  font-family: "Lucida Sans";
-  font-size: 12px;
-  color: white;
-  padding: 0px;
-  vertical-align: top;
-}
 .enterbutton {
+  background: none;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 11px;
+  color: white;
+  vertical-align: top;
+  border: none;
   border-right: 1px solid white;
-  padding-right: 4px;
-  margin-top: 3px;
-  margin-left: 1px;
+  padding: 0px 7px 0px 3px;
+  margin-top: 6px;
 }
 .regbutton {
-  margin-left: -2px;
-  margin-top: 2px;
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+  font-family: "Lucida Sans", sans-serif;
+  margin: 7px 0px 0px 4px;
+  float: left;
 }
 .forgetpass {
   color: white;
-  font-size: 14px;
-  font-family: "Lucida Sans";
-  margin: 4px 0px 0px 22px;
+  font-size: 12px;
+  font-family: "Lucida Sans", sans-serif;
+  margin: 7px 0px 0px 26px;
   float: left;
 }
 .icons {
   float: left;
   border: 1px solid grey;
   border-radius: 11px;
-  padding: 0px 9px 4px 8px;
+  padding: 2px 9px 2px 8px;
   margin-left: 19px;
 }
 .icons>a {
@@ -110,32 +106,34 @@ header::after {
 	visibility:hidden
 }
 .zazorlogo {
-  padding: 10px 0px 2px 1px;
+  padding: 9px 0px 2px 1px;
 }
+
+/*----------------------ГЛАВНОЕ МЕНЮ-------------*/
+
 .topnav {
   overflow: hidden;
   background: linear-gradient(to top, rgb(0, 0, 0), rgb(77, 86, 99)) ;
   border: 1px solid rgb(35, 44, 90);
   border-radius: 5px;
-  padding: 3.5px 0px;
+  padding: 4px 0px;
 }
 nav li {
   display: inline-block;
-  padding: 5px 7px;
+  padding: 5px 0px;
 }
-li.dostavka {
+/*li.dostavka {
   padding-left: 1px;
   padding-right: 4px;
-}
+}*/
 li.statii {
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-left: -3px;
 }
 li.contakti {
-  padding-left: 2px;
+  margin-left: -8px;
 }
 ul.ulmainmenu {
-  margin-left: 128px;
+  margin-left: 130px;
   margin-top: -1px;
   float: left;
 }
@@ -144,12 +142,12 @@ ul.ulmainmenu {
   font-family: Arial;
   font-size: 14px;
   color: rgb(177, 188, 192);
-  padding: 5px 10px;
+  padding: 5px 15px;
 }
 .mainmenu:hover {
   font-size: 14px;
   color: white;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 15px;
   background: linear-gradient(to top, rgb(12, 51, 87), rgb(31, 101, 133)) ;
 }
@@ -157,7 +155,7 @@ ul.ulmainmenu {
   float: right;
   background: url(../images/basket.png) center left no-repeat;
   background-position: -2px 0px;
-  padding: 0px 8px 0px 33px;
+  padding: 0px 8px 0px 29px;
   margin-top: 2px;
 }
 .balanceword {
@@ -205,15 +203,15 @@ ul.ulmainmenu {
   color: rgb(21, 68, 103);
 }
 .topper>span.disc {
-  padding: 2px 20px 2px 2px;
+  padding: 0px 20px 0px 0px;
 }
 .topper>span.bycar {
-  padding: 2px 20px 2px 42px;
+  padding: 0px 20px 0px 42px;
   font-family: Arial;
   font-size: 13.5px;
 }
 .topper>span.tyres {
-  padding: 2px 0px 2px 53px;
+  padding: 0px 0px 0px 53px;
 }
 .tyresbyauto,
 .discbyauto {
@@ -247,7 +245,7 @@ table span {
 }
 .searchtitle__tyres {
   float: left;
-  margin-left: 25px;
+  margin-left: 28px;
   margin-top: 4px;
 }
 .searchtyresbycar {
@@ -290,6 +288,9 @@ select {
   background-position: right center;
   background-repeat: no-repeat;
 }
+#avmarka {
+  margin-top: 3px;
+}
 .findbycar__tyres {
   float: left;
   width: 179px;
@@ -305,10 +306,9 @@ select {
   display: inline-block;
 }
 .findbycar__tyres .topper > span {
-  padding-left: 0px;
-  margin-left: -3px;
   font-size: 14px;
   font-family: "Lucida Sans";
+    padding: 0px;
 }
 .searchtitle__size {
   margin-top: 10px;
@@ -347,6 +347,7 @@ label {
 }
 .desh {
   font-weight: bold;
+  padding: 0px  5px  0px  2px;
 }
 input[type="checkbox"] {
   display: none;
@@ -359,19 +360,22 @@ input[type="checkbox"]:checked + label {
   background-position: 0 -15px;
 }
 .checkbox-vsesezon {
-  margin: -2px 0px 0px -3px;
+  margin: -2px 0px 0px 0px;
 }
 .checkbox-leto {
-  margin: 5px 0px 0px -3px;
+  margin: 7px 0px 0px 0px;
 }
 .checkbox-zima {
-  margin: -2px 0px 0px -3px;
+  margin: -2px 0px 0px 0px;
 }
 .findbycar__tyres .searchdiscbycar {
   padding-left: 3px;
 }
 .findbycar__tyres .searchbuttonbyauto {
   margin: -5px 12px 0 0;
+}
+.searchtitle__diski td.doudle__diski {
+  padding-top: 8px;
 }
 .findbycar__diski {
   margin-left: 10px;
@@ -386,13 +390,13 @@ input[type="checkbox"]:checked + label {
   margin: 0px 0px -2px 3px;
 }
 .searchtitle__tyres__diski__et {
-  margin: 6px 0px 0px 3px;
+  margin: 3px 0px 0px 3px;
 }
 .searchtitle__diski td {
   width: 92px;
   font-family: "Lucida Sans", sans-serif;
   font-size: 11px;
-  padding: 2px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .searchtitle__diski td.doudle__diski__3 {
   padding: 0px 0px 3px 0px;
@@ -406,6 +410,7 @@ input[type="checkbox"]:checked + label {
 }
 .dtso {
   float: right;
+  width: 30%;
   border-left: 1px solid grey;
   padding-left: 7px;
   margin: -13px 4px 0px 0px;
@@ -447,8 +452,9 @@ table.searchtitle__diski span {
   display: block;
 }
 .searchbuttonbyauto__d {
-  margin: 1px 12px 8px 0px;
+  margin: -7px 17px 9px 0px;
   float: right;
+  clear: both;
   background: none;
   border: none;
   font-style: italic;
@@ -468,10 +474,7 @@ aside {
   float: left;
 }
 aside.products {
-  margin: 9px 0px 0px -2px;
-}
-ul.sidebar {
-  margin-bottom: -1px;
+  margin: 7px 0px 0px -2px;
 }
 h1.sidebarhead,
 h1.sidebarULtops,
@@ -530,24 +533,16 @@ section.kartinki {
   width: 513px;
   background: linear-gradient(to top, rgb(147, 167, 176), rgb(228, 231, 233)) ;
   border-radius: 5px;
-  padding: 0px 0px 20px 12px;
+  padding: 4px 0px 15px 12px;
   float: left;
   margin-top: 4px;
   margin-left: 11px;
-}
-.line1,
-.line2,
-.line3 {
   overflow: hidden;
-  padding-top: 5px;
 }
-.line2,
-.line3 {
-  margin-top: -1px;
-}
+
 figure {
   float: left;
-  padding: 10px 10px;
+  padding: 10px 10px 14px 10px;
 }
 figure.secondcolomn {
   margin-left: 9px;
@@ -598,7 +593,7 @@ span.uah {
 
 aside.products__brands {
   margin-left: 8px;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 aside.products__brands h1.sidebarULtops {
   margin-left: 14px;
@@ -624,7 +619,7 @@ input.vibrat {
   font-size: 12px;
   color: white;
   background: linear-gradient(to top, rgb(13, 52, 88), rgb(31, 103, 135));
-  padding: 4px 11px;
+  padding: 5px 14px;
   border-radius: 15px;
   border: none;
   margin: 8px 0px 0px 23px;
@@ -633,7 +628,6 @@ input.vibrat {
 
 .image-brands {
   margin-left: -2px;
-  margin-top: 2px;
 }
 /*------------ФУТТЕР!!!-----------*/
 footer {
@@ -644,10 +638,11 @@ footer {
 }
 .footer_ulmainmenu {
   text-align: center;
+  padding-top: 8px;
 }
 .footer_ulmainmenu>li {
   display: inline-block;
-  padding: 8px 0px 10px 0px;
+  padding: 0px 11px;
 }
 .footer_ulmainmenu a {
   text-decoration: none;
@@ -658,25 +653,17 @@ footer {
 .footer_ulmainmenu a:hover {
     color: rgb(82, 171, 203);
 }
-.footer_kompaniya {
-  padding-right: 12px;
-}
 .footer_dostavka {
   border-left: 2px solid rgb(106, 120, 130);
   border-right: 2px solid rgb(106, 120, 130);
-  padding: 0px 13px 0px 14px;
 }
 .footer_statii {
-    border-right: 1px solid rgb(106, 120, 130);
-    padding: 0px 10px 0px 10px;
-}
-.footer_kontakti {
-  padding-left: 12px;
+    border-right: 2px solid rgb(106, 120, 130);
 }
 .copyright {
   color: rgb(117, 69, 66);
   text-align: center;
   font-family: Arial;
   font-size: 10px;
-  padding: 6px 5px 0px 0px;
+  padding-top: 15px;
 }
