@@ -92,7 +92,7 @@ header {
   border: 1px solid grey;
   border-radius: 11px;
   padding: 2px 9px 2px 8px;
-  margin-left: 19px;
+  margin-left: 18px;
 }
 .icons>a {
   padding: 0px 1px
@@ -412,7 +412,7 @@ input[type="checkbox"]:checked + label {
   float: right;
   width: 30%;
   border-left: 1px solid grey;
-  padding-left: 7px;
+  padding-left: 6px;
   margin: -13px 4px 0px 0px;
 }
 .tyresbyauto__vilet {
