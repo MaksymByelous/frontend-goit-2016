@@ -16,7 +16,7 @@ main {
   background-color: white;
 }
 header {
-  padding: 0px 5px 0px 5px;
+  /*padding: 0px 5px 0px 5px;*/
 }
 .telefons {
   background: url(../images/telefon.png) center left no-repeat;
@@ -192,7 +192,7 @@ ul.ulmainmenu {
   overflow: hidden;
   border: 1px solid rgb(176, 176, 177);
   border-radius: 15px;
-  padding-left: 17px;
+  padding-left: 10px;
   box-shadow: 5px 5px 5px 0px rgb(153, 153, 153);
 }
 .topper>span {
@@ -245,7 +245,7 @@ table span {
 }
 .searchtitle__tyres {
   float: left;
-  margin-left: 20px;
+  margin-left: 12px;
   margin-top: 4px;
 }
 .searchtyresbycar {
@@ -380,7 +380,7 @@ input[type="checkbox"]:checked + label {
 .findbycar__diski {
   margin-left: 10px;
   float: left;
-  width: 257px;
+  width: 263px;
   border: 1px solid rgb(176, 176, 177);
   border-radius: 15px;
   padding-left: 7px;
@@ -412,7 +412,7 @@ input[type="checkbox"]:checked + label {
   float: right;
   width: 30%;
   border-left: 1px solid grey;
-  padding-left: 6px;
+  padding-left: 2px;
   margin: -13px 4px 0px 0px;
 }
 .tyresbyauto__vilet {
@@ -542,7 +542,7 @@ section.kartinki {
 
 figure {
   float: left;
-  padding: 10px 23px 14px 10px;
+  padding: 10px 22px 14px 10px;
 }
 /*figure.secondcolomn {
   margin-left: 9px;
