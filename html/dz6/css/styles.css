@@ -92,7 +92,7 @@ header {
   border: 1px solid grey;
   border-radius: 11px;
   padding: 2px 9px 2px 8px;
-  margin-left: 18px;
+  margin-left: 10px;
 }
 .icons>a {
   padding: 0px 1px
@@ -245,7 +245,7 @@ table span {
 }
 .searchtitle__tyres {
   float: left;
-  margin-left: 28px;
+  margin-left: 20px;
   margin-top: 4px;
 }
 .searchtyresbycar {
@@ -293,14 +293,14 @@ select {
 }
 .findbycar__tyres {
   float: left;
-  width: 179px;
+  width: 186px;
   height: 135px;
   overflow: hidden;
   border: 1px solid rgb(176, 176, 177);
   border-radius: 15px;
   padding-left: 12px;
   box-shadow: 5px 5px 5px 0px rgb(153, 153, 153);
-  margin: -1px 0px 0px 13px;
+  margin: -1px 0px 0px 9px;
 }
 .discbyauto__tyreswidth {
   display: inline-block;
@@ -542,14 +542,14 @@ section.kartinki {
 
 figure {
   float: left;
-  padding: 10px 10px 14px 10px;
+  padding: 10px 23px 14px 10px;
 }
-figure.secondcolomn {
+/*figure.secondcolomn {
   margin-left: 9px;
 }
 figure.thirdcolomn {
   margin-left: 11px;
-}
+}*/
 figcaption {
   text-align: center;
   font-family: Arial;
@@ -562,10 +562,10 @@ figcaption>p {
   color: rgb(35, 35, 35);
   padding-left: 7px;
 }
-figure.thirdcolomn figcaption>p {
+/*figure.thirdcolomn figcaption>p {
   font-size: 14px;
   padding: 0px 2px 0px 0px;
-}
+}*/
 figcaption>span {
   font-weight: bold;
   font-style: italic;
@@ -582,12 +582,12 @@ span.uah {
   padding: 4px 29px;
   background: white;
 }
-.secondcolomn .shini {
+/*.secondcolomn .shini {
   padding: 4px 33px;
 }
 .thirdcolomn .shini {
   padding: 4px 26px;
-}
+}*/
 
 /*---------ПРАВЫЙ БЛОК МЕНЮ-СПИСКОВ-------*/
 
