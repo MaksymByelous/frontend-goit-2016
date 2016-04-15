@@ -1,0 +1,182 @@
+
+article,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+div.container {
+  margin: 0 auto;
+}
+div.container {
+  width: 960px;
+  overflow: hidden;
+}
+footer,
+header,
+section {
+    margin: 0 auto;
+}
+
+/*--------------ХЕДЕР------------*/
+header {
+  background: url(../images/montains768.png) top center no-repeat;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 26px;
+  float: left;
+}
+ul.main-menu {
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+li {
+  float: left;
+  margin-left: 45px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+div.slider {
+  clear: both;
+}
+/*--------------БЛОК ABOUT--------------*/
+section.about {
+  background: linear-gradient(to top, rgb(55, 41, 62), rgb(117, 81, 131));
+}
+article.about__company-1,
+article.about__company-2,
+article.about__company-3 {
+  width: 30%;
+  overflow: hidden;
+  float: left;
+  padding-left: 3%;
+}
+article.about__company-1,
+article.about__company-2,
+article.about__company-3 {
+
+}
+article.about__company-1 {
+  background: url(../images/about-icons-sprite.png) -3% 300% no-repeat;
+  background-size: 35%;
+}
+article.about__company-2 {
+  background: url(../images/about-icons-sprite.png) -21% 144% no-repeat;
+  background-size: 35%;
+}
+article.about__company-3 {
+  background: url(../images/about-icons-sprite.png) -39% -10% no-repeat;
+  background-size: 35%;
+}
+h2 {
+  font-size: 14px;
+  color: white;
+}
+p.about__company__text {
+  font-size: 10px;
+  color: white;
+}
+a.about__company__more {
+  display: block;
+  float: right;
+}
+
+/*--------------СТАТЬИ-----------------*/
+section.articles {
+  background: rgb(249, 249, 249);
+}
+article.articles__startshere {
+  background: white;
+  float: left;
+  width: 50%;
+}
+article.articles__updates {
+  float: left;
+  width: 50%;
+}
+div.logos {
+  clear: both;
+  border-top: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid rgb(230, 230, 230);
+  overflow: hidden;
+}
+figure {
+  float: left;
+  width: 12%;
+  padding: 2%;
+  text-align: center;
+}
+
+/*------------------FOOTER--------------*/
+
+footer {
+  background: url(../images/montains768.png) bottom center no-repeat;
+  height: 100px;
+}
+
+
+/*320px*/
+  @media (min-width: 100px) and (max-width: 479px) {
+    html {
+     -webkit-text-size-adjust: none;
+  }
+    div.container {
+      width: 100%;
+    }
+    figure {
+      width: 46%;
+    }
+    article.about__company-1,
+    article.about__company-2,
+    article.about__company-3 {
+      width: 97%;
+    }
+    article.articles__startshere,
+    article.articles__updates {
+      width: 100%;
+    }
+  }
+/*480px*/
+  @media (min-width: 480px) and (max-width: 767px) {
+    html {
+     -webkit-text-size-adjust: none;
+  }
+    div.container {
+      width: 100%;
+    }
+    figure {
+      width: 29%;
+    }
+    article.about__company-1,
+    article.about__company-2,
+    article.about__company-3 {
+      width: 97%;
+    }
+    article.articles__startshere,
+    article.articles__updates {
+      width: 100%;
+    }
+  }
+/*768px*/
+  @media (min-width: 768px) and (max-width: 960px) {
+    html {
+     -webkit-text-size-adjust: none;
+  }
+    div.container {
+      width: 100%;
+    }
+    figure {
+      width: 12%;
+    }
+  }
