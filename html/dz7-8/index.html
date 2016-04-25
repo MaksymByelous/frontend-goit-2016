@@ -8,9 +8,14 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,800&subset=latin,greek,latin-ext,greek-ext,cyrillic,vietnamese,cyrillic-ext' rel='stylesheet' type='text/css'>
   </head>
  <body>
+   <div class="wrapper">
+
+
     <header>
       <div class="container">
-      <h1>PINGBULL<span>ER</span></h1>
+        <div class="sitename">
+            <h1>PINGBULL<span class="sitename__gradient"></span><span>ER</span></h1>
+        </div>
       <nav>
         <ul class="main-menu">
           <li><a href="#">HOME</a></li>
@@ -21,19 +26,39 @@
           <li><a href="#">DOLOR SIT AMET</a></li>
         </ul>
       </nav>
+     </div>
+     <div class="slider__wrapper">
+       <div class="slider__greyfone">
+         <figure class="slider__strelki--left"><img src="images/slider-arrow-left2.png" alt="" /></figure>
+       <div class="container">
       <div class="slider">
+        <p class="slider__head">
+          Lorem Ipsum Dolor
+        </p>
+        <p class="slider__afterhead">
+          IT WILL MAKE ALL OF YOUR DREAMS COME TRUE
+        </p>
+        <p class="slider__afterhead--cut">
+          IT WILL MAKE ALL OF YOUR DREAMS COME
+        </p>
         <p class="slider__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco
-           laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-           irure dolor in reprehenderit in voluptate velit esse cillum
-           dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-           cupidatat non proident, sunt in culpa qui officia deserunt
-           mollit anim id est laborum.
+          Semper sollicitudin gravida eget, vestibulum sit amet sapien.
+          Nunc dignissim tincidunt est, et auctor turpis ornare a.
+          Nam venenatis hendrerit est at volutpat. Motbi elementum euismod
+          lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+          euismod id lectus. Nulla interdum arcu et felis aliquam
+          a tempus lectus lobortis.
+        </p>
+        <p class="slider__text--w768">
+          Semper sollicitudin gravida eget, vestibulum sit amet sapien.
+          Nunc dignissim tincidunt est, et auctor turpis ornare a.
+          Nam venenatis hendrerit est
         </p>
       </div>
-      </div>
+         </div>
+         <figure class="slider__strelki--right"><img src="images/slider-arrow-right.png" alt="" /></figure>
+         </div>
+     </div>
     </header>
 
 
@@ -46,6 +71,15 @@
           Praesent rhoncus ultrices posuere.
           Pellentesque vel lacus eget nisi convallis auctor. Nam
         </p>
+        <p class="about__company__text--w320">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus
+        </p>
+        <p class="about__company__text--w768">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus
+        </p>
         <a  class="about__company__more" href="#">READ MORE</a>
       </article>
       <article class="about__company-2">
@@ -55,6 +89,15 @@
           Praesent rhoncus ultrices posuere.
           Pellentesque vel lacus eget nisi convallis auctor. Nam
         </p>
+        <p class="about__company__text--w320">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus
+        </p>
+        <p class="about__company__text--w768">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus
+        </p>
         <a class="about__company__more" href="#">READ MORE</a>
       </article>
       <article class="about__company-3">
@@ -62,7 +105,16 @@
         <p class="about__company__text">
           Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
           Praesent rhoncus ultrices posuere.
-          Pellentesque vel lacus eget nisi convallis auctor. Nam
+          Pellentesque vel lacus eget
+        </p>
+        <p class="about__company__text--w320">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus
+        </p>
+        <p class="about__company__text--w768">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus
         </p>
         <a  class="about__company__more" href="#">READ MORE</a>
       </article>
@@ -73,7 +125,8 @@
     <section class="articles">
       <div class="container">
       <article class="articles__startshere">
-        <h2>PINGBULLER STARTS HERE</h2>
+        <div class="articles__startshere__container">
+        <h2 class="articles__startshere__topic-wfoto">PINGBULLER <span>STARTS HERE</span></h2>
         <p class="articles__startshere__text">
           "Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
           Praesent rhoncus ultrices posuere.
@@ -82,60 +135,103 @@
           mattis pulvinar bibendum in, venenatis quis neque.
           Mauris nec metus ultricles erat consequat dignissim non eu nisi."
         </p>
+        <div class="articles__startshere__tochki">
+
+        </div>
+        </div>
       </article>
       <article class="articles__updates">
-        <h2>RECENT UPDATES</h2>
-        <div class="articles__updates__item1">
-          <p class="articles__updates__item1__topic">
+        <h2 class="articles__updates__topic">RECENT UPDATES</h2>
+        <div class="articles__updates__item">
+          <p class="articles__updates__item__topic">
             Nunc turpis neque, feugiat eget
           </p>
-          <p>
+          <p class="articles__updates__item__topic--w320">
+            Nunc turpis neque
+          </p>
+          <p class="articles__updates__item__postdate">
             Posted by Admin on March 13 2012 in Recent News
           </p>
+
+          <p class="articles__updates__item__postdate--w468-768">
+            Posted by Admin on March 13 2012
+          </p>
+          <p class="articles__updates__item__postdate--w320">
+            Posted by Admin on March 13
+          </p>
+
         </div>
-        <div class="articles__updates__item1">
-          <p>
+        <div class="articles__updates__item">
+          <p class="articles__updates__item__topic">
             Nunc turpis neque, feugiat eget
           </p>
-          <p>
+          <p class="articles__updates__item__topic--w320">
+            Nunc turpis neque
+          </p>
+          <p class="articles__updates__item__postdate">
             Posted by Admin on March 13 2012 in Category
           </p>
+          <p class="articles__updates__item__postdate--w468-768">
+            Posted by Admin on March 13 2012
+          </p>
+          <p class="articles__updates__item__postdate--w320">
+            Posted by Admin on March 13
+          </p>
         </div>
-        <div class="articles__updates__item1">
-          <p>
+        <div class="articles__updates__item">
+          <p class="articles__updates__item__topic">
             Nunc turpis neque, feugiat eget
           </p>
-          <p>
+          <p class="articles__updates__item__topic--w320">
+            Nunc turpis neque
+          </p>
+          <p class="articles__updates__item__postdate">
             Posted by Admin on March 13 2012 in Blog Updates
           </p>
-        </div>
-        <div class="articles__updates__more">
-          <p>
-            READ MORE HERE
+          <p class="articles__updates__item__postdate--w468-768">
+            Posted by Admin on March 13 2012
+          </p>
+          <p class="articles__updates__item__postdate--w320">
+            Posted by Admin on March 13
           </p>
         </div>
+        <a class="articles__updates__more" href="#">READ MORE HERE</a>
+        <a class="articles__updates__more--blogs" href="#">READ BLOG POSTS</a>
       </article>
 
      <div class="logos">
        <figure><img src="images/brand-logos-1.png" alt="" /></figure>
        <figure><img src="images/brand-logos-2.png" alt="" /></figure>
        <figure><img src="images/brand-logos-3.png" alt="" /></figure>
-       <figure><img src="images/brand-logos-4.png" alt="" /></figure>
-       <figure><img src="images/brand-logos-5.png" alt="" /></figure>
+       <figure class="logos__brand-logos-4"><img src="images/brand-logos-4.png" alt="" /></figure>
+       <figure class="logos__brand-logos-5"><img src="images/brand-logos-5.png" alt="" /></figure>
        <figure><img src="images/brand-logos-6.png" alt="" /></figure>
      </div>
      </div>
     </section>
 
-
     <section class="foot-articles">
       <div class="container">
      <article class="foot-articles__item">
-        <h1>PIGBULL <span>ER</span></h1>
-        <p>
-          copyright
+        <h1  class="foot-articles__item__head-960">PIGBULL<span>ER</span></h1>
+        <h2 class="foot-articles__item__head-less960">NEWS CATEGORIES</h2>
+        <p class="foot-articles__item__copyright">
+          Copyright 2013, Pingbull AS
         </p>
-        <p>
+        <p class="foot-articles__item__text">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus eget nisi convallis auctor.
+          Nam vitae lectus eu libero pellentesque
+        </p>
+        <p class="foot-articles__item__text--w480">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus eget nisi convallis auctor.
+          Nam vitae lectus eu libero pellentesque pulvinar.
+          Quisque urna rirus, mattis pulvinar biben
+        </p>
+        <p class="foot-articles__item__text--w768">
           Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
           Praesent rhoncus ultrices posuere.
           Pellentesque vel lacus eget nisi convallis auctor.
@@ -143,23 +239,46 @@
         </p>
       </article>
       <article class="foot-articles__item">
-        <h1>PIGBULL <span>ER</span></h1>
-        <p>
-          copyright
+        <h2 class="foot-articles__item__head-960">RECENT COMMETS</h2>
+        <h2 class="foot-articles__item__head-less960">NEWS CATEGORIES</h2>
+        <p class="foot-articles__item__text">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus eget nisi convallis auctor.
+          Nam vitae lectus eu libero pellentesque pulvinar urna risus,
+          mattis pulvinar bibendum in, venenatis quis
         </p>
-        <p>
+        <p class="foot-articles__item__text--w480">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus eget nisi convallis auctor.
+          Nam vitae lectus eu libero pellentesque pulvinar.
+          Quisque urna rirus, mattis pulvinar biben
+        </p>
+        <p class="foot-articles__item__text--w768">
           Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
           Praesent rhoncus ultrices posuere.
           Pellentesque vel lacus eget nisi convallis auctor.
           Nam vitae lectus eu libero pellentesque
         </p>
       </article>
-      <article class="foot-articles__item">
-        <h1>PIGBULL <span>ER</span></h1>
-        <p>
-          copyright
+      <article class="foot-articles__item-3">
+        <h2>NEWS CATEGORIES</h2>
+        <p class="foot-articles__item__text">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus eget nisi convallis auctor.
+          Nam vitae lectus eu libero pellentesque pulvinar urna risus,
+          mattis pulvinar bibendum in, venenatis quis
         </p>
-        <p>
+        <p class="foot-articles__item__text--w480">
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+          Praesent rhoncus ultrices posuere.
+          Pellentesque vel lacus eget nisi convallis auctor.
+          Nam vitae lectus eu libero pellentesque pulvinar.
+          Quisque urna rirus, mattis pulvinar biben
+        </p>
+        <p class="foot-articles__item__text--w768">
           Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
           Praesent rhoncus ultrices posuere.
           Pellentesque vel lacus eget nisi convallis auctor.
@@ -173,7 +292,7 @@
       <div class="container">
         <nav class="footer__nav">
           <ul class="main-menu">
-            <li><a href="#">HOME</a></li>
+            <li class="main-menu__footer-frst"><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">BLOG</a></li>
             <li><a href="#">PRODUCTS</a></li>
@@ -188,6 +307,6 @@
       </div>
       </div>
     </footer>
-
+   </div>
   </body>
 </html>
