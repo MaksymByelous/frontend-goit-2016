@@ -29,6 +29,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 article,
 figcaption,
 figure,
@@ -39,8 +40,6 @@ nav,
 section {
     display: block;
 }
-/*div.wrapper {
-}*/
 div.container {
   width: 100%;
   overflow: hidden;
@@ -53,17 +52,22 @@ section {
 h1,
 h2,
 ul.main-menu>li>a,
+ul.main-menu--shot>li>a,
+ul.main-menu--shot__submenu>li>a,
 a.about__company__more,
 a.articles__updates__more,
 a.articles__updates__more--blogs,
 p.slider__head,
 p.slider__afterhead,
-p.slider__afterhead--cut {
+p.slider__afterhead--cut,
+p.articles__startshere__topic--w320w768 {
   font-family: "league_gothicregular", Arial, sans-serif;
 }
 p.slider__text,
 p.slider__text--w768,
 p.articles__startshere__text,
+p.articles__startshere__text--w768,
+p.articles__startshere__text--w320,
 p.about__company__text,
 p.about__company__text--w320,
 p.about__company__text--w768,
@@ -107,8 +111,8 @@ ul.main-menu {
 }
 li {
   float: left;
-  margin-left: 41px;
-  padding: 8px 5px 0px 5px;
+  margin-left: 38px;
+  padding: 7px 0px 7px 10px
 }
 a {
   text-decoration: none;
@@ -116,15 +120,37 @@ a {
   font-size: 24px;
   text-shadow: 0.1em 0.1em 0.2em rgb(60, 60, 60);
 }
-li:hover {
+a:hover {
+  border-bottom: 2px solid rgb(237, 191, 255);
+}
+ul.main-menu--shot {
+  display: none;
+}
+ul.main-menu--shot>li {
+position: relative;
+}
+ul.main-menu--shot__submenu {
+  display: none;
+  position: absolute;
+  top: 95%;
+  left: 40.5%;
+}
+ul.main-menu--shot>li,
+ul.main-menu--shot__submenu>li {
+  float: none;
+}
+ul.main-menu--shot li:hover ul.main-menu--shot__submenu {
+  display: block;
+}
+a.active {
   border-bottom: 2px solid rgb(237, 191, 255);
 }
 
 /*---------------SLIDER--------------*/
 
 div.slider__wrapper {
-  background: url(../images/iphone.png) 120% 28% no-repeat;
-  padding: 17.1% 0% 5.5% 0%;
+  background: url(../images/iphone.png) 126% 28% no-repeat;
+  padding: 17.5% 0% 5.5% 0%;
 }
 div.slider {
   clear: both;
@@ -139,7 +165,7 @@ div.slider__greyfone {
 div.slider__wrapper::after {
   content: url(../images/slider-tochki2.png);
   display: block;
-  padding: 92px 0px 0px 544px;
+  padding: 92px 0px 0px 562px;
 }
 div.slider>p {
   text-align: left;
@@ -199,7 +225,7 @@ article.about__company-3 {
   overflow: hidden;
   float: left;
   padding: 5.8% 0% 1% 6.6%;
-  margin-right: 4.8%;
+  margin-right: 5.5%;
 }
 article.about__company-1 {
   background: url(../images/about-icons-sprite.png) 9px -354px no-repeat;
@@ -210,7 +236,7 @@ article.about__company-2 {
 article.about__company-3 {
   background: url(../images/about-icons-sprite.png) -72px 58px no-repeat;
   margin-right: 0px;
-  padding: 56px 0px 10px 40px;
+  padding: 56px 0px 10px 35px;
 }
 article.about__company-3>h2,
 article.about__company-3>p {
@@ -239,7 +265,7 @@ a.about__company__more {
   display: block;
   float: right;
   font-size: 18px;
-  padding: 18px 13px 0px 0px;
+  padding: 20px 6px 0px 0px;
 }
 article.about__company-3 a.about__company__more {
   padding-top: 19px;
@@ -256,12 +282,18 @@ section.articles {
 }
 article.articles__startshere {
   float: left;
-  width: 50%;
+  width: 51%;
   margin-bottom: 65px;
   padding-left: 2px;
 }
-p.articles__startshere__text {
+p.articles__startshere__text,
+p.articles__startshere__text--w768,
+p.articles__startshere__text--w320 {
   line-height: 1.5;
+}
+p.articles__startshere__text--w768,
+p.articles__startshere__text--w320 {
+  display: none;
 }
 div.articles__startshere__container {
   background: white;
@@ -271,9 +303,9 @@ div.articles__startshere__container {
 }
 article.articles__updates {
   float: right;
-  width: 47%;
+  width: 46%;
   overflow: hidden;
-  padding: 27px 0px 0px 10px;
+  padding: 28px 0px 0px 10px;
 }
 h2.articles__startshere__topic,
 h2.articles__updates__topic,
@@ -281,8 +313,15 @@ a.articles__updates__more,
 a.articles__updates__more--blogs {
   color: rgb(69, 69, 69);
 }
-h2.articles__startshere__topic-wfoto>span {
+h2.articles__startshere__topic-wfoto>span,
+p.articles__startshere__topic--w320w768 {
   color: rgb(237, 191, 255);
+}
+p.articles__startshere__topic--w320w768 {
+  font-size: 30px;
+}
+p.articles__startshere__topic--w320w768 {
+  display: none;
 }
 h2.articles__startshere__topic-wfoto {
     background: url(../images/atricle-facefoto.png) -2px 0px no-repeat;
@@ -297,7 +336,7 @@ article.articles__startshere::after {
   padding: 0px 0px 0px 189px;
 }
 div.articles__updates__item {
-  padding: 12px 10px 16px 67px;
+  padding: 12px 0px 16px 59px;
   background: url(../images/article-upd-back-sprite.png) -13px -170px no-repeat;
 }
 a.articles__updates__more,
@@ -306,7 +345,7 @@ a.articles__updates__more--blogs {
   font-size: 18px;
   float: right;
   text-shadow: none;
-  padding: 13px 21px 0px 0px;
+  padding: 13px 3px 0px 0px;
 }
 a.articles__updates__more--blogs {
   display: none;
@@ -331,16 +370,17 @@ div.logos {
   border-top: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid rgb(230, 230, 230);
   overflow: hidden;
-  padding: 0.3% 6.4% 0.9% 6.4%;
+  padding: 0.6% 4.0% 0.9% 6.4%;
 }
 figure {
   float: left;
   width: 12%;
   padding: 2%;
   text-align: center;
+  margin-right: 0.0%;
 }
 figure.logos__brand-logos-4 {
-  margin-right: 0.7%;
+  margin-right: 0.5%;
 }
 figure.logos__brand-logos-5 {
   margin-right: 2.5%;
@@ -349,16 +389,16 @@ figure.logos__brand-logos-5 {
 /*--------------НИЖНИЙ РАЗДЕЛ СТАТЬИ-----------*/
 section.foot-articles {
   background: rgb(236, 236, 236);
-  padding: 10% 0% 7.4% 0%;
+  padding: 10% 0% 10.0% 0%;
 }
 article.foot-articles__item,
 article.foot-articles__item-3 {
   float: left;
-  width: 29%;
-  margin: 0% 6.3% 0% 0%;
+  width: 30%;
+  margin: 0% 6.0% 0% 0%;
 }
 article.foot-articles__item-3 {
-  margin: 0px 0px 0px 0px;
+  margin: 0% 0% 0% -2%;
 }
 article.foot-articles__item>h2,
 article.foot-articles__item>h1,
@@ -394,7 +434,7 @@ p.foot-articles__item__text--w768 {
 
 footer {
   background: url(../images/montains768.png) bottom center no-repeat;
-  padding: 36px 0px 49px 0px;
+  padding: 3.8% 0% 4.5% 0%;
 }
 nav.footer__nav {
   float: left;
@@ -404,11 +444,11 @@ nav.footer__nav ul.main-menu>li>a {
   font-size: 20px;
 }
   nav.footer__nav ul.main-menu>li {
-  margin-left: 38px;
-  padding: 9px 0px 0px 5px;
+  margin-left: 4.0%;
+  padding: 0.9% 0% 0.7% 0.5%;
 }
 nav.footer__nav ul.main-menu li.main-menu__footer-frst {
-  margin-left: -5px;
+  margin-left: -0.5%;
 }
 div.footer__desined {
   float: right;
@@ -418,13 +458,24 @@ div.footer__desined>p {
   font-size: 12px;
   margin-top: 16px;
 }
-/*320px*/
+
+/*-----------------------320px----------------------------*/
   @media (min-width: 100px) and (max-width: 479px) {
     html {
      -webkit-text-size-adjust: none;
   }
+    div.slider__greyfone {
+      background: none;
+    }
+    header>div.container {
+      overflow: visible;
+    }
     figure {
       width: 46%;
+    }
+    figure.logos__brand-logos-4,
+    figure.logos__brand-logos-5 {
+      margin: 0%;
     }
     article.about__company-1,
     article.about__company-2,
@@ -438,6 +489,18 @@ div.footer__desined>p {
     article.foot-articles__item,
     article.foot-articles__item-3 {
       display: none;
+    }
+    nav.top-menu {
+      display: none;
+    }
+    ul.main-menu--shot {
+      display: block;
+    }
+    ul.main-menu--shot__submenu {
+      top: 101%;
+      left: -0.5%;
+      width: 100%;
+      margin: 0 auto;
     }
     ul.main-menu {
       text-align: center;
@@ -494,12 +557,74 @@ div.footer__desined>p {
     a.articles__updates__more--blogs {
       display: block;
     }
+    p.articles__startshere__text {
+      display: none;
+    }
+    p.articles__startshere__text--w320 {
+      display: block;
+    }
+    h2.articles__startshere__topic-wfoto>span {
+      display: none;
+    }
+    p.articles__startshere__topic--w320w768 {
+      display: block;
+    }
   }
-/*480px*/
+
+/*----------------------480px-------------------------------*/
   @media (min-width: 480px) and (max-width: 767px) {
     html {
      -webkit-text-size-adjust: none;
   }
+    div.container {
+      padding: 0% 2.6% 0% 2.6%;
+      width: 94.8%;
+    }
+    header>div.container {
+      overflow: visible;
+    }
+    nav.top-menu {
+      display: none;
+    }
+    ul.main-menu--shot {
+      display: block;
+    }
+    ul.main-menu--shot>li {
+      margin: 0 auto;
+      width: 50%;
+      border: 1px solid rgb(29, 37, 43);
+      border-radius: 5px;
+      background: rgba(58, 42, 66, 0.9);
+    }
+    ul.main-menu--shot__submenu {
+      top: 101%;
+      left: -0.5%;
+      width: 100%;
+      margin: 0 auto;
+      border: 1px solid rgb(29, 37, 43);
+      border-top: none;
+      background: rgba(58, 42, 66, 0.9);
+      border-radius:  0px 0px 5px 5px;
+    }
+    ul.main-menu--shot__submenu li {
+      border-top: 1px solid rgb(76, 62, 85);
+    }
+    ul.main-menu--shot__submenu li:hover {
+      background: rgba(58, 42, 66, 0.98);
+      border-bottom: 2px solid rgb(232, 191, 249);
+      padding: 4px 5px 6px 5px;
+    }
+    ul.main-menu--shot>li:hover {
+      border-bottom: none;
+      border-radius: 5px 5px 0px 0px;
+      background: rgba(58, 42, 66, 0.98);
+    }
+    a.active {
+      border-bottom: 2px solid rgb(232, 191, 249);
+    }
+    a:hover {
+      border-bottom: none;
+    }
     figure {
       width: 29%;
     }
@@ -523,9 +648,8 @@ div.footer__desined>p {
     figure.logos__brand-logos-5 {
       margin-right: 0%;
     }
-    ul.main-menu {
-      float: none;
-      text-align: center;
+    ul.main-menu--shot {
+      display: block;
     }
     li {
       float: none;
@@ -539,7 +663,7 @@ div.footer__desined>p {
     nav.footer__nav ul.main-menu>li {
       float: left;
       text-align: center;
-      padding: 0% 3.0% 0% 3.0%;
+      padding: 0% 2.7% 0% 2.7%;
       margin: 0px;
     }
     div.footer__desined {
@@ -611,7 +735,7 @@ div.footer__desined>p {
       width: 94.8%;
     }
     li {
-      margin: 0px 47px 0px -5px;
+      margin: 0% 6.1% 0% -0.7%;
       float: left;
     }
     figure {
@@ -705,6 +829,21 @@ div.footer__desined>p {
     p.foot-articles__item__text--w768 {
       display: block;
     }
+    p.articles__startshere__text {
+      display: none;
+    }
+    p.articles__startshere__text--w768 {
+      display: block;
+    }
+    h2.articles__startshere__topic-wfoto>span {
+      display: none;
+    }
+    p.articles__startshere__topic--w320w768 {
+      display: block;
+    }
+    div.footer__desined {
+      clear: both;
+    }
   }
 /*961px+*/
   @media (min-width: 961px) and (max-width: 10000px) {
@@ -715,7 +854,7 @@ div.footer__desined>p {
   div.slider__wrapper {
     padding-bottom: 0%;
     padding-top: 10%;
-    background: url(../images/iphone.png) 85% 28% no-repeat;
+    background: url(../images/iphone.png) 120% 28% no-repeat;
   }
   div.slider p.slider__afterhead--cut {
     display: none;
