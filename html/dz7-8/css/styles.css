@@ -415,6 +415,9 @@ div.footer__desined>p {
     header>div.container {
       overflow: visible;
     }
+    img.iphone {
+      display: none;
+    }
     figure {
       width: 46%;
     }
@@ -546,6 +549,22 @@ div.footer__desined>p {
     a:hover {
       border-bottom: none;
     }
+    div.slider__wrapper {
+      padding: 80px 0% 20px 0%;
+    }
+    img.iphone {
+      top: 4%;
+      left: 43%;
+    }
+    div.slider>p {
+      width: 52%;
+    }
+    div.slider p.slider__afterhead {
+    font-size: 28px;
+    }
+    p.slider__head {
+    font-size: 40px;
+    }
     figure {
       width: 29%;
     }
@@ -553,6 +572,10 @@ div.footer__desined>p {
     article.about__company-2,
     article.about__company-3 {
       width: 90%;
+    }
+    article.about__company-1,
+    article.about__company-2 {
+      padding: 5.8% 0% 1% 11.3%;
     }
     article.articles__startshere,
     article.articles__updates {
@@ -565,9 +588,18 @@ div.footer__desined>p {
       width: 90%;
       margin: 20px 0px 20px 0px;
     }
+    div.logos {
+      padding: 0.6% 0% 0.9% 0%;
+    }
     figure.logos__brand-logos-4,
     figure.logos__brand-logos-5 {
       margin-right: 0%;
+    }
+    figure {
+      width: 25%;
+    }
+    section.foot-articles {
+    padding: 40px 0% 40px 0%;
     }
     ul.main-menu--shot {
       display: block;
@@ -579,6 +611,7 @@ div.footer__desined>p {
     nav.footer__nav {
       float: none;
       margin: 0 auto;
+      width: auto;
       text-align: center;
     }
     nav.footer__nav ul.main-menu>li {
@@ -621,10 +654,9 @@ div.footer__desined>p {
       padding: 0% 2.6% 0% 2.6%;
       width: 94.8%;
     }*/
-
-
     li {
       padding: 7px 55px 7px 0px;
+      margin-left: 0px;
     }
     figure {
       width: 11%;
