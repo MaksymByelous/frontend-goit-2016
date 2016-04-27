@@ -241,6 +241,7 @@ article.about__company-3 a.about__company__more {
 }
 a.about__company__more:hover {
   text-shadow: 0 0 1em white, 0 0 1em white;
+  border: none;
 }
 
 /*--------------СТАТЬИ-----------------*/
@@ -305,6 +306,9 @@ a.articles__updates__more {
   float: right;
   text-shadow: none;
   padding: 11px 21px 0px 0px;
+}
+a.articles__updates__more:hover {
+  border:none;
 }
 div.articles__updates__item>p {
   font-size: 16px;
@@ -419,7 +423,7 @@ div.footer__desined>p {
       display: none;
     }
     figure {
-      width: 46%;
+      width: 38%;
     }
     figure.logos__brand-logos-4,
     figure.logos__brand-logos-5 {
@@ -500,10 +504,6 @@ div.footer__desined>p {
     html {
      -webkit-text-size-adjust: none;
   }
-    /*div.container {
-      padding: 0% 2.6% 0% 2.6%;
-      width: 94.8%;
-    }*/
     header>div.container {
       overflow: visible;
     }
@@ -550,7 +550,10 @@ div.footer__desined>p {
       border-bottom: none;
     }
     div.slider__wrapper {
-      padding: 80px 0% 20px 0%;
+      padding: 60px 0% 0px 0%;
+    }
+    div.slider__greyfone {
+    padding-bottom: 166px;
     }
     img.iphone {
       top: 4%;
@@ -564,6 +567,9 @@ div.footer__desined>p {
     }
     p.slider__head {
     font-size: 40px;
+    }
+    div.slider p.slider__text {
+      display: none;
     }
     figure {
       width: 29%;
@@ -626,9 +632,6 @@ div.footer__desined>p {
     }
     div.sitename {
     float: none;
-    }
-    p.slider__text {
-      display: none;
     }
     article.about__company-2,
     article.about__company-3 {
