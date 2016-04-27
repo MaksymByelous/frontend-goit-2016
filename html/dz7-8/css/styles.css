@@ -150,7 +150,7 @@ div.slider {
 }
 div.slider__greyfone {
   background: rgba(0, 0, 0, 0.1);
-  padding-bottom: 50px;
+  padding-bottom: 61px;
 }
 div.slider__wrapper::after {
   content: url(../images/slider-tochki2.png);
@@ -160,7 +160,7 @@ div.slider__wrapper::after {
 img.iphone {
   position: absolute;
   top: 18%;
-  left: 60%;
+  left: 64%;
 }
 div.slider>p {
   text-align: left;
@@ -188,7 +188,7 @@ div.slider p.slider__afterhead {
 /*--------------БЛОК ABOUT--------------*/
 section.about {
   background: linear-gradient(to top, rgb(55, 41, 62), rgb(117, 81, 131));
-  padding: 20px 0px 58px 0px;
+  padding: 20px 0px 54px 0px;
   border-top: 1px solid rgb(51, 37, 58);
   border-bottom: 1px solid rgb(11, 21, 27);
 }
@@ -227,7 +227,7 @@ section.about>h2 {
 p.about__company__text {
   font-size: 16px;
   color: white;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 a.about__company__more {
   display: block;
@@ -293,7 +293,7 @@ h2.articles__startshere__topic-wfoto {
 article.articles__startshere::after {
   content: url(../images/atricle-tochki.png);
   display: block;
-  padding: 0px 0px 0px 186px;
+  padding: 9px 0px 0px 190px;
 }
 div.articles__updates__item {
   padding: 12px 0px 16px 66px;
@@ -336,7 +336,7 @@ figure.logos__brand-logos-5 {
 /*--------------НИЖНИЙ РАЗДЕЛ СТАТЬИ-----------*/
 section.foot-articles {
   background: rgb(236, 236, 236);
-  padding: 96px 0% 94px;
+  padding: 96px 0% 104px;
 }
 article.foot-articles__item,
 article.foot-articles__item-3 {
@@ -613,16 +613,21 @@ div.footer__desined>p {
     header {
       padding-top: 8.6%;
     }
+    div.sitename {
+      float: none;
+      text-align: left;
+    }
     /*div.container {
       padding: 0% 2.6% 0% 2.6%;
       width: 94.8%;
     }*/
+
+
     li {
-      margin: 0% 6.1% 0% -0.7%;
-      float: left;
+      padding: 7px 55px 7px 0px;
     }
     figure {
-      width: 12%;
+      width: 11%;
     }
     ul.main-menu {
       overflow: hidden;
@@ -631,16 +636,21 @@ div.footer__desined>p {
       margin-top: 2.9%;
     }
     nav.footer__nav {
-        float: none;
+      float: none;
+      width: auto;
       margin-left: 0px;
     }
+    nav.footer__nav ul.main-menu>li {
+    padding: 0.9% 4% 0.7% 0%;
+  }
     div.slider__wrapper {
       padding: 9.9% 0% 5.5% 0%;
-      background: url(../images/iphone.png) 150% -38% no-repeat;
     }
     div.slider {
-      width: 45%;
-      padding: 97px 0px 50px 23px;
+      padding: 50px 0px 50px 23px;
+    }
+    img.iphone {
+      top: 4%;
     }
     p.slider__head {
       font-size: 50px;
@@ -648,9 +658,10 @@ div.footer__desined>p {
     h2 {
       font-size: 24px;
     }
+    article.about__company-1,
     article.about__company-2,
     article.about__company-3 {
-      background: url(../images/about-icons-sprite.png) 9px -354px no-repeat;
+      background: url(../images/about-icons-sprite.png) 9px -373px no-repeat;
     }
     article.about__company-3 {
       padding: 43px 0px 0px 27px;
