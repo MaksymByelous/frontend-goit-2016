@@ -140,8 +140,7 @@ a.active {
 /*---------------SLIDER--------------*/
 
 div.slider__wrapper {
-  /*background: url(../images/iphone.png) 126% 28% no-repeat;*/
-  padding: 164px 0% 53px 0%;
+  padding: 164px 0 53px 0;
   position: relative;
 }
 div.slider {
@@ -412,8 +411,22 @@ div.footer__desined>p {
     html {
      -webkit-text-size-adjust: none;
   }
+  header {
+    padding-top: 55px;
+  }
+  div.slider__wrapper {
+    padding: 70px 0 30px 0;
+  }
+  div.slider__wrapper::after {
+    padding: 70px 0 0 50px;
+  }
+  div.slider>p {
+    width: 100%;
+    text-align: center;
+  }
     div.slider__greyfone {
       background: none;
+      padding-bottom: 0;
     }
     header>div.container {
       overflow: visible;
@@ -421,14 +434,20 @@ div.footer__desined>p {
     img.iphone,
     nav.top-menu,
     nav.footer__nav,
-    div.slider p.slider__afterhead,
-    p.slider__text,
-    p.about__company__text,
-    p.articles__updates__item__topic,
-    p.articles__updates__item__postdate,
-    p.articles__startshere__text,
-    h2.articles__startshere__topic-wfoto>span {
+    div.slider p.slider__text {
       display: none;
+    }
+    h2.articles__startshere__topic-wfoto>span {
+      display: block;
+    }
+    div.articles__startshere__container {
+      margin-right: 25px;
+    }
+    article.articles__startshere::after {
+      padding-left: 128px;
+    }
+    article.articles__startshere {
+      margin-bottom: 15px;
     }
     figure {
       width: 38%;
@@ -442,9 +461,27 @@ div.footer__desined>p {
     article.about__company-3 {
       width: 80%;
     }
+    article.about__company-1,
+    article.about__company-2,
+    article.about__company-3 {
+    background: url(../images/about-icons-sprite.png) 9px -398px no-repeat;
+    padding-right: 14.3%;
+    }
+    article.about__company-3 {
+      margin-top: 19px;
+    }
+    section.articles {
+      padding-top: 70px;
+    }
     article.articles__startshere,
     article.articles__updates {
       width: 100%;
+    }
+    article.articles__updates {
+      padding-bottom: 28px;
+    }
+    section.foot-articles {
+      padding-bottom: 15px;
     }
     article.foot-articles__item,
     article.foot-articles__item-3 {
