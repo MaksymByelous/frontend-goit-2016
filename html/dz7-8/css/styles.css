@@ -149,7 +149,7 @@ div.slider {
 }
 div.slider__greyfone {
   background: rgba(0, 0, 0, 0.1);
-  padding-bottom: 61px;
+  padding-bottom: 51px;
 }
 div.slider__wrapper::after {
   content: url(../images/slider-tochki2.png);
@@ -291,7 +291,7 @@ h2.articles__startshere__topic-wfoto {
 article.articles__startshere::after {
   content: url(../images/atricle-tochki.png);
   display: block;
-  padding: 9px 0px 0px 190px;
+  padding: 0px 0px 0px 190px;
 }
 div.articles__updates__item {
   padding: 12px 0px 16px 66px;
@@ -337,7 +337,7 @@ figure.logos__brand-logos-5 {
 /*--------------НИЖНИЙ РАЗДЕЛ СТАТЬИ-----------*/
 section.foot-articles {
   background: rgb(236, 236, 236);
-  padding: 96px 0 104px 0;
+  padding: 96px 0 93px 0;
 }
 article.foot-articles__item,
 article.foot-articles__item-3 {
