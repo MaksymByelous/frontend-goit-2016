@@ -285,7 +285,6 @@ img.facefoto {
   left: 0%;
 }
 h2.articles__startshere__topic-wfoto {
-    /*background: url(../images/atricle-facefoto.png) -2px 0px no-repeat;*/
     color: rgb(69, 69, 69);
     padding: 12px 0px 12px 60px;
     margin-left: -60px;
@@ -340,7 +339,7 @@ figure.logos__brand-logos-5 {
 /*--------------НИЖНИЙ РАЗДЕЛ СТАТЬИ-----------*/
 section.foot-articles {
   background: rgb(236, 236, 236);
-  padding: 96px 0% 104px;
+  padding: 96px 0 104px 0;
 }
 article.foot-articles__item,
 article.foot-articles__item-3 {
@@ -379,7 +378,7 @@ article.foot-articles__item-3>p {
 
 footer {
   background: url(../images/montains768.png) bottom center no-repeat;
-  padding: 40px 0% 45px 0%;
+  padding: 40px 0 45px 0;
 }
 nav.footer__nav {
   float: left;
@@ -419,7 +418,16 @@ div.footer__desined>p {
     header>div.container {
       overflow: visible;
     }
-    img.iphone {
+    img.iphone,
+    nav.top-menu,
+    nav.footer__nav,
+    div.slider p.slider__afterhead,
+    p.slider__text,
+    p.about__company__text,
+    p.articles__updates__item__topic,
+    p.articles__updates__item__postdate,
+    p.articles__startshere__text,
+    h2.articles__startshere__topic-wfoto>span {
       display: none;
     }
     figure {
@@ -442,9 +450,6 @@ div.footer__desined>p {
     article.foot-articles__item-3 {
       display: none;
     }
-    nav.top-menu {
-      display: none;
-    }
     ul.main-menu--shot {
       display: block;
     }
@@ -465,37 +470,13 @@ div.footer__desined>p {
     div.sitename {
     float: none;
     }
-    nav.footer__nav {
-      display: none;
-    }
     div.footer__desined {
       float: none;
       text-align: center;
     }
-    div.slider p.slider__afterhead {
-      display: none;
-    }
-    p.slider__text {
-      display: none;
-    }
     article.about__company-2,
     article.about__company-3 {
       background: url(../images/about-icons-sprite.png) 9px -354px no-repeat;
-    }
-    p.about__company__text {
-      display: none;
-    }
-    p.articles__updates__item__topic {
-      display: none;
-    }
-    p.articles__updates__item__postdate {
-      display: none;
-    }
-    p.articles__startshere__text {
-      display: none;
-    }
-    h2.articles__startshere__topic-wfoto>span {
-      display: none;
     }
   }
 
