@@ -25,6 +25,8 @@ h1 {
   padding: 10px 30px;
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
+
 }
 .mainmenu a:hover {
   background-color: black;

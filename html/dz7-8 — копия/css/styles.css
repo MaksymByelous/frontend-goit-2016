@@ -59,19 +59,28 @@ a.articles__updates__more,
 a.articles__updates__more--blogs,
 p.slider__head,
 p.slider__afterhead,
-p.slider__afterhead--cut {
+p.slider__afterhead--cut,
+p.articles__startshere__topic--w320w768 {
   font-family: "league_gothicregular", Arial, sans-serif;
 }
 p.slider__text,
+p.slider__text--w768,
 p.articles__startshere__text,
+p.articles__startshere__text--w768,
+p.articles__startshere__text--w320,
 p.about__company__text,
+p.about__company__text--w320,
+p.about__company__text--w768,
 p.articles__updates__item__postdate,
+p.articles__updates__item__postdate--w468-768,
+p.articles__updates__item__postdate--w320,
 article.foot-articles__item>p,
 article.foot-articles__item-3>p,
 div.footer__desined>p {
   font-family: "open_sanslight", Arial, sans-serif;
 }
 p.articles__updates__item__topic,
+p.articles__updates__item__topic--w320,
 div.footer__desined>p>span {
   font-family: "open_sansextrabold", Arial, sans-serif;
 }
@@ -79,7 +88,7 @@ div.footer__desined>p>span {
 header {
   background: url(../images/montains768.png) top center no-repeat;
   text-align: center;
-  padding-top: 66px;
+  padding-top: 6.9%;
 }
 div.sitename {
   float: left;
@@ -102,7 +111,7 @@ ul.main-menu {
 }
 li {
   float: left;
-  margin-left: 42px;
+  margin-left: 38px;
   padding: 7px 0px 7px 10px
 }
 a {
@@ -140,57 +149,72 @@ a.active {
 /*---------------SLIDER--------------*/
 
 div.slider__wrapper {
-  padding: 164px 0 53px 0;
-  position: relative;
+  background: url(../images/iphone.png) 126% 28% no-repeat;
+  padding: 17.5% 0% 5.5% 0%;
 }
 div.slider {
   clear: both;
-  padding: 77px 0px 53px 0px;
+  width: 55%;
+  padding: 77px 0px 50px 0px;
 }
 div.slider__greyfone {
   background: rgba(0, 0, 0, 0.1);
-  padding-bottom: 51px;
+  position: relative;
+  /*для стрелок*/
 }
 div.slider__wrapper::after {
   content: url(../images/slider-tochki2.png);
   display: block;
-  padding: 90px 0px 0px 543px;
-}
-img.iphone {
-  position: absolute;
-  top: 18%;
-  left: 64%;
+  padding: 92px 0px 0px 562px;
 }
 div.slider>p {
   text-align: left;
   color: white;
-  display: block;
-  width: 55%;
-  float: left;
 }
-p.slider__text {
+p.slider__text,
+p.slider__text--w768 {
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 26px;
 }
+p.slider__text--w768 {
+  display: none;
+}
 p.slider__head {
   font-size: 60px;
-  text-shadow: 0em 0.04em 0.2em rgb(60, 60, 60);
+    text-shadow: 0em 0.04em 0.2em rgb(60, 60, 60);
 }
-div.slider p.slider__afterhead {
+div.slider p.slider__afterhead,
+div.slider p.slider__afterhead--cut {
   font-size: 34px;
   color: rgb(237, 191, 255);
   text-shadow: 0em 0.04em 0.2em rgb(60, 60, 60);
   margin-bottom: 3px;
 }
+div.slider p.slider__afterhead--cut {
+  display: none;
+}
+figure.slider__strelki--right {
+  width: auto;
+  padding: 0px;
+  float: none;
+  position: absolute;
+  top: 45%;
+  left: 115%
+}
+figure.slider__strelki--left {
+  width: auto;
+  padding: 0px;
+  float: none;
+  position: absolute;
+  top: 45%;
+  left: -10%
+}
 
 /*--------------БЛОК ABOUT--------------*/
 section.about {
-
-  /*---------------сделать бек картинкой для сафари-------------*/
-  background-color: rgb(55, 41, 62);
   background: linear-gradient(to top, rgb(55, 41, 62), rgb(117, 81, 131));
-  padding: 20px 0px 54px 0px;
+  padding: 20px 0px 58px 0px;
   border-top: 1px solid rgb(51, 37, 58);
   border-bottom: 1px solid rgb(11, 21, 27);
 }
@@ -200,19 +224,19 @@ article.about__company-3 {
   width: 24%;
   overflow: hidden;
   float: left;
-  padding: 5.8% 0% 1% 6.3%;
+  padding: 5.8% 0% 1% 6.6%;
   margin-right: 5.5%;
 }
 article.about__company-1 {
   background: url(../images/about-icons-sprite.png) 9px -354px no-repeat;
 }
 article.about__company-2 {
-  background: url(../images/about-icons-sprite.png) -37px -133px no-repeat;
+  background: url(../images/about-icons-sprite.png) -33px -133px no-repeat;
 }
 article.about__company-3 {
-  background: url(../images/about-icons-sprite.png) -81px 58px no-repeat;
+  background: url(../images/about-icons-sprite.png) -72px 58px no-repeat;
   margin-right: 0px;
-  padding: 56px 4px 10px 33px;
+  padding: 56px 0px 10px 35px;
 }
 article.about__company-3>h2,
 article.about__company-3>p {
@@ -226,23 +250,29 @@ h2 {
 section.about>h2 {
   text-shadow: 0em 0.04em 0.2em rgb(60, 60, 60);
 }
-p.about__company__text {
+p.about__company__text,
+p.about__company__text--w320,
+p.about__company__text--w768 {
   font-size: 16px;
   color: white;
-  line-height: 1.6;
+  line-height: 1.5;
+}
+p.about__company__text--w320,
+p.about__company__text--w768 {
+  display: none;
 }
 a.about__company__more {
   display: block;
   float: right;
   font-size: 18px;
-  padding: 20px 13px 0px 0px;
+  padding: 20px 6px 0px 0px;
 }
 article.about__company-3 a.about__company__more {
   padding-top: 19px;
+  margin-right: -10px;
 }
 a.about__company__more:hover {
   text-shadow: 0 0 1em white, 0 0 1em white;
-  border: none;
 }
 
 /*--------------СТАТЬИ-----------------*/
@@ -255,37 +285,46 @@ article.articles__startshere {
   width: 51%;
   margin-bottom: 65px;
   padding-left: 2px;
-  position: relative;
 }
-p.articles__startshere__text {
+p.articles__startshere__text,
+p.articles__startshere__text--w768,
+p.articles__startshere__text--w320 {
   line-height: 1.5;
+}
+p.articles__startshere__text--w768,
+p.articles__startshere__text--w320 {
+  display: none;
 }
 div.articles__startshere__container {
   background: white;
-  margin: 0px 41px 16px 25px;
+  margin: 0px 31px 16px 25px;
   border-radius: 5px;
   padding: 15px 35px 35px 35px;
 }
 article.articles__updates {
   float: right;
-  width: 47%;
+  width: 46%;
   overflow: hidden;
-  padding: 28px 0px 0px 0px;
+  padding: 28px 0px 0px 10px;
 }
 h2.articles__startshere__topic,
 h2.articles__updates__topic,
-a.articles__updates__more {
+a.articles__updates__more,
+a.articles__updates__more--blogs {
   color: rgb(69, 69, 69);
 }
-h2.articles__startshere__topic-wfoto>span {
+h2.articles__startshere__topic-wfoto>span,
+p.articles__startshere__topic--w320w768 {
   color: rgb(237, 191, 255);
 }
-img.facefoto {
-  position: absolute;
-  top: 5%;
-  left: 0%;
+p.articles__startshere__topic--w320w768 {
+  font-size: 30px;
+}
+p.articles__startshere__topic--w320w768 {
+  display: none;
 }
 h2.articles__startshere__topic-wfoto {
+    background: url(../images/atricle-facefoto.png) -2px 0px no-repeat;
     color: rgb(69, 69, 69);
     padding: 12px 0px 12px 60px;
     margin-left: -60px;
@@ -294,27 +333,37 @@ h2.articles__startshere__topic-wfoto {
 article.articles__startshere::after {
   content: url(../images/atricle-tochki.png);
   display: block;
-  padding: 0px 0px 0px 190px;
+  padding: 0px 0px 0px 189px;
 }
 div.articles__updates__item {
-  padding: 12px 0px 16px 66px;
+  padding: 12px 0px 16px 59px;
   background: url(../images/article-upd-back-sprite.png) -13px -170px no-repeat;
 }
-a.articles__updates__more {
+a.articles__updates__more,
+a.articles__updates__more--blogs {
   display: block;
   font-size: 18px;
   float: right;
   text-shadow: none;
-  padding: 11px 21px 0px 0px;
+  padding: 13px 3px 0px 0px;
 }
-a.articles__updates__more:hover {
-  border:none;
+a.articles__updates__more--blogs {
+  display: none;
 }
 div.articles__updates__item>p {
   font-size: 16px;
 }
-p.articles__updates__item__postdate {
+p.articles__updates__item__topic--w320 {
+  display: none;
+}
+p.articles__updates__item__postdate,
+p.articles__updates__item__postdate--w468-768,
+p.articles__updates__item__postdate--w320 {
   padding-top: 6px;
+}
+p.articles__updates__item__postdate--w468-768,
+p.articles__updates__item__postdate--w320 {
+  display: none;
 }
 div.logos {
   clear: both;
@@ -326,7 +375,7 @@ div.logos {
 figure {
   float: left;
   width: 12%;
-  padding: 16px;
+  padding: 2%;
   text-align: center;
   margin-right: 0.0%;
 }
@@ -340,7 +389,7 @@ figure.logos__brand-logos-5 {
 /*--------------НИЖНИЙ РАЗДЕЛ СТАТЬИ-----------*/
 section.foot-articles {
   background: rgb(236, 236, 236);
-  padding: 96px 0 93px 0;
+  padding: 10% 0% 10.0% 0%;
 }
 article.foot-articles__item,
 article.foot-articles__item-3 {
@@ -374,30 +423,32 @@ article.foot-articles__item-3>p {
   font-size: 16px;
   line-height: 1.5;
 }
-
+h2.foot-articles__item__head-less960 {
+  display: none;
+}
+p.foot-articles__item__text--w480,
+p.foot-articles__item__text--w768 {
+  display: none;
+}
 /*------------------FOOTER--------------*/
 
 footer {
   background: url(../images/montains768.png) bottom center no-repeat;
-  padding: 40px 0 45px 0;
+  padding: 3.8% 0% 4.5% 0%;
 }
 nav.footer__nav {
   float: left;
-  width: 65%;
   margin-left: 0px;
-}
-nav.footer__nav ul.main-menu {
-  float: none;
 }
 nav.footer__nav ul.main-menu>li>a {
   font-size: 20px;
 }
   nav.footer__nav ul.main-menu>li {
-  margin-left: 3.0%;
-  padding: 0.9% 4% 0.7% 0%;
+  margin-left: 4.0%;
+  padding: 0.9% 0% 0.7% 0.5%;
 }
 nav.footer__nav ul.main-menu li.main-menu__footer-frst {
-  margin-left: 0%;
+  margin-left: -0.5%;
 }
 div.footer__desined {
   float: right;
@@ -409,56 +460,18 @@ div.footer__desined>p {
 }
 
 /*-----------------------320px----------------------------*/
-  @media screen and (min-width: 100px) and (max-width: 479px) {
+  @media (min-width: 100px) and (max-width: 479px) {
     html {
      -webkit-text-size-adjust: none;
   }
-  header {
-    padding-top: 55px;
-  }
-  div.slider__wrapper {
-    padding: 70px 0 30px 0;
-  }
-  div.slider__wrapper::after {
-    padding: 70px 0 0 10px;
-  }
-  div.slider>p {
-    width: 100%;
-    text-align: center;
-  }
-  div.slider p.slider__afterhead {
-  font-size: 28px;
-  }
-  p.slider__head {
-  font-size: 40px;
-  }
     div.slider__greyfone {
       background: none;
-      padding-bottom: 0;
     }
     header>div.container {
       overflow: visible;
     }
-    img.iphone,
-    nav.top-menu,
-    nav.footer__nav,
-    div.slider p.slider__text {
-      display: none;
-    }
-    h2.articles__startshere__topic-wfoto>span {
-      display: block;
-    }
-    div.articles__startshere__container {
-      margin-right: 25px;
-    }
-    article.articles__startshere::after {
-      padding-left: 128px;
-    }
-    article.articles__startshere {
-      margin-bottom: 15px;
-    }
     figure {
-      width: 38%;
+      width: 46%;
     }
     figure.logos__brand-logos-4,
     figure.logos__brand-logos-5 {
@@ -469,30 +482,15 @@ div.footer__desined>p {
     article.about__company-3 {
       width: 80%;
     }
-    article.about__company-1,
-    article.about__company-2,
-    article.about__company-3 {
-    background: url(../images/about-icons-sprite.png) 9px -398px no-repeat;
-    padding-left: 14.3%;
-    }
-    article.about__company-3 {
-      margin-top: 19px;
-    }
-    section.articles {
-      padding-top: 70px;
-    }
     article.articles__startshere,
     article.articles__updates {
       width: 100%;
     }
-    article.articles__updates {
-      padding-bottom: 28px;
-    }
-    section.foot-articles {
-      padding-bottom: 15px;
-    }
     article.foot-articles__item,
     article.foot-articles__item-3 {
+      display: none;
+    }
+    nav.top-menu {
       display: none;
     }
     ul.main-menu--shot {
@@ -515,21 +513,73 @@ div.footer__desined>p {
     div.sitename {
     float: none;
     }
+    nav.footer__nav {
+      display: none;
+    }
     div.footer__desined {
       float: none;
       text-align: center;
+    }
+    div.slider p.slider__afterhead {
+      display: none;
+    }
+    div.slider p.slider__afterhead--cut {
+      display: block;
+    }
+    p.slider__text {
+      display: none;
     }
     article.about__company-2,
     article.about__company-3 {
       background: url(../images/about-icons-sprite.png) 9px -354px no-repeat;
     }
+    p.about__company__text {
+      display: none;
+    }
+    p.about__company__text--w320 {
+      display: block;
+    }
+    p.articles__updates__item__topic {
+      display: none;
+    }
+    p.articles__updates__item__topic--w320 {
+      display: block;
+    }
+    p.articles__updates__item__postdate {
+      display: none;
+    }
+    p.articles__updates__item__postdate--w320 {
+      display: block;
+    }
+    a.articles__updates__more {
+      display: none;
+    }
+    a.articles__updates__more--blogs {
+      display: block;
+    }
+    p.articles__startshere__text {
+      display: none;
+    }
+    p.articles__startshere__text--w320 {
+      display: block;
+    }
+    h2.articles__startshere__topic-wfoto>span {
+      display: none;
+    }
+    p.articles__startshere__topic--w320w768 {
+      display: block;
+    }
   }
 
 /*----------------------480px-------------------------------*/
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media (min-width: 480px) and (max-width: 767px) {
     html {
      -webkit-text-size-adjust: none;
   }
+    div.container {
+      padding: 0% 2.6% 0% 2.6%;
+      width: 94.8%;
+    }
     header>div.container {
       overflow: visible;
     }
@@ -575,31 +625,6 @@ div.footer__desined>p {
     a:hover {
       border-bottom: none;
     }
-    div.slider__wrapper {
-      padding: 60px 0 10px 0
-    }
-    div.slider__greyfone {
-    padding-bottom: 166px;
-    }
-    img.iphone {
-      top: 4%;
-      left: 43%;
-    }
-    div.slider>p {
-      width: 52%;
-    }
-    div.slider p.slider__afterhead {
-    font-size: 28px;
-    }
-    p.slider__head {
-    font-size: 40px;
-    }
-    div.slider p.slider__text {
-      display: none;
-    }
-    div.slider__wrapper::after {
-    padding: 90px 0px 0px 60px;
-    }
     figure {
       width: 29%;
     }
@@ -607,10 +632,6 @@ div.footer__desined>p {
     article.about__company-2,
     article.about__company-3 {
       width: 90%;
-    }
-    article.about__company-1,
-    article.about__company-2 {
-      padding: 5.8% 0% 1% 11.3%;
     }
     article.articles__startshere,
     article.articles__updates {
@@ -623,18 +644,9 @@ div.footer__desined>p {
       width: 90%;
       margin: 20px 0px 20px 0px;
     }
-    div.logos {
-      padding: 0.6% 0% 0.9% 0%;
-    }
     figure.logos__brand-logos-4,
     figure.logos__brand-logos-5 {
       margin-right: 0%;
-    }
-    figure {
-      width: 25%;
-    }
-    section.foot-articles {
-    padding: 40px 0% 40px 0%;
     }
     ul.main-menu--shot {
       display: block;
@@ -646,7 +658,6 @@ div.footer__desined>p {
     nav.footer__nav {
       float: none;
       margin: 0 auto;
-      width: auto;
       text-align: center;
     }
     nav.footer__nav ul.main-menu>li {
@@ -662,39 +673,73 @@ div.footer__desined>p {
     div.sitename {
     float: none;
     }
-    article.about__company-1,
-    article.about__company-2 {
-      background: url(../images/about-icons-sprite.png) 9px -390px no-repeat;
+    div.slider p.slider__afterhead {
+      display: none;
     }
+    div.slider p.slider__afterhead--cut {
+      display: block;
+    }
+    p.slider__text {
+      display: none;
+    }
+    article.about__company-2,
     article.about__company-3 {
-      background: url(../images/about-icons-sprite.png) 9px -360px no-repeat;
+      background: url(../images/about-icons-sprite.png) 9px -354px no-repeat;
     }
-    article.about__company-3 a.about__company__more {
-      margin-left: -19px;
+    p.articles__updates__item__postdate {
+      display: none;
+    }
+    p.articles__updates__item__postdate--w468-768 {
+      display: block;
+    }
+    a.articles__updates__more {
+      display: none;
+    }
+    a.articles__updates__more--blogs {
+      display: block;
     }
     p.foot-articles__item__copyright {
       display: none;
     }
+    h2.foot-articles__item__head-less960 {
+      display: block;
+    }
+    .foot-articles__item__head-960 {
+      display: none;
+    }
+    p.foot-articles__item__text {
+      display: none;
+    }
+    p.foot-articles__item__text--w480 {
+      display: block;
+    }
   }
-
-/*-------------------------------768px----------------------------*/
-  @media screen and (min-width: 768px) and (max-width: 959px) {
+/*768px*/
+  @media (min-width: 768px) and (max-width: 959px) {
     html {
      -webkit-text-size-adjust: none;
     }
     header {
       padding-top: 8.6%;
     }
-    div.sitename {
-      float: none;
-      text-align: left;
+    figure.slider__strelki--left {
+      left: 0%;
+      top:40%;
+    }
+    figure.slider__strelki--right {
+      left: 96%;
+      top:40%;
+    }
+    div.container {
+      padding: 0% 2.6% 0% 2.6%;
+      width: 94.8%;
     }
     li {
-      padding: 7px 55px 7px 0px;
-      margin-left: 0px;
+      margin: 0% 6.1% 0% -0.7%;
+      float: left;
     }
     figure {
-      width: 11%;
+      width: 12%;
     }
     ul.main-menu {
       overflow: hidden;
@@ -704,20 +749,30 @@ div.footer__desined>p {
     }
     nav.footer__nav {
       float: none;
-      width: auto;
       margin-left: 0px;
     }
-    nav.footer__nav ul.main-menu>li {
-    padding: 0.9% 4% 0.7% 0%;
-  }
     div.slider__wrapper {
       padding: 9.9% 0% 5.5% 0%;
+      background: url(../images/iphone.png) 150% -38% no-repeat;
     }
     div.slider {
-      padding: 50px 0px 50px 23px;
+      width: 45%;
+      padding: 97px 0px 50px 23px;
     }
-    img.iphone {
-      top: 4%;
+    div.slider p.slider__afterhead {
+      display: none;
+    }
+    div.slider p.slider__afterhead--cut {
+      display: block;
+      font-size: 24px;
+      margin-top: 7px;
+      margin-bottom: 9px;
+    }
+    p.slider__text {
+      display: none;
+    }
+    p.slider__text--w768 {
+      display: block;
     }
     p.slider__head {
       font-size: 50px;
@@ -725,13 +780,18 @@ div.footer__desined>p {
     h2 {
       font-size: 24px;
     }
-    article.about__company-1,
     article.about__company-2,
     article.about__company-3 {
-      background: url(../images/about-icons-sprite.png) 9px -373px no-repeat;
+      background: url(../images/about-icons-sprite.png) 9px -354px no-repeat;
+    }
+    p.about__company__text {
+      display: none;
+    }
+    p.about__company__text--w768 {
+      display: block;
     }
     article.about__company-3 {
-      padding: 48px 0px 0px 40px;
+      padding: 43px 0px 0px 27px;
     }
     article.about__company-1,
     article.about__company-2,
@@ -740,22 +800,63 @@ div.footer__desined>p {
     }
     article.about__company-1,
     article.about__company-2 {
-        margin-right: 2.0%
+        margin-right: 4.0%
+    }
+    p.articles__updates__item__postdate {
+      display: none;
+    }
+    p.articles__updates__item__postdate--w468-768 {
+      display: block;
+    }
+    a.articles__updates__more {
+      display: none;
+    }
+    a.articles__updates__more--blogs {
+      display: block;
     }
     p.foot-articles__item__copyright {
       display: none;
     }
+    h2.foot-articles__item__head-less960 {
+      display: block;
+    }
+    .foot-articles__item__head-960 {
+      display: none;
+    }
+    p.foot-articles__item__text {
+      display: none;
+    }
+    p.foot-articles__item__text--w768 {
+      display: block;
+    }
+    p.articles__startshere__text {
+      display: none;
+    }
+    p.articles__startshere__text--w768 {
+      display: block;
+    }
     h2.articles__startshere__topic-wfoto>span {
       display: none;
+    }
+    p.articles__startshere__topic--w320w768 {
+      display: block;
     }
     div.footer__desined {
       clear: both;
     }
   }
-/*------------------961px+-----------------------------------------*/
-  @media screen and (min-width: 961px) and (max-width: 10000px) {
+/*961px+*/
+  @media (min-width: 961px) and (max-width: 10000px) {
   div.container {
     width: 960px;
     margin: 0 auto;
+  }
+  div.slider__wrapper {
+    padding-bottom: 0%;
+    padding-top: 10%;
+    background: url(../images/iphone.png) 120% 28% no-repeat;
+  }
+  div.slider p.slider__afterhead--cut {
+    display: none;
   }
 }
