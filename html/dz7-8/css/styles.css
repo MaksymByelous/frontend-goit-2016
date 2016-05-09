@@ -78,6 +78,7 @@ div.footer__desined>p>span {
 /*--------------ХЕДЕР------------*/
 header {
   background: url(../images/montains768.png) top center no-repeat;
+  background-size: cover;
   text-align: center;
   padding-top: 66px;
 }
@@ -266,6 +267,12 @@ div.articles__startshere__container {
   border-radius: 5px;
   padding: 15px 35px 35px 35px;
 }
+div.articles__startshere__container::after {
+  content: url(../images/atricle-after-triangle.png);
+  display: block;
+  margin-bottom: -62px;
+  padding: 30px 0px 0px 333px;
+}
 article.articles__updates {
   float: right;
   width: 47%;
@@ -297,8 +304,11 @@ article.articles__startshere::after {
   padding: 0px 0px 0px 190px;
 }
 div.articles__updates__item {
-  padding: 12px 0px 16px 66px;
-  background: url(../images/article-upd-back-sprite.png) -13px -170px no-repeat;
+  padding: 12px 0px 12px 0px;
+  /*background: url(../images/article-upd-back-sprite.png) -13px -170px no-repeat;*/
+}
+.articles__updates__item img {
+  float: left;
 }
 a.articles__updates__more {
   display: block;
@@ -312,6 +322,9 @@ a.articles__updates__more:hover {
 }
 div.articles__updates__item>p {
   font-size: 16px;
+}
+p.articles__updates__item__topic {
+  margin-top: 10px;
 }
 p.articles__updates__item__postdate {
   padding-top: 6px;
@@ -379,6 +392,7 @@ article.foot-articles__item-3>p {
 
 footer {
   background: url(../images/montains768.png) bottom center no-repeat;
+  background-size: cover;
   padding: 40px 0 45px 0;
 }
 nav.footer__nav {
@@ -494,6 +508,9 @@ div.footer__desined>p {
     article.foot-articles__item,
     article.foot-articles__item-3 {
       display: none;
+    }
+    div.articles__startshere__container::after {
+      padding: 30px 0px 0px 190px;
     }
     ul.main-menu--shot {
       display: block;
@@ -741,6 +758,9 @@ div.footer__desined>p {
     article.about__company-1,
     article.about__company-2 {
         margin-right: 2.0%
+    }
+    div.articles__startshere__container::after {
+      padding: 30px 0px 0px 260px;
     }
     p.foot-articles__item__copyright {
       display: none;
