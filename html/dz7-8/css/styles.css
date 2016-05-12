@@ -152,6 +152,11 @@ div.slider {
   width: 55%;
   float: left;
 }
+div.slider__iphone {
+  width: 45%;
+  float: right;
+  margin-top: -15px;
+}
 div.slider__greyfone {
   background: rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
@@ -162,9 +167,7 @@ div.slider__wrapper::after {
   padding: 90px 0px 0px 543px;
 }
 img.iphone {
- display: block;
- float: right;
- margin-top: -15px;
+ max-width: 100%;
 }
 div.slider__article>p {
   text-align: left;
@@ -523,12 +526,14 @@ div.footer__desined>p {
     }
     ul.main-menu--shot {
       display: block;
+      background: rgba(58, 42, 66, 0.9);
     }
     ul.main-menu--shot__submenu {
       top: 101%;
       left: -0.5%;
       width: 100%;
       margin: 0 auto;
+      background: rgba(58, 42, 66, 0.9);
     }
     ul.main-menu {
       text-align: center;
@@ -607,9 +612,9 @@ div.footer__desined>p {
     div.slider__greyfone {
     padding-bottom: 0px;
     }
-    .slider__article {
+    /*.slider__article {
       width: 42%;
-    }
+    }*/
     div.slider__article p.slider__afterhead {
     font-size: 28px;
     }
@@ -694,12 +699,6 @@ div.footer__desined>p {
         article.about__company-3 {
       background: url(../images/about-icons-sprite.png) 9px -390px no-repeat;
     }
-    /*article.about__company-3 {
-      background: url(../images/about-icons-sprite.png) 9px -360px no-repeat;
-    }*/
-    /*article.about__company-3 a.about__company__more {
-      margin-left: -19px;
-    }*/
     p.foot-articles__item__copyright {
       display: none;
     }
@@ -741,9 +740,6 @@ div.footer__desined>p {
     div.slider__wrapper {
       padding: 9.9% 0% 5.5% 0%;
     }
-    /*div.slider {
-      padding: 50px 0px 50px 23px;
-    }*/
     p.slider__head {
       font-size: 50px;
     }
