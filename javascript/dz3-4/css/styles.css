@@ -1,0 +1,16 @@
+body {
+  background: grey;
+}
+div.row {
+  width: 900px;
+  margin: 0 auto;
+  background: lightgrey;
+  padding: 20px;
+}
+.checkbox input[type="checkbox"] {
+  margin-left: 0px;
+  display: block;
+}
+.checkbox label {
+  display: block;
+}

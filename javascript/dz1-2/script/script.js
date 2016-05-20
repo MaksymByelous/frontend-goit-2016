@@ -12,10 +12,10 @@ var n = prompt("input n - power of number", "");
 alert( pow(x, n) );
 
 // ------block 2 of homework: are you right user?
-var names= ["1", "2", "3", "4", "5"];
+var names= [];
 function logIN () {
-  for (var i = 0; i < names.length; i++) {
-    names [i]= prompt("input next name", "");
+  for (var i = 0; i < 5; i++) {
+    names.push(prompt("input next name", ""));
   } return names;
 }
 logIN();
@@ -34,4 +34,3 @@ if (rightUser) {
 } else {
   alert("you are not in the users list")
   }
-  
