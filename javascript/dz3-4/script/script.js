@@ -2,8 +2,6 @@
 var questionNumber = 3;
 //how many options of answers do you need
 var optionNumber = 3;
-//lets create our test
-test.createTest();
 
 var test = {
   createTest: function () {
@@ -102,3 +100,6 @@ var test = {
     form.appendChild(button);
   },
 }
+
+//lets create our test
+test.createTest();
