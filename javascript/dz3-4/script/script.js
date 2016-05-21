@@ -1,105 +1,64 @@
-//how many questions do you want
-var questionNumber = 3;
-//how many options of answers do you need
-var optionNumber = 3;
-
 var test = {
-  createTest: function () {
-    test.createRow();
-    test.createCol();
-    test.createH1();
-    test.createForm();
-    test.createQuesion(questionNumber);
-    test.createButton();
-  },
-  createQuesion: function (k) {
-    for (var j = 0; j < k; j++) {
-      test.createFormGroup();
-      test.createFormH2(j);
-      test.createDivCheckbox(j);
-      // test.createCheckbox(1, j);
-      // test.createLabel(1, j);
-      // test.createCheckbox(2, j);
-      // test.createLabel(2, j);
-      // test.createCheckbox(3, j);
-      // test.createLabel(3, j);
-      test.createInputGroup(optionNumber, j);
-    }
-  },
-  createInputGroup: function (l, j) {
-    for (var i = 1; i <= l; i++) {
-      test.createCheckbox(i, j);
-      test.createLabel(i, j);
-    }
-  },
-  createRow: function () {
+  name: 'Test of development skills',
+  question: ['question №1' , 'question №2' ,' question №3'],
+  answer: ['answer option №11','answer option №12', 'answer option №13',
+          'answer option №21','answer option №22', 'answer option №23',
+          'answer option №31','answer option №32', 'answer option №33'],
+  submit: 'CHECK RESULTS',
+  letsTest: function () {
     var row = document.createElement('div');
-    row.classList.add('row');
-    var body = document.querySelector('body');
-    body.appendChild(row);
-  },
-  createCol: function () {
+      row.classList.add('row');
+      var body = document.querySelector('body');
+      body.appendChild(row);
     var col = document.createElement('div');
-    col.classList.add('col');
-    col.classList.add('col-md-12');
-    var row = document.querySelector('.row');
-    row.appendChild(col);
-  },
-  createH1: function () {
+      col.classList.add('col');
+      col.classList.add('col-md-12');
+      var row = document.querySelector('.row');
+      row.appendChild(col);
     var topH1 = document.createElement('h1');
-    topH1.classList.add('text-center');
-    topH1.innerHTML = 'Test of development skills';
-    var col = document.querySelector('.col');
-    col.appendChild(topH1);
-  },
-  createForm: function () {
+      topH1.classList.add('text-center');
+      topH1.innerHTML = this.name;
+      var col = document.querySelector('.col');
+      col.appendChild(topH1);
     var testForm = document.createElement('form');
-    var col = document.querySelector('.col');
-    col.appendChild(testForm);
-  },
-  createFormGroup: function () {
-    var formGroup = document.createElement('div');
-    formGroup.classList.add('form-group');
-    var form = document.querySelector('form');
-    form.appendChild(formGroup);
-  },
-  createFormH2: function (i) {
-    var formH2 = document.createElement('h2');
-    formH2.innerHTML = 'question ' + (+i + 1);
-    var formGroup = document.querySelectorAll('.form-group');
-    formGroup[i].appendChild(formH2);
-  },
-  createDivCheckbox: function (i) {
-    var divCheckBox = document.createElement('div');
-    divCheckBox.classList.add('checkbox');
-    var formGroup = document.querySelectorAll('.form-group');
-    formGroup[i].appendChild(divCheckBox);
-  },
-  createCheckbox: function (i, y) {
-    var checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.value = 'answer' + i;
-    checkbox.id ='answer' + (+y + 1) + i;
-    var divCheckBox = document.querySelectorAll('.checkbox');
-    divCheckBox[y].appendChild(checkbox);
-  },
-  createLabel: function (i, f) {
-    var label = document.createElement('label');
-    label.innerHTML = 'option ' + i;
-    label.htmlFor = 'answer' + (+f + 1) + i;
-    var divCheckBox = document.querySelectorAll('.checkbox');
-    divCheckBox[f].appendChild(label);
-  },
-  createButton: function () {
+      var col = document.querySelector('.col');
+      col.appendChild(testForm);
+    var questionIterator = 0;
+    for (var y = 0; y < 3; y++) {
+      var formGroup = document.createElement('div');
+        formGroup.classList.add('form-group');
+        var form = document.querySelector('form');
+        form.appendChild(formGroup);
+      var formH2 = document.createElement('h2');
+        formH2.innerHTML = this.question[y];
+        var formGroup = document.querySelectorAll('.form-group');
+        formGroup[y].appendChild(formH2);
+      var divCheckBox = document.createElement('div');
+        divCheckBox.classList.add('checkbox');
+        var formGroup = document.querySelectorAll('.form-group');
+        formGroup[y].appendChild(divCheckBox);
+      for (var i = 1; i < 4; i++) {
+       var checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.value = 'answer' + i;
+        checkbox.id ='answer' + (+y + 1) + i;
+        var divCheckBox = document.querySelectorAll('.checkbox');
+        divCheckBox[y].appendChild(checkbox);
+       var label = document.createElement('label');
+        label.innerHTML = this.answer[i - 1 + questionIterator];
+        label.htmlFor = 'answer' + (+y + 1) + i;
+        var divCheckBox = document.querySelectorAll('.checkbox');
+        divCheckBox[y].appendChild(label);
+      }
+      questionIterator += 3;
+    }
     var button = document.createElement('button');
-    button.classList.add('btn');
-    button.classList.add('btn-success');
-    button.classList.add('btn-lg');
-    button.innerHTML = 'CHECK RESULTS';
-    var form = document.querySelector('form');
-    form.appendChild(button);
-  },
+      button.classList.add('btn');
+      button.classList.add('btn-success');
+      button.classList.add('btn-lg');
+      button.innerHTML = this.submit;
+      var form = document.querySelector('form');
+      form.appendChild(button);
+  }
 }
-
-//lets create our test
-test.createTest();
+test.letsTest();
