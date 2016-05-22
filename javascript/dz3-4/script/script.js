@@ -1,9 +1,9 @@
 var test = {
   name: 'Test of development skills',
   question: ['question №1' , 'question №2' ,' question №3'],
-  answer: ['answer option №11','answer option №12', 'answer option №13',
-          'answer option №21','answer option №22', 'answer option №23',
-          'answer option №31','answer option №32', 'answer option №33'],
+  answer: ['answer option №1','answer option №2', 'answer option №3',
+          'answer option №1','answer option №2', 'answer option №3',
+          'answer option №1','answer option №2', 'answer option №3'],
   submit: 'CHECK RESULTS',
   letsTest: function () {
     var row = document.createElement('div');
