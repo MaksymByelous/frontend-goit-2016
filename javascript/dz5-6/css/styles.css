@@ -48,7 +48,10 @@ button.btn {
   border: 5px solid black;
   border-radius: 15px;
 }
-
+p {
+  text-align: center;
+  margin-top: -20px;
+}
 
 @media (min-width: 280px) and (max-width: 560px) {
   div.content {
