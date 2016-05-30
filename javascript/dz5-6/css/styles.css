@@ -1,0 +1,60 @@
+body {
+  background: grey;
+}
+div.container {
+
+  background: lightgrey;
+  padding: 20px;
+}
+div.header {
+  background: blue;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+div.footer {
+  background: blue;
+  padding: 5px 10px;
+}
+div.col-md-10 {
+  margin: 0 auto;
+  float:none;
+  text-align: center;
+}
+div.watch-timer span {
+  font-size: 100px;
+}
+a,
+a:hover,
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+  color: white;
+}
+span.glyphicon.glyphicon-home {
+  margin-right: 10px;
+}
+div.content {
+  margin: 20px auto;
+  width: 80%;
+  border: 5px solid black;
+  border-radius: 15px;
+}
+div.watch-buttons {
+  margin-bottom: 20px;
+}
+button.btn {
+  border: 5px solid black;
+  border-radius: 15px;
+}
+
+
+@media (min-width: 280px) and (max-width: 560px) {
+  div.content {
+    width: 95%;
+  }
+  div.watch-timer span {
+    font-size: 50px;
+  }
+}
