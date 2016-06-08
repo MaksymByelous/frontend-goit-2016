@@ -1,0 +1,84 @@
+body {
+	font-family: Arial, sans-serif;
+}
+.tabs-title li {
+	display: inline-block;
+	padding: 5px;
+	background: grey;
+	border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+li a, a:hover, a:visited {
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+}
+#tabs {
+	width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+}
+#tabs-1,
+#tabs-2,
+#tabs-3,
+#tabs-4 {
+	padding: 10px;
+	border-radius: 10px;
+  border-top-left-radius: 0;
+}
+#tabs-1,
+#tabs-2,
+#tabs-3,
+#tabs-4 {
+	display: none;
+}
+.active,
+.tabs-title .active,
+#tabs .active {
+	background: #FE9A2E;
+	display: inline-block;
+}
+
+div.form-wrapper {
+	margin: 30px auto;
+	width: 500px;
+	border: 1px solid grey;
+	padding: 10px;
+}
+div.input-group {
+	margin: 10px;
+}
+.ourForm {
+	border: 1px solid green;
+}
+h3 {
+	margin: 10px auto;
+}
+div.input-group input {
+	margin-right: 10px;
+}
+input.btn-help {
+	margin: 10px;
+	background: grey;
+	color: brown;
+	border: 0px;
+	border-radius: 5px;
+}
+input.form-btn-submit {
+	margin: 10px;
+	background: black;
+	color: white;
+	border: 0px;
+	border-radius: 5px;
+}
+input#address {
+	margin-left: 12px;
+}
+p.help {
+	display: inline;
+	box-shadow: 0px 0px 5px 5px rgba(158,153,158,1);
+	border-radius: 5px;
+	font-size: 0.8em;
+	padding: 2px;
+}
