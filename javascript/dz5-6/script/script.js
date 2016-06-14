@@ -101,5 +101,3 @@ function handler() {
 }
 startStopBtn.addEventListener("click", handler);
 clearBtn.addEventListener("click", clearHandler);
-startStopBtn.removeEventListener("click", handler);
-clearBtn.removeEventListener("click", clearHandler);

@@ -13,6 +13,7 @@ $(document).ready(function () {
     $(':text').mouseout(function () {
       $(this).siblings('p').fadeOut();
     });
+    // return false;
   });
   $('.btn-help').click(function () {
     $('.input-group p').fadeIn('slow');
