@@ -1,11 +1,25 @@
 div.wrapper {
-	width: 1000px;
+	width: 640px;
+	height: 1600px;
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center;
 	background: lightgrey;
 }
-
+h1 {
+	margin: 10px 0 10px 0;
+	font-size: 24px;
+}
+div.select_container {
+	margin: 0 auto;
+	width: 300px;
+	height: 100px;
+}
+div.box {
+	text-align: right;
+	background-color: rgba(0, 223, 255, 0.86);
+	padding: 5px;
+}
 /*-------------------connected-carousels*/
 /** Stage container **/
 .connected-carousels .stage {
@@ -19,7 +33,7 @@ div.wrapper {
 .connected-carousels .photo-credits {
     position: absolute;
     right: 15px;
-    bottom: 0;
+    bottom: 15px;
     font-size: 13px;
     color: #fff;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
@@ -167,4 +181,123 @@ div.wrapper {
 .connected-carousels .next-navigation.inactive {
     opacity: .5;
     cursor: default;
+}
+  /*--------- custom checkbox by css3*/
+	input[type=checkbox] {
+		position: absolute;
+		clip: rect(0, 0, 0, 0);
+	}
+	label {
+		cursor: pointer;
+	}
+	.checkboxCSS label:after {
+		content: " ";
+		display: inline-block;
+		width: 17px;
+		height: 17px;
+		background: url(../images/checkbox-sprite.png);
+		position: relative;
+		top: 3px;
+		margin-left: 15px;
+	}
+	input[type=checkbox]:checked + label:after {
+	background-position: 0 -17px;
+	}
+	label:hover:after {
+	background-position: 0 -34px;
+	}
+	input[type=checkbox]:checked + label:hover:after {
+	background-position: 0 -51px;
+	}
+          /*checkbox by jquery */
+.niceCheck {
+		width: 17px;
+		height: 17px;
+		display: inline-block;
+		cursor: pointer;
+		background: url(../images/checkbox-sprite.png);
+		overflow: hidden;
+}
+.niceChecked {
+		background-position: 0 -17px;
+}
+.niceCheck input {
+margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+.niceCheckDisabled {
+background-image: url(..images/checkbox-nice.png);
+background-position: 0 -75px;
+}
+
+/*------------------drop down menu */
+div.nav {
+    background-color:rgb(255,100,100);
+    padding:10px 0;
+}
+div.nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+div.nav ul li {
+    display:inline-block;
+    position:relative;
+}
+/* sub navigation */
+div.nav li ul {
+    /*background-color:rgb(225,75,75);*/
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+div.nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+div.nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+/* style all links */
+div.nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+div.nav a:hover,
+div.nav a:focus,
+div.nav a:active {
+    color:rgb(50,50,50);
+}
+/* style sub level links */
+div.nav li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+div.nav li li:last-child a {
+    border-bottom:none;
+}
+/* show arrows for dropdowns */
+div.nav li.dropdown > a {
+    background-image:url('../images/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+div.nav li li.dropdown > a {
+    background-image:url('../images/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+		background-color: rgb(225,75,75);
 }
