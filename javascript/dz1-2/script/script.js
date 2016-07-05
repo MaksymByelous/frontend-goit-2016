@@ -1,3 +1,4 @@
+
 // ------block 1 of homework: lets get a power!
 function pow(x, n) {
   var result = 1;
