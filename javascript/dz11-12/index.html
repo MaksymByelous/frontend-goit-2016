@@ -39,5 +39,29 @@
     <div class="carousel-arrow-right"><span>look right</span>
       </div>
     </div>
+    <div class="templating">
+      <h1>Our candidates:</h1>
+      <div class="candidates">
+        <h1>name:</h1>
+        <p>job_title:</p>
+        <p>company:</p>
+        <p>salary:</p>
+        <p>family_status:</p>
+      </div>
+      <script type="text/template" id="test">
+        <% for (var i = 0; i < data.length; i++) { %>
+
+          <div class="candidates">
+            <h1><%= data[i].name %></h1>
+            <p><%= data[i].job_title %></p>
+            <p><%= data[i].company %></p>
+            <p><%= data[i].salary %></p>
+            <p><%= data[i].family_status %></p>
+          </div>
+
+        <% }; %>
+      </script>
+    </div>
+
   </body>
 </html>

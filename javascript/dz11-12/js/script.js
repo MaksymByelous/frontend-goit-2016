@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
 //----------carouselka
+(function () {
   var leftBtn = $('div.carousel-arrow-left');
   var rightBtn = $('div.carousel-arrow-right');
   var elementsList = $('ul.carousel-list');
@@ -22,10 +23,9 @@ $(document).ready(function () {
       elementsList.animate({left : currentLeftValue + "px"}, 800);
       }
   });
+})();
 //-------finita del carousel
 
-// see:
-// http://ejohn.org/blog/javascript-micro-templating/
 
 // Simple JavaScript Templating
 // John Resig - http://ejohn.org/ - MIT Licensed
@@ -63,6 +63,35 @@ $(document).ready(function () {
   };
 })();
 
+(function () {
+  var html = $('#test').html();
+  var candidatesInfo = [
+    {
+    name: 'Semen',
+    job_title: 'manager',
+    company: 'good company',
+    salary: 'USD 1000',
+    family_status: 'sole'
+    },
+    {
+    name: 'Anton',
+    job_title: 'super manager',
+    company: 'awfull company',
+    salary: 'USD 100',
+    family_status: 'egoist'
+    },
+    {
+    name: 'Luda',
+    job_title: 'traffic manager',
+    company: 'mega company',
+    salary: 'USD 1500',
+    family_status: 'free'
+    }
+  ];
+  var content = tmpl(html, {data: candidatesInfo});
 
+  $('.templating').append(content);
+
+})();
 
 });

@@ -1,5 +1,6 @@
 body {
   background-color: orange;
+  font-family: Arial sans-serif, sans-serif;
 }
 div.carousel {
   padding: 20px;
@@ -43,10 +44,32 @@ div.carousel-arrow-right {
   margin-left: 15px;
 }
 div.carousel-arrow-left span,
-div.carousel-arrow-right span {
+div.carousel-arrow-right span,
+li.carousel-element p {
+  font-style: italic;
 }
 div.carousel-arrow-left:hover,
 div.carousel-arrow-right:hover {
   cursor: pointer;
   background-color: grey;
+}
+
+div.templating {
+  padding: 20px;
+  width: 600px;
+  margin: 0 auto;
+  background: white;
+  overflow: hidden;
+}
+h1 {
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+div.candidates {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  float: left;
 }
