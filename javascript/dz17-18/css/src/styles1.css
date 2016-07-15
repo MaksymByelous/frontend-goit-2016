@@ -1,0 +1,10 @@
+body {
+  background-color: orange;
+  font-family: Arial sans-serif, sans-serif;
+}
+div.script1Div {
+  width: 50%;
+  margin: 25px auto 0 auto;;
+  padding: 10px;
+  background-color: green;
+}

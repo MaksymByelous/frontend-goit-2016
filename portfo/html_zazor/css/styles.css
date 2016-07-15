@@ -1,0 +1,669 @@
+body {
+  background-color: rgb(40, 40, 40);
+}
+header,
+footer,
+aside,
+nav,
+section,
+main {
+  display: block;
+}
+.wrapper {
+  width: 910px;
+  margin: 0 auto;
+  padding: 20px 45px 0px 45px;
+  background-color: white;
+}
+header {
+  /*padding: 0px 5px 0px 5px;*/
+}
+.telefons {
+  background: url(../images/telefon.png) center left no-repeat;
+  padding: 2px 15px 2px 28px;
+  float: left;
+  font-family: Arial;
+  font-size: 19px;
+  color: rgb(126, 135, 138);
+  vertical-align: middle;
+  margin-top: 1px;
+  margin-left: -2px;
+}
+.regform {
+  display: inline-block;
+  float: left;
+  padding: 0px 0px 5px 19px;
+  background: url(../images/icon-logmen.png) center left no-repeat;
+}
+.registration {
+  float: left;
+  background: linear-gradient(to top, rgb(12, 51, 87), rgb(31, 102, 133));
+  padding: 0px 10px 0px 5px;
+  border-radius: 3px;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+.inputlogin,
+.inputpass {
+  width: 109px;
+  vertical-align: top;
+  margin-top: 3px;
+  height: 15px;
+  border: 1px solid rgb(108, 126, 140);
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 12px;
+  color: rgb(151, 162, 166);;
+  padding: 0px 1px 1px 3px
+}
+.inputlogin {
+  margin-left: 2px;
+}
+.inputpass {
+  margin-left: 2px;
+}
+.enterbutton {
+  background: none;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 11px;
+  color: white;
+  vertical-align: top;
+  border: none;
+  border-right: 1px solid white;
+  padding: 0px 7px 0px 3px;
+  margin-top: 6px;
+}
+.regbutton {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+  font-family: "Lucida Sans", sans-serif;
+  margin: 7px 0px 0px 4px;
+  float: left;
+}
+.forgetpass {
+  color: white;
+  font-size: 12px;
+  font-family: "Lucida Sans", sans-serif;
+  margin: 7px 0px 0px 26px;
+  float: left;
+}
+.icons {
+  float: left;
+  border: 1px solid grey;
+  border-radius: 11px;
+  padding: 2px 9px 2px 8px;
+  margin-left: 10px;
+}
+.icons>a {
+  padding: 0px 1px
+}
+header::after {
+	content:".";
+	clear:both;
+	display:block;
+	height:0;
+	font-size:0;
+	visibility:hidden
+}
+.zazorlogo {
+  padding: 9px 0px 2px 1px;
+}
+
+/*----------------------ГЛАВНОЕ МЕНЮ-------------*/
+
+.topnav {
+  overflow: hidden;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgb(77, 86, 99)) ;
+  border: 1px solid rgb(35, 44, 90);
+  border-radius: 5px;
+  padding: 4px 0px;
+}
+nav li {
+  display: inline-block;
+  padding: 5px 0px;
+}
+/*li.dostavka {
+  padding-left: 1px;
+  padding-right: 4px;
+}*/
+li.statii {
+  margin-left: -3px;
+}
+li.contakti {
+  margin-left: -8px;
+}
+ul.ulmainmenu {
+  margin-left: 130px;
+  margin-top: -1px;
+  float: left;
+}
+.mainmenu {
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 14px;
+  color: rgb(177, 188, 192);
+  padding: 5px 15px;
+}
+.mainmenu:hover {
+  font-size: 14px;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background: linear-gradient(to top, rgb(12, 51, 87), rgb(31, 101, 133)) ;
+}
+.topnav_balance {
+  float: right;
+  background: url(../images/basket.png) center left no-repeat;
+  background-position: -2px 0px;
+  padding: 0px 8px 0px 29px;
+  margin-top: 2px;
+}
+.balanceword {
+  font-family: Arial;
+  font-size: 11px;
+  color: rgb(127, 134, 138);
+}
+.balancefigure {
+  font-family: Arial;
+  font-size: 12px;
+  color: rgb(14, 83, 131);
+  padding-right: 10px;
+}
+.balanceword__sum {
+  font-family: Arial;
+  font-size: 11px;
+  color: rgb(127, 134, 138);
+  padding-right: 9px;
+}
+
+/* БЛОК ПОИСКА*/
+
+.floatcontainer {
+  margin-top: 2px;
+}
+.findfilters {
+  overflow: hidden;
+  padding: 11px 0px 10px 5px;
+}
+.findbycar {
+  float: left;
+  width: 396px;
+  height: 133px;
+  overflow: hidden;
+  border: 1px solid rgb(176, 176, 177);
+  border-radius: 15px;
+  padding-left: 10px;
+  box-shadow: 5px 5px 5px 0px rgb(153, 153, 153);
+}
+.topper>span {
+  padding: 2px 20px 2px 20px;
+  font-family: Verdana;
+  font-size: 10.6px;
+  font-weight: bold;
+  color: rgb(21, 68, 103);
+}
+.topper>span.disc {
+  padding: 0px 20px 0px 0px;
+}
+.topper>span.bycar {
+  padding: 0px 20px 0px 42px;
+  font-family: Arial;
+  font-size: 13.5px;
+}
+.topper>span.tyres {
+  padding: 0px 0px 0px 53px;
+}
+.tyresbyauto,
+.discbyauto {
+  display: block;
+}
+.searchdiscbycar {
+  float: left;
+}
+table {
+  float: left;
+}
+td {
+  width: 75px;
+  height: 10px;
+  padding: 3px 0px;
+  font-size: 10px;
+  font-family: Arial;
+  font-weight: bold;
+}
+table span {
+  color: grey;
+}
+.doudle {
+  line-height: 0.8;
+}
+.lowitem {
+  padding-top: 6px;
+}
+.searchtitle {
+  margin-top: 6px;
+}
+.searchtitle__tyres {
+  float: left;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+.searchtyresbycar {
+  float: left;
+  margin-top: -3px;
+}
+.searchbuttonbyauto {
+  float: right;
+  margin: 2px 15px 0px 0px;
+  background: none;
+  border: none;
+  font-family: Arial;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 13px;
+  color: rgb(21, 80, 103);
+}
+.floatcontainer {
+  overflow: hidden;
+}
+select {
+  border: 1px solid rgb(153, 153, 153);
+  border-bottom: 0px;
+  border-right: 0px;
+  margin-top: 5px;
+  height: 17px;
+}
+select {
+      /*for WebKit*/
+     -webkit-appearance: none;
+     /* for FF */
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+      /* for IE */
+      -ms-appearance: none;
+      appearance: none!important;
+  background-image: url('../images/selector.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+#avmarka {
+  margin-top: 3px;
+}
+.findbycar__tyres {
+  float: left;
+  width: 186px;
+  height: 135px;
+  overflow: hidden;
+  border: 1px solid rgb(176, 176, 177);
+  border-radius: 15px;
+  padding-left: 12px;
+  box-shadow: 5px 5px 5px 0px rgb(153, 153, 153);
+  margin: -1px 0px 0px 9px;
+}
+.discbyauto__tyreswidth {
+  display: inline-block;
+}
+.findbycar__tyres .topper > span {
+  font-size: 14px;
+  font-family: "Lucida Sans";
+    padding: 0px;
+}
+.searchtitle__size {
+  margin-top: 10px;
+}
+.sizetitle,
+.radius {
+  width: 43px;
+}
+.radius {
+  padding: 9px 0px 3px 0px;
+  text-align: right;
+  font-size: 11px;
+}
+.discbyauto__tyreswidth>option,
+.discbyauto__tyresheight>option {
+  width: 44px;
+  font-family: "Lucida Sans";
+  font-size: 12px;
+}
+.discbyauto__tyresheight {
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+.discbyauto__tyresradius {
+  display: block;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+.discbyauto__tyresradius>option {
+  width: 37px;
+  font-family: "Lucida Sans";
+  font-size: 12px;
+}
+label {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+}
+.desh {
+  font-weight: bold;
+  padding: 0px  5px  0px  2px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  background: url(../images/checkbox_sprite.png) 0 0 no-repeat;
+  padding-left: 14px;
+}
+input[type="checkbox"]:checked + label {
+  background-position: 0 -15px;
+}
+.checkbox-vsesezon {
+  margin: -2px 0px 0px 0px;
+}
+.checkbox-leto {
+  margin: 7px 0px 0px 0px;
+}
+.checkbox-zima {
+  margin: -2px 0px 0px 0px;
+}
+.findbycar__tyres .searchdiscbycar {
+  padding-left: 3px;
+}
+.findbycar__tyres .searchbuttonbyauto {
+  margin: -5px 12px 0 0;
+}
+.searchtitle__diski td.doudle__diski {
+  padding-top: 8px;
+}
+.findbycar__diski {
+  margin-left: 10px;
+  float: left;
+  width: 263px;
+  border: 1px solid rgb(176, 176, 177);
+  border-radius: 15px;
+  padding-left: 7px;
+  box-shadow: 5px 5px 5px 0px rgb(153, 153, 153);
+}
+.searchtitle__tyres__diski {
+  margin: 0px 0px -2px 3px;
+}
+.searchtitle__tyres__diski__et {
+  margin: 3px 0px 0px 3px;
+}
+.searchtitle__diski td {
+  width: 92px;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 11px;
+  padding: 0px 0px 0px 0px;
+}
+.searchtitle__diski td.doudle__diski__3 {
+  padding: 0px 0px 3px 0px;
+}
+.discbyauto__krepez {
+  margin-top: 15px;
+}
+.discbyauto__diamotverstiy {
+  margin-top: 13px;
+  display: block;
+}
+.dtso {
+  float: right;
+  width: 30%;
+  border-left: 1px solid grey;
+  padding-left: 2px;
+  margin: -13px 4px 0px 0px;
+}
+.tyresbyauto__vilet {
+  margin-left: 5px;
+  display: block;
+}
+.searchtitle__diski {
+  margin: 6px 0px 0px 7px;
+}
+.doudle__diski {
+  line-height: 0.9;
+}
+table.searchtitle__tyres__diski td.doudle__diski {
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 9px;
+  padding-bottom: 6px;
+}
+table.searchtitle__tyres__diski td.doudle__diski span {
+  font-size: 8px;
+}
+table.searchtitle__diski span {
+  font-size: 9px;
+}
+.topper__diski span {
+  font-size: 14px;
+  font-family: "Lucida Sans";
+  font-weight: bold;
+  color: rgb(21, 68, 103);
+  letter-spacing: 1.6px;
+}
+.topper__diski {
+  margin-left: 1px;
+  margin-top: -2px;
+}
+.tyresbyauto__diski {
+  margin-left: 4px;
+  display: block;
+}
+.searchbuttonbyauto__d {
+  margin: -7px 17px 9px 0px;
+  float: right;
+  clear: both;
+  background: none;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 12px;
+  color: rgb(21, 80, 103);
+}
+
+main {
+  overflow: hidden;
+  margin-top: 1px;
+}
+/*---------ЛЕВЫЙ БЛОК МЕНЮ-СПИСКОВ-------*/
+aside {
+  width: 183px;
+  float: left;
+}
+aside.products {
+  margin: 7px 0px 0px -2px;
+}
+h1.sidebarhead,
+h1.sidebarULtops,
+ul.sidebar a {
+  font-family: "Lucida Sans", sans-serif;
+  display: block;
+}
+h1.sidebarhead {
+  font-size: 13px;
+  color: rgb(17, 65, 101);
+  width: 148px;
+  padding: 5px 5px 6px 28px;
+  margin-bottom: 14px;
+  border: 1px solid rgb(139, 151, 156);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px -5px rgb(139, 151, 156);
+  background: url(../images/katalog.png) no-repeat;
+  background-position: 2% 50%;
+}
+h1.sidebarULtops {
+  font-size: 14px;
+  color: rgb(17, 65, 101);
+  width: 115px;
+  border: 1px solid rgb(139, 151, 156);
+  border-radius: 15px;
+  background: url(../images/list-bagle.png) no-repeat;
+  background-position: 2% 50%;
+  padding: 6px 5px 5px 28px;
+  margin-left: 2px;
+}
+ul.sidebar li {
+  padding: 5px 5px 7px 5px;
+}
+ul.sidebar a {
+  font-size: 13.5px;
+  text-decoration: none;
+  color: rgb(70, 89, 97);
+  background: url(../images/li-sprite.png) no-repeat;
+  background-position: 20% 103%;
+  padding-left: 43px;
+}
+ul.sidebar a:hover {
+  font-size: 14.5px;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(12, 50, 86);
+  background: url(../images/li-sprite.png) no-repeat;
+  background-position: 20% -7%;
+  margin-bottom: -1px;
+}
+
+/*----------ФОТО ШИН ДАННЫЕ--------------*/
+
+section.kartinki {
+  width: 513px;
+  background: linear-gradient(to top, rgb(147, 167, 176), rgb(228, 231, 233)) ;
+  border-radius: 5px;
+  padding: 4px 0px 15px 12px;
+  float: left;
+  margin-top: 4px;
+  margin-left: 11px;
+  overflow: hidden;
+}
+
+figure {
+  float: left;
+  padding: 10px 22px 14px 10px;
+}
+/*figure.secondcolomn {
+  margin-left: 9px;
+}
+figure.thirdcolomn {
+  margin-left: 11px;
+}*/
+figcaption {
+  text-align: center;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(32, 105, 136);
+}
+figcaption>p {
+  font-size: 13px;
+  color: rgb(35, 35, 35);
+  padding-left: 7px;
+}
+/*figure.thirdcolomn figcaption>p {
+  font-size: 14px;
+  padding: 0px 2px 0px 0px;
+}*/
+figcaption>span {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 7px;
+}
+span.uah {
+  font-size: 12px;
+}
+.shini {
+  height: 121px;
+  border: 1px solid rgb(176, 185, 188);
+  border-radius: 10px;
+  padding: 4px 29px;
+  background: white;
+}
+/*.secondcolomn .shini {
+  padding: 4px 33px;
+}
+.thirdcolomn .shini {
+  padding: 4px 26px;
+}*/
+
+/*---------ПРАВЫЙ БЛОК МЕНЮ-СПИСКОВ-------*/
+
+aside.products__brands {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+aside.products__brands h1.sidebarULtops {
+  margin-left: 14px;
+  width: 102px;
+}
+form.rightbar>label {
+  display: block;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(95, 111, 118);
+  margin: 9px 5px 12px 24px;
+}
+form.rightbar>input+label {
+  background: url(../images/bar_checkbox_sprite.png) 0 0 no-repeat;
+  padding-left: 23px;
+}
+form.rightbar>input[type="checkbox"]:checked+label {
+  background-position: 0 -15px;
+}
+input.vibrat {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  background: linear-gradient(to top, rgb(13, 52, 88), rgb(31, 103, 135));
+  padding: 5px 14px;
+  border-radius: 15px;
+  border: none;
+  margin: 8px 0px 0px 23px;
+  box-shadow: 5px 5px 5px 0px rgb(31, 103, 135);
+}
+
+.image-brands {
+  margin-left: -2px;
+}
+/*------------ФУТТЕР!!!-----------*/
+footer {
+  width: 908px;
+  height: 100px;
+  background: rgb(33, 58, 77);
+  margin: 2px auto 0px auto;
+}
+.footer_ulmainmenu {
+  text-align: center;
+  padding-top: 8px;
+}
+.footer_ulmainmenu>li {
+  display: inline-block;
+  padding: 0px 11px;
+}
+.footer_ulmainmenu a {
+  text-decoration: none;
+  color: rgb(190, 198, 201);
+  font-family: Arial;
+  font-size: 12px;
+}
+.footer_ulmainmenu a:hover {
+    color: rgb(82, 171, 203);
+}
+.footer_dostavka {
+  border-left: 2px solid rgb(106, 120, 130);
+  border-right: 2px solid rgb(106, 120, 130);
+}
+.footer_statii {
+    border-right: 2px solid rgb(106, 120, 130);
+}
+.copyright {
+  color: rgb(117, 69, 66);
+  text-align: center;
+  font-family: Arial;
+  font-size: 10px;
+  padding-top: 15px;
+}
