@@ -1,6 +1,14 @@
+// var script = {
+//   sayHello: function (name) {
+//     return 'Hello, ' + name;
+//   }
+// };
+// module.exports = script;
+
 $(document).ready(function () {
 'use strict';
 //----------create object with Q and A
+
 let test = {
   name: 'Test of development skills',
   question: [
@@ -28,6 +36,9 @@ let test = {
         ],
   submit: 'CHECK RESULTS'
 };
+
+module.exports = test;
+
 //-----------save object in local storage
 // let testInStore = JSON.stringify(test);
 localStorage.setItem("test", JSON.stringify(test));
@@ -60,4 +71,5 @@ let content = _.template( html)(test);
           $('.modal-overlay').remove();
           });
   });
+
 });

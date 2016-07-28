@@ -1,5 +1,12 @@
 'use strict';
 
+// var script = {
+//   sayHello: function (name) {
+//     return 'Hello, ' + name;
+//   }
+// };
+// module.exports = script;
+
 $(document).ready(function () {
   'use strict';
   //----------create object with Q and A
@@ -27,6 +34,9 @@ $(document).ready(function () {
     }],
     submit: 'CHECK RESULTS'
   };
+
+  module.exports = test;
+
   //-----------save object in local storage
   // let testInStore = JSON.stringify(test);
   localStorage.setItem("test", JSON.stringify(test));
