@@ -8,8 +8,8 @@
 'use strict';
 //----------create object with Q and A
 
-var onReady = function(){
 
+$(document).ready(function (onReady) {
   var test = {
     name: 'Test of development skills',
     question: [{
@@ -65,6 +65,4 @@ var onReady = function(){
       $('.modal-overlay').remove();
     });
   });
-};
-$(document).ready(function (onReady) {});
-exports = onReady;
+});

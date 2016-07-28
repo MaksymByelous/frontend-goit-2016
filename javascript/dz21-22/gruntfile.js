@@ -18,6 +18,21 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        concat: {
+          options: {
+            separator: ';'
+          },
+          dist: {
+            src: ['js/dist/*.js'],
+            dest: 'js/script.main.min.js'
+          }
+        },
+        uglify: {
+          dist:{
+          src: ['js/script.main.min.js'],
+          dest: 'js/script.main.min.js'
+          }
+        },
         watch: {
             babel: {
                 files:'js/src/*.js',
@@ -26,5 +41,7 @@ module.exports = function(grunt) {
         }
     });
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['babel']);
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.registerTask('default', ['babel', 'concat', 'uglify']);
 };

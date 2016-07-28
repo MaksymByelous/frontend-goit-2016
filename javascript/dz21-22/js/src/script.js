@@ -7,8 +7,9 @@
 
 'use strict';
 //----------create object with Q and A
-let onReady = function () {
 
+
+$(document).ready(function (onReady) {
 let test = {
   name: 'Test of development skills',
   question: [
@@ -69,8 +70,5 @@ let content = _.template( html)(test);
           $(checkedBoxes).prop('checked', false);
           $('.modal-overlay').remove();
           });
+        });
   });
-};
-$(document).ready(function (onReady) {
-});
-module.exports = onReady;
