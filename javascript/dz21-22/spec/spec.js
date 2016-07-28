@@ -1,4 +1,4 @@
-var app = require('../js/dist/script.js');
+var onReady = require('../js/dist/script.js');
 
 describe("app", function() {
   it("should say hello", function() {
