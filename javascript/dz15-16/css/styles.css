@@ -1,0 +1,24 @@
+body {
+  background-color: orange;
+  font-family: Arial sans-serif, sans-serif;
+}
+.wrapper {
+    margin: 5% auto;
+    width: 80%;
+    font-size: 18px;
+    font-family: Tahoma,sans-serif;
+    text-align: center;
+}
+input[type=text] {
+    width: 50%;
+}
+.search {
+    margin: 3% 5%;
+}
+.link {
+    color: green;
+}
+.logo {
+    margin: 0 auto;
+    text-align: center;
+}
