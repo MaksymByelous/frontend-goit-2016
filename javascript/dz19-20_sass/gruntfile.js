@@ -17,7 +17,9 @@ module.exports = function(grunt) {
         separator: ''
       },
       dist: {
-        src: ['styles/src/variables.scss', 'styles/src/reset.scss', 'styles/src/styles.scss'],
+        src: ['styles/src/variables.scss', 'styles/src/reset.scss',
+        'styles/src/styles.scss', 'styles/src/styles-carousel.scss',
+        'jquery.akordeon.scss'],
         dest: 'styles/main.scss'
        }
       },

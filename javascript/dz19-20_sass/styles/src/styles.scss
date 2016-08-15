@@ -32,6 +32,9 @@
 body {
   background: white;
   font-family: $font-regular;
+  a {
+    text-decoration: none;
+  }
 }
 div.container {
   width: $page-width;
@@ -44,30 +47,10 @@ div.slider,
 div.articles {
   margin-top: $margin-top;
 }
-
 .clearfix {
   overflow: hidden;
 }
 div.wrapper-top {
-  nav {
-    background-color: $background-dark;
-    li {
-      float: left;
-      padding: 20px 0px;
-      a {
-        text-decoration: none;
-        color: $font-color-white;
-        padding: 20px 40px;
-      }
-      a:hover {
-        color: $color-yellow;
-      }
-      a:active {
-        background-color: $color-azur;
-        color: $font-color-white;
-      }
-    }
-  }
   header {
     div.header__logo {
       float: left;
@@ -84,7 +67,7 @@ div.wrapper-top {
         background-position: 192px 46px;
       }
       a.facebook:hover {
-        background-position: 192px 80px;
+        background-position: 200px 80px;
       }
       a.twitter {
         background-position: 158px 46px;
@@ -112,7 +95,54 @@ div.wrapper-top {
       }
     }
   }
+  nav {
+    background-color: $background-dark;
+    li {
+      float: left;
+      padding: 20px 0px;
+      a {
+        color: $font-color-white;
+        padding: 20px 40px;
+        text-transform: uppercase;
+      }
+      a:hover {
+        color: $color-yellow;
+      }
+      a:active {
+        background-color: $color-azur;
+        color: $font-color-white;
+      }
+    }
+  }
+  div.slider-wrapper {
+    position: relative;
+    height: 470px;
+    width: $page-width;
+    margin-top: $margin-top;
+    div.slider__moto {
+      position: absolute;
+      z-index: 100;
+      left: 40px;
+      top: 270px;
+      p {
+        text-transform: uppercase;
+        font-size: 55px;
+        color: $font-color-white;
+        background: $font-color-dark;
+        opacity: 0.8;
+        padding: 0 5px;
+      }
+      p.first,
+      p.second {
+        width: 160px;
+      }
+      p.first {
+        color: $color-yellow;
+      }
+    }
+  }
 }
+
 div.articles {
   color: $font-color-light;
   h1 {
@@ -120,7 +150,6 @@ div.articles {
     font-size: 20px;
   }
   a {
-    text-decoration: none;
     color: $font-color-dark;
   }
   a::after {
@@ -136,7 +165,7 @@ div.articles {
   div.articles__article3 {
     float: left;
     width: $articles-width;
-    height: $articles-height;
+    // height: $articles-height;
     div.articles__article1__number,
     div.articles__article2__number,
     div.articles__article3__number {
@@ -156,6 +185,10 @@ div.articles {
         height: 80px;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-bottom: $margin-bottom;
+      }
+      p.height100 {
+        height: 100%;
       }
     }
   }
@@ -163,45 +196,221 @@ div.articles {
 
 div.wrapper-services {
   background-color: $background-dark;
-  margin-top: ($margin-top*2)
+  margin-top: ($margin-top*2);
+  div.services-schedule,
+  div.services-maintence,
+  div.services-tiresWheels,
+  div.services-repair {
+    float: left;
+    text-align: center;
+  }
+  div.services-maintence,
+  div.services-tiresWheels,
+  div.services-repair {
+    margin-left: $margin-left;
+  }
+  a {
+    // text-decoration: none;
+  }
+  a:hover {
+    figcaption {
+      color: $color-yellow;
+    }
+  }
+  p {
+    margin-top: $margin-top;
+    font-size: 26px;
+    color: $font-color-white;
+  }
+  figure {
+    margin-top: ($margin-top + 10px);
+    img {
+      width: 260px;
+    }
+    figcaption {
+      margin-top: ($margin-top/2);
+      margin-bottom: ($margin-bottom*3);
+      color: $font-color-white;
+    }
+  }
 }
 
 div.wrapper-news {
+  padding-bottom: ($margin-bottom*3);
   background-color: #f7f7f7;
+  div.wrapper-news__news,
+  div.wrapper-news__banners {
+    float: left;
+    width: 50%;
+    h1 {
+      font-size: 26px;
+      color: $font-color-dark;
+      margin-top: ($margin-top + 15px);
+    }
+  }
+  div.wrapper-news__news__item {
+    position: relative;
+    margin-top: $margin-top;
+    div.news-item-date {
+      position: absolute;
+      left: 0px;
+      top: 10px;
+      p.month {
+        background: $color-azur;
+        color: $font-color-white;
+        text-align: center;
+        padding: 5px;
+      }
+      p.day {
+        background: $color-yellow;
+        color: $font-color-dark;
+        text-align: center;
+        padding: 5px;
+      }
+    }
+    div.news-item-foto,
+    div.news-item-foto2 {
+      width: (150/580)*100%;
+      height: 150px;
+      float: left;
+      background: url(../img/services-man.png);
+      background-size: cover;
+    }
+    div.news-item-foto2 {
+      background: url(../img/services-truck.png);
+    }
+    div.news-item-content {
+      width: (370/580)*100%;
+      height: 150px;
+      float: left;
+      margin-left: ($margin-left - 10px);
+      h1 {
+        margin-top: 0px;
+        font-size: 20px;
+        a {
+          color: $font-color-dark;
+        }
+        a:hover {
+          color: $color-azur;
+        }
+      }
+      p.news-item-content__comments {
+        margin-top: ($margin-top/7);
+        color: $font-color-light;
+      }
+      p.news-item-content__text {
+        margin-top: ($margin-top - 10px);
+        color: $font-color-light;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        }
+      }
+    }
+    div.wrapper-news__banners {
+      div#accordion {
+        margin-top: $margin-top;
+        h3 {
+          margin-bottom: 10px;
+          padding: 10px 0px 0px 10px;
+          font-size: 24px;
+          color: $font-color-dark;
+          text-transform: uppercase;
+          height: 40px;
+          background: $font-color-white;
+          border: 1px solid lightgrey;
+        }
+        h3.ui-accordion-header-active {
+          background: $color-yellow;
+          outline-color: lightgrey;
+        }
+        p {
+          color: $font-color-light;
+          font-size: 16px;
+          margin-left: $margin-left;
+        }
+      }
+    }
 }
 
+div.wrapper-brands {
 
-div.brand-logo {
-  width: 150px;
-  height: 60px;
-  float: left;
-  margin: ($margin-top*2) 0 ($margin-top*2) $margin-left;
-  background: url(../img/brand-logos-sprite.png);
+  div.brand-logo {
+    width: 150px;
+    height: 60px;
+    float: left;
+    margin: ($margin-top*2) 0 ($margin-top*2) $margin-left;
+    background: url(../img/brand-logos-sprite.png);
+  }
+  div.rbp {
+    background-position: 6px 67px;
+  }
+  div.motoMetal {
+    background-position: -179px 67px;
+  }
+  div.twocrave {
+    background-position: -401px 67px;
+  }
+  div.atx {
+    background-position: 504px 67px;
+  }
+  div.cruiser {
+    background-position: 301px 67px;
+  }
+  div.gear {
+    background-position: 143px 67px;
+  }
 }
-div.rbp {
-  background-position: 6px 67px;
-}
-div.motoMetal {
-  background-position: -179px 67px;
-}
-div.twocrave {
-  background-position: -401px 67px;
-}
-div.atx {
-  background-position: 504px 67px;
-}
-div.cruiser {
-  background-position: 301px 67px;
-}
-div.gear {
-  background-position: 143px 67px;
-}
-
 
 div.wrapper-sitemap {
   background-color: $background-dark;
+  padding: 50px 0px;
+  div.sitemap__block {
+    float: left;
+    width: (260px/$page-width)*100%;
+    margin-left: $margin-left;
+    li {
+      border-bottom: 1px solid $font-color-light;
+      padding: 5px 0px;
+      a {
+        color: $font-color-light;
+      }
+      a:hover {
+        color: $color-azur;
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      color: $font-color-white;
+      margin-bottom: ($margin-bottom*2);
+    }
+  }
+  div.firstBlock {
+    margin-left: 0px;
+  }
 }
 
 footer {
   background-color: #2a2d32;
+  padding: 20px 0px;
+  color: $font-color-light;
+  span {
+    margin-right: $margin-right;
+  }
+  span.site-name {
+    float: right;
+  }
+  span.address::before {
+    content: url(../img/footer-address-icon.png);
+  }
+  span.phoneNumber::before {
+    content: url(../img/footer-phone-icon.png);
+  }
+  span.email::before {
+    content: url(../img/footer-email-icon.png);
+  }
+  span::before {
+    margin-right: 15px;
+  }
 }
