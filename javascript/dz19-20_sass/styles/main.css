@@ -93,7 +93,7 @@ div.wrapper-top header div.header__links {
     height: 30px;
     background: url(../img/header-links-sprite.png); }
   div.wrapper-top header div.header__links a.facebook {
-    background-position: 192px 46px; }
+    background-position: 200px 46px; }
   div.wrapper-top header div.header__links a.facebook:hover {
     background-position: 200px 80px; }
   div.wrapper-top header div.header__links a.twitter {
@@ -115,8 +115,21 @@ div.wrapper-top header div.header__links {
 div.wrapper-top nav {
   background-color: #2a2d32; }
   div.wrapper-top nav li {
-    float: left;
-    padding: 20px 0px; }
+    display: inline-block;
+    padding: 20px 0px;
+    position: relative; }
+    div.wrapper-top nav li ul {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 150px; }
+    div.wrapper-top nav li ul.sub-menu {
+      display: none;
+      background-color: #2a2d32;
+      z-index: 1000; }
+      div.wrapper-top nav li ul.sub-menu li {
+        display: block;
+        z-index: 1000; }
     div.wrapper-top nav li a {
       color: white;
       padding: 20px 40px;
@@ -126,6 +139,9 @@ div.wrapper-top nav {
     div.wrapper-top nav li a:active {
       background-color: #248cec;
       color: white; }
+  div.wrapper-top nav li.dropdown > a::after {
+    content: url(../img/arrow-down.png);
+    margin-left: 5px; }
 div.wrapper-top div.slider-wrapper {
   position: relative;
   height: 470px;
@@ -296,12 +312,18 @@ div.wrapper-news {
     div.wrapper-news div.wrapper-news__banners div#accordion h3 {
       margin-bottom: 10px;
       padding: 10px 0px 0px 10px;
-      font-size: 24px;
+      font-size: 20px;
       color: #191b1e;
       text-transform: uppercase;
       height: 40px;
       background: white;
       border: 1px solid lightgrey; }
+      div.wrapper-news div.wrapper-news__banners div#accordion h3 span {
+        margin: 0 10px 10px 0; }
+      div.wrapper-news div.wrapper-news__banners div#accordion h3 span.ui-icon {
+        background: url(../img/accordion-icons.png); }
+      div.wrapper-news div.wrapper-news__banners div#accordion h3 span.ui-icon-triangle-1-e {
+        background-position: -31px 22px; }
     div.wrapper-news div.wrapper-news__banners div#accordion h3.ui-accordion-header-active {
       background: #f4b60d;
       outline-color: lightgrey; }
@@ -368,8 +390,7 @@ footer {
     margin-right: 15px; }
 
 .jcarousel-wrapper {
-  position: relative;
-  border: 10px solid #fff; }
+  position: relative; }
 
 .jcarousel-wrapper .photo-credits {
   position: absolute;

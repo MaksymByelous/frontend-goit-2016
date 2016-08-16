@@ -132,7 +132,7 @@ div.wrapper-top {
         background: url(../img/header-links-sprite.png);
       }
       a.facebook {
-        background-position: 192px 46px;
+        background-position: 200px 46px;
       }
       a.facebook:hover {
         background-position: 200px 80px;
@@ -166,8 +166,24 @@ div.wrapper-top {
   nav {
     background-color: $background-dark;
     li {
-      float: left;
+      display: inline-block;
       padding: 20px 0px;
+      position: relative;
+      ul {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 150px;
+      }
+      ul.sub-menu {
+        display: none;
+        background-color: $background-dark;
+        z-index: 1000;
+        li {
+          display: block;
+          z-index: 1000;
+        }
+      }
       a {
         color: $font-color-white;
         padding: 20px 40px;
@@ -180,6 +196,10 @@ div.wrapper-top {
         background-color: $color-azur;
         color: $font-color-white;
       }
+    }
+    li.dropdown>a::after {
+      content: url(../img/arrow-down.png);
+      margin-left: 5px;
     }
   }
   div.slider-wrapper {
@@ -382,12 +402,21 @@ div.wrapper-news {
         h3 {
           margin-bottom: 10px;
           padding: 10px 0px 0px 10px;
-          font-size: 24px;
+          font-size: 20px;
           color: $font-color-dark;
           text-transform: uppercase;
           height: 40px;
           background: $font-color-white;
           border: 1px solid lightgrey;
+          span {
+            margin: 0 10px 10px 0;
+          }
+          span.ui-icon {
+            background: url(../img/accordion-icons.png);
+          }
+          span.ui-icon-triangle-1-e {
+            background-position: -31px 22px;
+          }
         }
         h3.ui-accordion-header-active {
           background: $color-yellow;
@@ -485,7 +514,7 @@ footer {
 .jcarousel-wrapper {
     // margin: 20px auto;
     position: relative;
-    border: 10px solid #fff;
+    // border: 10px solid #fff;
     // width: 800px;
     // height: 400px;
     // -webkit-border-radius: 5px;
