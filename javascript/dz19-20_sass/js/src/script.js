@@ -1,6 +1,4 @@
-
 $( function() {
-
 //-----acrivate akordeon plugin
   $( "#accordion" ).accordion();
 //----open full text of article
@@ -8,7 +6,6 @@ $( function() {
     e.preventDefault();
     $(this).prev('p').toggleClass('height100');
   });
-
 //-------slide down main menu
 $( '.dropdown' ).hover(
         function(){
@@ -20,11 +17,3 @@ $( '.dropdown' ).hover(
     );
 
 });
-
-
-
-
-
-/* сделать увеличение артикл по высоте при клике на ридмор,
-  и также сворачивание
-*/
