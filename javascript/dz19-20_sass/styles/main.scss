@@ -202,6 +202,22 @@ div.wrapper-top {
       content: url(../img/arrow-down.png);
       margin-left: 5px;
     }
+    div.header__search {
+      position: relative;
+      float: right;
+      margin: -$margin-top $margin-right 0px 0px;
+        input.searchText {
+          background-color: $font-color-light;
+          border-width: 0px;
+          padding: 5px;
+          width: 220px;
+        }
+        input.searchImage {
+          position: absolute;
+          left: 240px;
+          top: 6px;
+        }
+    }
   }
   div.slider-wrapper {
     position: relative;

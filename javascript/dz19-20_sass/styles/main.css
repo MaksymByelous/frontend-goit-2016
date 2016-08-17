@@ -143,6 +143,19 @@ div.wrapper-top nav {
   div.wrapper-top nav li.dropdown > a::after {
     content: url(../img/arrow-down.png);
     margin-left: 5px; }
+  div.wrapper-top nav div.header__search {
+    position: relative;
+    float: right;
+    margin: -35px 40px 0px 0px; }
+    div.wrapper-top nav div.header__search input.searchText {
+      background-color: #8a8a8a;
+      border-width: 0px;
+      padding: 5px;
+      width: 220px; }
+    div.wrapper-top nav div.header__search input.searchImage {
+      position: absolute;
+      left: 240px;
+      top: 6px; }
 div.wrapper-top div.slider-wrapper {
   position: relative;
   height: 470px;
