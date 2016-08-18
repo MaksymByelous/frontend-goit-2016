@@ -38,7 +38,14 @@
 }
 .jcarousel li {
     float: left;
+    img {
+      width: $page-width;
+      @media screen and (min-width: 769px) and (max-width: 1150px) {
+        width: $page-width-medium;
+      }
+    }
 }
+
 /** Carousel Controls **/
 .jcarousel-control-prev,
 .jcarousel-control-next {
@@ -58,6 +65,9 @@
     -webkit-box-shadow: 0 0 2px #999;
        -moz-box-shadow: 0 0 2px #999;
             box-shadow: 0 0 2px #999;
+    @media screen and (min-width: 769px) and (max-width: 1150px) {
+      top: 115px;
+    }
 }
 .jcarousel-control-prev {
     left: 0px;

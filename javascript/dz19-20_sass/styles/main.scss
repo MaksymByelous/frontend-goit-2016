@@ -12,6 +12,8 @@ $primary-color: white;
 $background-dark: #2a2d32;
 //-----------sizes margins paddings
 $page-width: 1160px;
+$page-width-medium: 760px;
+$page-width-small: 470px;
 $margin-top: 35px;
 $margin-left: 40px;
 $margin-right: 40px;
@@ -106,6 +108,9 @@ body {
 }
 div.container {
   width: $page-width;
+  @media screen and (min-width: 767px) and (max-width: 1150px) {
+    width: $page-width-medium;
+  }
   margin: 0 auto;
   overflow: hidden;
 }
@@ -189,6 +194,9 @@ div.wrapper-top {
         color: $font-color-white;
         padding: 20px 40px;
         text-transform: uppercase;
+        @media screen and (min-width: 767px) and (max-width: 1150px) {
+          padding: 20px 20px;
+        }
       }
       a:hover {
         color: $color-yellow;
@@ -221,14 +229,15 @@ div.wrapper-top {
   }
   div.slider-wrapper {
     position: relative;
-    height: 470px;
-    width: $page-width;
     margin-top: $margin-top;
     div.slider__moto {
       position: absolute;
       z-index: 100;
       left: 40px;
       top: 270px;
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        top: 160px;
+      }
       p {
         text-transform: uppercase;
         font-family: $font-medium;
@@ -237,6 +246,9 @@ div.wrapper-top {
         background: $font-color-dark;
         opacity: 0.8;
         padding: 0 5px;
+        @media screen and (min-width: 767px) and (max-width: 1150px) {
+          font-size: 40px;
+        }
       }
       p.first,
       p.second {
@@ -279,6 +291,9 @@ div.articles {
       font-family: $font-medium;
       font-size: 90px;
       width: 30%;
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        font-size: 60px;
+      }
     }
     div.articles__article__text {
       float: left;
@@ -299,6 +314,11 @@ div.articles {
       p.height100 {
         height: 100%;
       }
+      p.fast-truck {
+        img {
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -312,11 +332,19 @@ div.wrapper-services {
   div.services-repair {
     float: left;
     text-align: center;
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      padding: 0px 15px;
+      width: 45%;
+      margin-top: $margin-top/3;
+    }
   }
   div.services-maintence,
   div.services-tiresWheels,
   div.services-repair {
     margin-left: $margin-left;
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      margin-left: 0px;
+    }
   }
   a:hover {
     figcaption {
@@ -330,6 +358,9 @@ div.wrapper-services {
   }
   figure {
     margin-top: ($margin-top + 10px);
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      margin-top: 0px;
+    }
     img {
       width: 260px;
     }
@@ -338,6 +369,9 @@ div.wrapper-services {
       margin-bottom: ($margin-bottom*3);
       color: $font-color-white;
       font: 16px $font-medium;
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        margin-bottom: $margin-bottom;
+      }
     }
   }
 }
@@ -381,12 +415,16 @@ div.wrapper-news {
     div.news-item-foto2 {
       width: (150/580)*100%;
       height: 150px;
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        height: 100px;
+      }
       float: left;
       background: url(../img/services-man.png);
       background-size: cover;
     }
     div.news-item-foto2 {
       background: url(../img/services-truck.png);
+      background-size: cover;
     }
     div.news-item-content {
       width: (370/580)*100%;
@@ -461,6 +499,10 @@ div.wrapper-brands {
     float: left;
     margin: ($margin-top*2) 0 ($margin-top*2) $margin-left;
     background: url(../img/brand-logos-sprite.png);
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      width: 23%;
+      margin: $margin-top 0 $margin-top $margin-left*1.5;
+    }
   }
   div.rbp {
     background-position: 6px 67px;
@@ -476,19 +518,32 @@ div.wrapper-brands {
   }
   div.cruiser {
     background-position: 301px 67px;
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+        background-position: 318px 67px;
+    }
   }
   div.gear {
     background-position: 143px 67px;
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+        background-position: 165px 67px;
+    }
   }
 }
 
 div.wrapper-sitemap {
   background-color: $background-dark;
   padding: 50px 0px;
+  @media screen and (min-width: 767px) and (max-width: 1150px) {
+    padding: 0px;
+  }
   div.sitemap__block {
     float: left;
     width: (260px/$page-width)*100%;
     margin-left: $margin-left;
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      width: (150px/$page-width-medium)*100%;
+      margin-top: $margin-top;
+    }
     li {
       border-bottom: 1px solid $font-color-light;
       padding: 5px 0px;
@@ -505,10 +560,16 @@ div.wrapper-sitemap {
       font: 16px $font-medium;
       color: $font-color-white;
       margin-bottom: ($margin-bottom*2);
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        margin-bottom: $margin-bottom;
+      }
     }
   }
   div.firstBlock {
     margin-left: 0px;
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      margin-left: $margin-left*0.6;
+    }
   }
 }
 
@@ -576,7 +637,14 @@ footer {
 }
 .jcarousel li {
     float: left;
+    img {
+      width: $page-width;
+      @media screen and (min-width: 769px) and (max-width: 1150px) {
+        width: $page-width-medium;
+      }
+    }
 }
+
 /** Carousel Controls **/
 .jcarousel-control-prev,
 .jcarousel-control-next {
@@ -596,6 +664,9 @@ footer {
     -webkit-box-shadow: 0 0 2px #999;
        -moz-box-shadow: 0 0 2px #999;
             box-shadow: 0 0 2px #999;
+    @media screen and (min-width: 769px) and (max-width: 1150px) {
+      top: 115px;
+    }
 }
 .jcarousel-control-prev {
     left: 0px;

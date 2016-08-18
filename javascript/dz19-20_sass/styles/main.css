@@ -73,6 +73,9 @@ div.container {
   width: 1160px;
   margin: 0 auto;
   overflow: hidden; }
+  @media screen and (min-width: 767px) and (max-width: 1150px) {
+    div.container {
+      width: 760px; } }
 
 header,
 nav,
@@ -135,6 +138,9 @@ div.wrapper-top nav {
       color: white;
       padding: 20px 40px;
       text-transform: uppercase; }
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        div.wrapper-top nav li a {
+          padding: 20px 20px; } }
     div.wrapper-top nav li a:hover {
       color: #f4b60d; }
     div.wrapper-top nav li a:active {
@@ -158,14 +164,15 @@ div.wrapper-top nav {
       top: 6px; }
 div.wrapper-top div.slider-wrapper {
   position: relative;
-  height: 470px;
-  width: 1160px;
   margin-top: 35px; }
   div.wrapper-top div.slider-wrapper div.slider__moto {
     position: absolute;
     z-index: 100;
     left: 40px;
     top: 270px; }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      div.wrapper-top div.slider-wrapper div.slider__moto {
+        top: 160px; } }
     div.wrapper-top div.slider-wrapper div.slider__moto p {
       text-transform: uppercase;
       font-family: ubuntuMedium, sans-serif;
@@ -174,6 +181,9 @@ div.wrapper-top div.slider-wrapper {
       background: #191b1e;
       opacity: 0.8;
       padding: 0 5px; }
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        div.wrapper-top div.slider-wrapper div.slider__moto p {
+          font-size: 40px; } }
     div.wrapper-top div.slider-wrapper div.slider__moto p.first,
     div.wrapper-top div.slider-wrapper div.slider__moto p.second {
       width: 160px; }
@@ -211,6 +221,17 @@ div.articles__article3 {
     font-family: ubuntuMedium, sans-serif;
     font-size: 90px;
     width: 30%; }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      div.articles__article1 div.articles__article1__number,
+      div.articles__article1 div.articles__article2__number,
+      div.articles__article1 div.articles__article3__number,
+      div.articles__article2 div.articles__article1__number,
+      div.articles__article2 div.articles__article2__number,
+      div.articles__article2 div.articles__article3__number,
+      div.articles__article3 div.articles__article1__number,
+      div.articles__article3 div.articles__article2__number,
+      div.articles__article3 div.articles__article3__number {
+        font-size: 60px; } }
   div.articles__article1 div.articles__article__text,
   div.articles__article2 div.articles__article__text,
   div.articles__article3 div.articles__article__text {
@@ -237,6 +258,10 @@ div.articles__article3 {
     div.articles__article2 div.articles__article__text p.height100,
     div.articles__article3 div.articles__article__text p.height100 {
       height: 100%; }
+    div.articles__article1 div.articles__article__text p.fast-truck img,
+    div.articles__article2 div.articles__article__text p.fast-truck img,
+    div.articles__article3 div.articles__article__text p.fast-truck img {
+      opacity: 1; }
 
 div.wrapper-services {
   background-color: #2a2d32;
@@ -247,10 +272,23 @@ div.wrapper-services {
   div.wrapper-services div.services-repair {
     float: left;
     text-align: center; }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      div.wrapper-services div.services-schedule,
+      div.wrapper-services div.services-maintence,
+      div.wrapper-services div.services-tiresWheels,
+      div.wrapper-services div.services-repair {
+        padding: 0px 15px;
+        width: 45%;
+        margin-top: 11.66667px; } }
   div.wrapper-services div.services-maintence,
   div.wrapper-services div.services-tiresWheels,
   div.wrapper-services div.services-repair {
     margin-left: 40px; }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      div.wrapper-services div.services-maintence,
+      div.wrapper-services div.services-tiresWheels,
+      div.wrapper-services div.services-repair {
+        margin-left: 0px; } }
   div.wrapper-services a:hover figcaption {
     color: #f4b60d; }
   div.wrapper-services p {
@@ -259,6 +297,9 @@ div.wrapper-services {
     color: white; }
   div.wrapper-services figure {
     margin-top: 45px; }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      div.wrapper-services figure {
+        margin-top: 0px; } }
     div.wrapper-services figure img {
       width: 260px; }
     div.wrapper-services figure figcaption {
@@ -266,6 +307,9 @@ div.wrapper-services {
       margin-bottom: 60px;
       color: white;
       font: 16px ubuntuMedium, sans-serif; }
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        div.wrapper-services figure figcaption {
+          margin-bottom: 20px; } }
 
 div.wrapper-news {
   padding-bottom: 60px;
@@ -305,8 +349,13 @@ div.wrapper-news {
       float: left;
       background: url(../img/services-man.png);
       background-size: cover; }
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        div.wrapper-news div.wrapper-news__news__item div.news-item-foto,
+        div.wrapper-news div.wrapper-news__news__item div.news-item-foto2 {
+          height: 100px; } }
     div.wrapper-news div.wrapper-news__news__item div.news-item-foto2 {
-      background: url(../img/services-truck.png); }
+      background: url(../img/services-truck.png);
+      background-size: cover; }
     div.wrapper-news div.wrapper-news__news__item div.news-item-content {
       width: 63.7931%;
       height: 150px;
@@ -361,6 +410,10 @@ div.wrapper-brands div.brand-logo {
   float: left;
   margin: 70px 0 70px 40px;
   background: url(../img/brand-logos-sprite.png); }
+  @media screen and (min-width: 767px) and (max-width: 1150px) {
+    div.wrapper-brands div.brand-logo {
+      width: 23%;
+      margin: 35px 0 35px 60px; } }
 div.wrapper-brands div.rbp {
   background-position: 6px 67px; }
 div.wrapper-brands div.motoMetal {
@@ -371,16 +424,29 @@ div.wrapper-brands div.atx {
   background-position: 504px 67px; }
 div.wrapper-brands div.cruiser {
   background-position: 301px 67px; }
+  @media screen and (min-width: 767px) and (max-width: 1150px) {
+    div.wrapper-brands div.cruiser {
+      background-position: 318px 67px; } }
 div.wrapper-brands div.gear {
   background-position: 143px 67px; }
+  @media screen and (min-width: 767px) and (max-width: 1150px) {
+    div.wrapper-brands div.gear {
+      background-position: 165px 67px; } }
 
 div.wrapper-sitemap {
   background-color: #2a2d32;
   padding: 50px 0px; }
+  @media screen and (min-width: 767px) and (max-width: 1150px) {
+    div.wrapper-sitemap {
+      padding: 0px; } }
   div.wrapper-sitemap div.sitemap__block {
     float: left;
     width: 22.41379%;
     margin-left: 40px; }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      div.wrapper-sitemap div.sitemap__block {
+        width: 19.73684%;
+        margin-top: 35px; } }
     div.wrapper-sitemap div.sitemap__block li {
       border-bottom: 1px solid #8a8a8a;
       padding: 5px 0px; }
@@ -394,8 +460,14 @@ div.wrapper-sitemap {
       font: 16px ubuntuMedium, sans-serif;
       color: white;
       margin-bottom: 40px; }
+      @media screen and (min-width: 767px) and (max-width: 1150px) {
+        div.wrapper-sitemap div.sitemap__block h1 {
+          margin-bottom: 20px; } }
   div.wrapper-sitemap div.firstBlock {
     margin-left: 0px; }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      div.wrapper-sitemap div.firstBlock {
+        margin-left: 24px; } }
 
 footer {
   background-color: #2a2d32;
@@ -444,6 +516,11 @@ footer {
 
 .jcarousel li {
   float: left; }
+  .jcarousel li img {
+    width: 1160px; }
+    @media screen and (min-width: 769px) and (max-width: 1150px) {
+      .jcarousel li img {
+        width: 760px; } }
 
 /** Carousel Controls **/
 .jcarousel-control-prev,
@@ -461,6 +538,10 @@ footer {
   -webkit-box-shadow: 0 0 2px #999;
   -moz-box-shadow: 0 0 2px #999;
   box-shadow: 0 0 2px #999; }
+  @media screen and (min-width: 769px) and (max-width: 1150px) {
+    .jcarousel-control-prev,
+    .jcarousel-control-next {
+      top: 115px; } }
 
 .jcarousel-control-prev {
   left: 0px; }
