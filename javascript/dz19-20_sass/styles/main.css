@@ -76,6 +76,9 @@ div.container {
   @media screen and (min-width: 767px) and (max-width: 1150px) {
     div.container {
       width: 760px; } }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.container {
+      width: 560px; } }
 
 header,
 nav,
@@ -117,6 +120,10 @@ div.wrapper-top header div.header__links {
     background-position: 40px 80px; }
 div.wrapper-top nav {
   background-color: #2a2d32; }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.wrapper-top nav {
+      text-align: center;
+      padding-bottom: 15px; } }
   div.wrapper-top nav li {
     display: inline-block;
     padding: 20px 0px;
@@ -141,6 +148,9 @@ div.wrapper-top nav {
       @media screen and (min-width: 767px) and (max-width: 1150px) {
         div.wrapper-top nav li a {
           padding: 20px 20px; } }
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        div.wrapper-top nav li a {
+          padding: 20px 30px; } }
     div.wrapper-top nav li a:hover {
       color: #f4b60d; }
     div.wrapper-top nav li a:active {
@@ -153,6 +163,10 @@ div.wrapper-top nav {
     position: relative;
     float: right;
     margin: -35px 40px 0px 0px; }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      div.wrapper-top nav div.header__search {
+        float: none;
+        margin: 0px; } }
     div.wrapper-top nav div.header__search input.searchText {
       background-color: #8a8a8a;
       border-width: 0px;
@@ -162,9 +176,15 @@ div.wrapper-top nav {
       position: absolute;
       left: 240px;
       top: 6px; }
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        div.wrapper-top nav div.header__search input.searchImage {
+          left: 410px; } }
 div.wrapper-top div.slider-wrapper {
   position: relative;
   margin-top: 35px; }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.wrapper-top div.slider-wrapper {
+      display: none; } }
   div.wrapper-top div.slider-wrapper div.slider__moto {
     position: absolute;
     z-index: 100;
@@ -232,6 +252,17 @@ div.articles__article3 {
       div.articles__article3 div.articles__article2__number,
       div.articles__article3 div.articles__article3__number {
         font-size: 60px; } }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      div.articles__article1 div.articles__article1__number,
+      div.articles__article1 div.articles__article2__number,
+      div.articles__article1 div.articles__article3__number,
+      div.articles__article2 div.articles__article1__number,
+      div.articles__article2 div.articles__article2__number,
+      div.articles__article2 div.articles__article3__number,
+      div.articles__article3 div.articles__article1__number,
+      div.articles__article3 div.articles__article2__number,
+      div.articles__article3 div.articles__article3__number {
+        font-size: 40px; } }
   div.articles__article1 div.articles__article__text,
   div.articles__article2 div.articles__article__text,
   div.articles__article3 div.articles__article__text {
@@ -245,6 +276,14 @@ div.articles__article3 {
     div.articles__article3 div.articles__article__text h1 {
       margin-top: 11.66667px;
       font: 20px ubuntuMedium, sans-serif; }
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        div.articles__article1 div.articles__article__text p,
+        div.articles__article1 div.articles__article__text h1,
+        div.articles__article2 div.articles__article__text p,
+        div.articles__article2 div.articles__article__text h1,
+        div.articles__article3 div.articles__article__text p,
+        div.articles__article3 div.articles__article__text h1 {
+          margin-top: 3.5px; } }
     div.articles__article1 div.articles__article__text p.text-paragragh,
     div.articles__article2 div.articles__article__text p.text-paragragh,
     div.articles__article3 div.articles__article__text p.text-paragragh {
@@ -266,6 +305,9 @@ div.articles__article3 {
 div.wrapper-services {
   background-color: #2a2d32;
   margin-top: 70px; }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.wrapper-services {
+      margin-top: 35px; } }
   div.wrapper-services div.services-schedule,
   div.wrapper-services div.services-maintence,
   div.wrapper-services div.services-tiresWheels,
@@ -289,12 +331,21 @@ div.wrapper-services {
       div.wrapper-services div.services-tiresWheels,
       div.wrapper-services div.services-repair {
         margin-left: 0px; } }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.wrapper-services div.services-schedule,
+    div.wrapper-services div.services-maintence,
+    div.wrapper-services div.services-tiresWheels,
+    div.wrapper-services div.services-repair {
+      margin: 0px 10px; } }
   div.wrapper-services a:hover figcaption {
     color: #f4b60d; }
   div.wrapper-services p {
     margin-top: 35px;
     font: 24px ubuntuMedium, sans-serif;
     color: white; }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      div.wrapper-services p {
+        margin-top: 17.5px; } }
   div.wrapper-services figure {
     margin-top: 45px; }
     @media screen and (min-width: 767px) and (max-width: 1150px) {
@@ -310,14 +361,24 @@ div.wrapper-services {
       @media screen and (min-width: 767px) and (max-width: 1150px) {
         div.wrapper-services figure figcaption {
           margin-bottom: 20px; } }
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        div.wrapper-services figure figcaption {
+          margin-bottom: 6.66667px; } }
 
 div.wrapper-news {
   padding-bottom: 60px;
   background-color: #f7f7f7; }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.wrapper-news {
+      padding-bottom: 20px; } }
   div.wrapper-news div.wrapper-news__news,
   div.wrapper-news div.wrapper-news__banners {
     float: left;
     width: 50%; }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      div.wrapper-news div.wrapper-news__news,
+      div.wrapper-news div.wrapper-news__banners {
+        width: 98%; } }
     div.wrapper-news div.wrapper-news__news h1,
     div.wrapper-news div.wrapper-news__banners h1 {
       font: 24px ubuntuMedium, sans-serif;
@@ -381,6 +442,9 @@ div.wrapper-news {
         font-size: 13px; }
   div.wrapper-news div.wrapper-news__banners div#accordion {
     margin-top: 35px; }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      div.wrapper-news div.wrapper-news__banners div#accordion div {
+        height: auto; } }
     div.wrapper-news div.wrapper-news__banners div#accordion h3 {
       margin-bottom: 10px;
       padding: 10px 0px 0px 10px;
@@ -414,29 +478,42 @@ div.wrapper-brands div.brand-logo {
     div.wrapper-brands div.brand-logo {
       width: 23%;
       margin: 35px 0 35px 60px; } }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.wrapper-brands div.brand-logo {
+      width: 35%;
+      margin: 11.66667px 0 11.66667px 60px; } }
 div.wrapper-brands div.rbp {
-  background-position: 6px 67px; }
+  background-position: -100px 67px; }
 div.wrapper-brands div.motoMetal {
-  background-position: -179px 67px; }
+  background-position: -287px 67px; }
 div.wrapper-brands div.twocrave {
-  background-position: -401px 67px; }
+  background-position: -512px 67px; }
 div.wrapper-brands div.atx {
-  background-position: 504px 67px; }
+  background-position: 614px 67px; }
 div.wrapper-brands div.cruiser {
-  background-position: 301px 67px; }
+  background-position: 413px 67px; }
   @media screen and (min-width: 767px) and (max-width: 1150px) {
     div.wrapper-brands div.cruiser {
-      background-position: 318px 67px; } }
+      background-position: 423px 67px; } }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.wrapper-brands div.cruiser {
+      background-position: 429px 67px; } }
 div.wrapper-brands div.gear {
-  background-position: 143px 67px; }
+  background-position: 190px 67px; }
   @media screen and (min-width: 767px) and (max-width: 1150px) {
     div.wrapper-brands div.gear {
-      background-position: 165px 67px; } }
+      background-position: 196px 67px; } }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    div.wrapper-brands div.gear {
+      background-position: 190px 67px; } }
 
 div.wrapper-sitemap {
   background-color: #2a2d32;
   padding: 50px 0px; }
   @media screen and (min-width: 767px) and (max-width: 1150px) {
+    div.wrapper-sitemap {
+      padding: 0px; } }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
     div.wrapper-sitemap {
       padding: 0px; } }
   div.wrapper-sitemap div.sitemap__block {
@@ -447,6 +524,10 @@ div.wrapper-sitemap {
       div.wrapper-sitemap div.sitemap__block {
         width: 19.73684%;
         margin-top: 35px; } }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      div.wrapper-sitemap div.sitemap__block {
+        width: 37.5%;
+        margin-top: 17.5px; } }
     div.wrapper-sitemap div.sitemap__block li {
       border-bottom: 1px solid #8a8a8a;
       padding: 5px 0px; }
@@ -463,21 +544,34 @@ div.wrapper-sitemap {
       @media screen and (min-width: 767px) and (max-width: 1150px) {
         div.wrapper-sitemap div.sitemap__block h1 {
           margin-bottom: 20px; } }
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        div.wrapper-sitemap div.sitemap__block h1 {
+          margin-bottom: 10px; } }
   div.wrapper-sitemap div.firstBlock {
     margin-left: 0px; }
     @media screen and (min-width: 767px) and (max-width: 1150px) {
       div.wrapper-sitemap div.firstBlock {
         margin-left: 24px; } }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      div.wrapper-sitemap div.firstBlock {
+        margin-left: 40px; } }
 
 footer {
   background-color: #2a2d32;
   padding: 20px 0px;
   font-size: 12px;
   color: #8a8a8a; }
-  footer span {
-    margin-right: 40px; }
-  footer span.site-name {
-    float: right; }
+  footer li {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 5px 0px; }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      footer li {
+        width: 37%;
+        margin: 0 0 0 40px; } }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      footer li {
+        margin: 0 20px 0 20px; } }
   footer span.address::before {
     content: url(../img/footer-address-icon.png); }
   footer span.phoneNumber::before {
@@ -485,7 +579,15 @@ footer {
   footer span.email::before {
     content: url(../img/footer-email-icon.png); }
   footer span::before {
-    margin-right: 15px; }
+    margin-right: 10px; }
+  footer span.site-name {
+    margin-left: 440px; }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      footer span.site-name {
+        margin-left: 0px; } }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      footer span.site-name {
+        margin-left: 0px; } }
 
 .jcarousel-wrapper {
   position: relative; }

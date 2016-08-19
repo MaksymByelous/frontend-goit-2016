@@ -1,5 +1,6 @@
+'use strict';
 $( function() {
-  // alert('Hello! This page done with SASS on HTML5/CSS3. It contains JQuery Plugin (slider), JQuery-UI widget (accordion), drop-down menu with JS, hover and click animation (there are too many trucks...try to click on it!)'
+  // alert('Hello! This page done with SASS on HTML5/CSS3. It is adaptive for desctop, tablet and mobile. It contains JQuery Plugin (slider), JQuery-UI widget (accordion), drop-down menu with JS, hover and click animation with easing (there are too many yellow trucks...try to click on it!). Project build with Grunt'
   // );
 
 //-----acrivate akordeon plugin
@@ -26,7 +27,8 @@ $( function() {
     $('img:last', this).animate({
       'margin-left': '+=50',
       opacity: 0,
-      },  500,
+    },  800,
+      "easeInBounce",
       function () {
         $(this).remove();
       }

@@ -41,6 +41,9 @@ div.container {
   @media screen and (min-width: 767px) and (max-width: 1150px) {
     width: $page-width-medium;
   }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    width: $page-width-small;
+  }
   margin: 0 auto;
   overflow: hidden;
 }
@@ -100,6 +103,10 @@ div.wrapper-top {
   }
   nav {
     background-color: $background-dark;
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      text-align: center;
+      padding-bottom: 15px;
+    }
     li {
       display: inline-block;
       padding: 20px 0px;
@@ -127,6 +134,9 @@ div.wrapper-top {
         @media screen and (min-width: 767px) and (max-width: 1150px) {
           padding: 20px 20px;
         }
+        @media screen and (min-width: 300px) and (max-width: 766px) {
+          padding: 20px 30px;
+        }
       }
       a:hover {
         color: $color-yellow;
@@ -144,6 +154,10 @@ div.wrapper-top {
       position: relative;
       float: right;
       margin: -$margin-top $margin-right 0px 0px;
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        float: none;
+        margin: 0px;
+      }
         input.searchText {
           background-color: $font-color-light;
           border-width: 0px;
@@ -154,12 +168,18 @@ div.wrapper-top {
           position: absolute;
           left: 240px;
           top: 6px;
+          @media screen and (min-width: 300px) and (max-width: 766px) {
+            left: 410px;
+          }
         }
     }
   }
   div.slider-wrapper {
     position: relative;
     margin-top: $margin-top;
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      display: none;
+    }
     div.slider__moto {
       position: absolute;
       z-index: 100;
@@ -224,6 +244,9 @@ div.articles {
       @media screen and (min-width: 767px) and (max-width: 1150px) {
         font-size: 60px;
       }
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        font-size: 40px;
+      }
     }
     div.articles__article__text {
       float: left;
@@ -232,6 +255,9 @@ div.articles {
       h1 {
         margin-top: ($margin-top/3);
         font: 20px $font-medium;
+        @media screen and (min-width: 300px) and (max-width: 766px) {
+          margin-top: $margin-top/10;
+        }
       }
       p.text-paragragh {
         display: block;
@@ -256,6 +282,9 @@ div.articles {
 div.wrapper-services {
   background-color: $background-dark;
   margin-top: ($margin-top*2);
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    margin-top: $margin-top;
+  }
   div.services-schedule,
   div.services-maintence,
   div.services-tiresWheels,
@@ -276,6 +305,14 @@ div.wrapper-services {
       margin-left: 0px;
     }
   }
+  div.services-schedule,
+  div.services-maintence,
+  div.services-tiresWheels,
+  div.services-repair {
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      margin: 0px 10px;
+    }
+  }
   a:hover {
     figcaption {
       color: $color-yellow;
@@ -285,6 +322,9 @@ div.wrapper-services {
     margin-top: $margin-top;
     font: 24px $font-medium;
     color: $font-color-white;
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      margin-top: $margin-top/2;
+    }
   }
   figure {
     margin-top: ($margin-top + 10px);
@@ -302,6 +342,9 @@ div.wrapper-services {
       @media screen and (min-width: 767px) and (max-width: 1150px) {
         margin-bottom: $margin-bottom;
       }
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        margin-bottom: $margin-bottom/3;
+      }
     }
   }
 }
@@ -309,10 +352,16 @@ div.wrapper-services {
 div.wrapper-news {
   padding-bottom: ($margin-bottom*3);
   background-color: #f7f7f7;
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    padding-bottom: 20px;
+  }
   div.wrapper-news__news,
   div.wrapper-news__banners {
     float: left;
     width: 50%;
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      width: 98%;
+    }
     h1 {
       font: 24px $font-medium;
       color: $font-color-dark;
@@ -389,6 +438,11 @@ div.wrapper-news {
     div.wrapper-news__banners {
       div#accordion {
         margin-top: $margin-top;
+        div {
+          @media screen and (min-width: 300px) and (max-width: 766px) {
+            height: auto;
+          }
+        }
         h3 {
           margin-bottom: 10px;
           padding: 10px 0px 0px 10px;
@@ -433,29 +487,39 @@ div.wrapper-brands {
       width: 23%;
       margin: $margin-top 0 $margin-top $margin-left*1.5;
     }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      width: 35%;
+      margin: $margin-top/3 0 $margin-top/3 $margin-left*1.5;
+    }
   }
   div.rbp {
-    background-position: 6px 67px;
+    background-position: -100px 67px;
   }
   div.motoMetal {
-    background-position: -179px 67px;
+    background-position: -287px 67px;
   }
   div.twocrave {
-    background-position: -401px 67px;
+    background-position: -512px 67px;
   }
   div.atx {
-    background-position: 504px 67px;
+    background-position: 614px 67px;
   }
   div.cruiser {
-    background-position: 301px 67px;
+    background-position: 413px 67px;
     @media screen and (min-width: 767px) and (max-width: 1150px) {
-        background-position: 318px 67px;
+        background-position: 423px 67px;
+    }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+        background-position: 429px 67px;
     }
   }
   div.gear {
-    background-position: 143px 67px;
+    background-position: 190px 67px;
     @media screen and (min-width: 767px) and (max-width: 1150px) {
-        background-position: 165px 67px;
+        background-position: 196px 67px;
+    }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+        background-position: 190px 67px;
     }
   }
 }
@@ -466,6 +530,9 @@ div.wrapper-sitemap {
   @media screen and (min-width: 767px) and (max-width: 1150px) {
     padding: 0px;
   }
+  @media screen and (min-width: 300px) and (max-width: 766px) {
+    padding: 0px;
+  }
   div.sitemap__block {
     float: left;
     width: (260px/$page-width)*100%;
@@ -473,6 +540,10 @@ div.wrapper-sitemap {
     @media screen and (min-width: 767px) and (max-width: 1150px) {
       width: (150px/$page-width-medium)*100%;
       margin-top: $margin-top;
+    }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      width: (210px/$page-width-small)*100%;
+      margin-top: $margin-top/2;
     }
     li {
       border-bottom: 1px solid $font-color-light;
@@ -493,12 +564,18 @@ div.wrapper-sitemap {
       @media screen and (min-width: 767px) and (max-width: 1150px) {
         margin-bottom: $margin-bottom;
       }
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        margin-bottom: $margin-bottom/2;
+      }
     }
   }
   div.firstBlock {
     margin-left: 0px;
     @media screen and (min-width: 767px) and (max-width: 1150px) {
       margin-left: $margin-left*0.6;
+    }
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      margin-left: $margin-left;
     }
   }
 }
@@ -508,11 +585,17 @@ footer {
   padding: 20px 0px;
   font-size: 12px;
   color: $font-color-light;
-  span {
+  li {
+    display: inline-block;
     margin-right: $margin-right;
-  }
-  span.site-name {
-    float: right;
+    padding: 5px 0px;
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      width: 37%;
+      margin: 0 0 0 $margin-left;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1150px) {
+      margin: 0 $margin-right/2 0 $margin-left/2;
+    }
   }
   span.address::before {
     content: url(../img/footer-address-icon.png);
@@ -524,6 +607,15 @@ footer {
     content: url(../img/footer-email-icon.png);
   }
   span::before {
-    margin-right: 15px;
+    margin-right: 10px;
+  }
+  span.site-name {
+    margin-left: $margin-left*11;
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      margin-left: 0px;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1150px)  {
+      margin-left: 0px;
+    }
   }
 }
