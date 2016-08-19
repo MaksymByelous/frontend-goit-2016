@@ -1,0 +1,113 @@
+module.exports = function(grunt) {
+
+  grunt.initConfig({
+//---------------------work with css files
+    sass: {
+        dist: {
+          files: [{
+            expand: true,
+            cwd: 'src/styles',
+            src: ['main.scss'],
+            dest: 'src/styles',
+            ext: '.min.css'
+          }]
+        }
+      },
+    concat_css: {
+      options: {
+        separator: ''
+      },
+      dist: {
+        src: ['src/styles/src/variables.scss', 'src/styles/src/reset.scss',
+        'src/styles/src/styles.scss', 'src/styles/src/styles-carousel.scss'],
+        dest: 'src/styles/main.scss'
+       }
+      },
+      cssmin: {
+        dist: {
+            src: ['src/styles/main.min.css'],
+            dest: 'build/styles/main.min.css'
+        }
+      },
+// -----------work with js files
+    concat: {
+      options: {
+        separator: ';'
+      },
+      dist: {
+        src: ['src/js/src/*.js'],
+        dest: 'src/js/script.main.min.js'
+       }
+      },
+    uglify: {
+      dist: {
+          src: ['src/js/script.main.min.js'],
+          dest: 'build/js/script.main.min.js'
+      }
+    },
+//-------eye of saruman
+    watch: {
+      sass: {
+        files: ['src/styles/src/*.scss'],
+        tasks: ['concat_css', 'sass', 'cssmin'],
+      },
+      js: {
+        files: ['src/js/src/*.js'],
+        tasks: ['concat', 'uglify'],
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-concat-css');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.registerTask('default', ['concat_css', 'sass', 'cssmin', 'concat', 'uglify', 'watch']);
+};
+
+// module.exports = function(grunt) {
+//
+//   grunt.initConfig({
+//     concat: {
+//       options: {
+//         separator: ';'
+//       },
+//       dist: {
+//         src: ['js/src/*.js'],
+//         dest: 'js/script.main.min.js'
+//        }
+//       },
+//     uglify: {
+//       dist: {
+//           src: ['js/script.main.min.js'],
+//           dest: 'js/script.main.min.js'
+//       }
+//     },
+//     concat_css: {
+//       options: {
+//         separator: ';'
+//       },
+//       dist: {
+//         src: ['css/src/*.css'],
+//         dest: 'css/styles.main.min.css'
+//        }
+//       },
+//     cssmin: {
+//       dist: {
+//           src: ['css/styles.main.min.css'],
+//           dest: 'css/styles.main.min.css'
+//       }
+//     }
+//   });
+//
+//   grunt.loadNpmTasks('grunt-contrib-concat');
+//   grunt.loadNpmTasks('grunt-contrib-uglify');
+//   grunt.loadNpmTasks('grunt-concat-css');
+//   grunt.loadNpmTasks('grunt-contrib-cssmin');
+//
+//   grunt.registerTask('default', ['concat', 'uglify', 'concat_css', 'cssmin']);
+//
+// };
