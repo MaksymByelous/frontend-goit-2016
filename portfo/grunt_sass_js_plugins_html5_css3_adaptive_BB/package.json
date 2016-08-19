@@ -1,7 +1,7 @@
 {
-  "name": "hw",
+  "name": "js_sass_grunt",
   "version": "1.0.0",
-  "description": "",
+  "description": "forPortfolio",
   "main": "gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
