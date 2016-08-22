@@ -204,54 +204,36 @@
 
     <div class="wrapper-news">
       <div class="container">
-        <div class="wrapper-news__news">
+        <div class="wrapper-news__news" id="newsContainer">
           <h1>Latest News</h1>
-          <div class="wrapper-news__news__item clearfix">
-            <div class="news-item-date">
-              <p class="month">
-                Jan
-              </p>
-              <p class="day">
-                10
-              </p>
-            </div>
-            <div class="news-item-foto">
-            </div>
-            <div class="news-item-content">
-              <h1><a href="#">Advanced Mashinery Helps
-                Improve Quality</a></h1>
-              <p class="news-item-content__comments">
-                by cms masters <span>Comments (6)</span>
-              </p>
-              <p class="news-item-content__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            </div>
-          <div class="wrapper-news__news__item clearfix">
-            <div class="news-item-date">
-              <p class="month">
-                Jan
-              </p>
-              <p class="day">
-                3
-              </p>
-            </div>
-            <div class="news-item-foto2">
-            </div>
-            <div class="news-item-content">
-              <h1><a href="#">Advanced Mashinery Helps
-                Improve Quality</a></h1>
-              <p class="news-item-content__comments">
-                by cms masters <span>Comments (6)</span>
-              </p>
-              <p class="news-item-content__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
+          <script type="text/template" id="news-template">
+            <% news.forEach(function(news) { %>
+              <div class="wrapper-news__news__item clearfix">
+                <div class="news-item-date">
+                  <p class="month">
+                    <%= news.month %>
+                  </p>
+                  <p class="day">
+                    <%= news.day %>
+                  </p>
+                </div>
+                <div class="news-item-foto">
+                  <img src="<%= news.fotoSrc %>" alt="" />
+                </div>
+                <div class="news-item-content">
+                  <h1><a href="#"> <%= news.topic %> </a></h1>
+                    <p class="news-item-content__comments">
+                      <%= news.autor %>
+                      <span> <%= news.comments %> </span>
+                    </p>
+                    <p class="news-item-content__text">
+                      <%= news.content %>
+                    </p>
+                  </div>
+                </div>
+                <% }); %>
+          </script>
         </div>
-
 
         <div class="wrapper-news__banners">
           <h1>Banners Place</h1>

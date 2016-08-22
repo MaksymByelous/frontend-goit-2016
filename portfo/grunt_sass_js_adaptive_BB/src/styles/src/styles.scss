@@ -390,20 +390,16 @@ div.wrapper-news {
         font: 18px $font-medium;
       }
     }
-    div.news-item-foto,
-    div.news-item-foto2 {
+    div.news-item-foto {
       width: (150/580)*100%;
       height: 150px;
       @media screen and (min-width: 767px) and (max-width: 1150px) {
         height: 100px;
       }
       float: left;
-      background: url(../img/services-man.png);
-      background-size: cover;
-    }
-    div.news-item-foto2 {
-      background: url(../img/services-truck.png);
-      background-size: cover;
+      img {
+        max-width: 100%;
+      }
     }
     div.news-item-content {
       width: (370/580)*100%;

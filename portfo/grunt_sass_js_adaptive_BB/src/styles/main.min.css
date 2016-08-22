@@ -403,20 +403,15 @@ div.wrapper-news {
         text-align: center;
         padding: 5px;
         font: 18px ubuntuMedium, sans-serif; }
-    div.wrapper-news div.wrapper-news__news__item div.news-item-foto,
-    div.wrapper-news div.wrapper-news__news__item div.news-item-foto2 {
+    div.wrapper-news div.wrapper-news__news__item div.news-item-foto {
       width: 25.86207%;
       height: 150px;
-      float: left;
-      background: url(../img/services-man.png);
-      background-size: cover; }
+      float: left; }
       @media screen and (min-width: 767px) and (max-width: 1150px) {
-        div.wrapper-news div.wrapper-news__news__item div.news-item-foto,
-        div.wrapper-news div.wrapper-news__news__item div.news-item-foto2 {
+        div.wrapper-news div.wrapper-news__news__item div.news-item-foto {
           height: 100px; } }
-    div.wrapper-news div.wrapper-news__news__item div.news-item-foto2 {
-      background: url(../img/services-truck.png);
-      background-size: cover; }
+      div.wrapper-news div.wrapper-news__news__item div.news-item-foto img {
+        max-width: 100%; }
     div.wrapper-news div.wrapper-news__news__item div.news-item-content {
       width: 63.7931%;
       height: 150px;
