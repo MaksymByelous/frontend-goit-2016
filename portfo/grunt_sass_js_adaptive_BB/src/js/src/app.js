@@ -1,7 +1,7 @@
 'use strict';
 $( function() {
   $('body').click(function () {
-    alert('Hello! This page done with SASS on HTML5/CSS3. It is adaptive for desctop, tablet and mobile. It contains JQuery Plugin (slider), JQuery-UI widget (accordion), drop-down menu with JS, hover and click animation with easing (there are too many yellow trucks...try to click on it!). Lodash was used too. Project build with Grunt'
+    alert('Hello! This page done with SASS on HTML5/CSS3. It is adaptive for desctop, tablet and mobile. It contains JQuery Plugin (slider), JQuery-UI widget (accordion), drop-down menu with JS, hover and click animation with easing (there are too many yellow trucks...try to click on it!). Search field is alive, try it. Lodash was used too, for rendering of news. Project build with Grunt'
     );
     $(this).unbind('click');
   });
@@ -40,4 +40,27 @@ $( function() {
       }
     );
   });
+//---------searsh on page------------
+  $("#search-btn").click(function () {
+    $('.light').toggleClass('light');
+    var phrase = $('#text-to-find').val();
+    if (phrase.length == 0) {
+      alert('so what do you seach?');
+      return;
+    }
+     $(":contains("+phrase+")").not(":has(:contains("+phrase+"))").each(function () {
+        var that = $(this);
+        var html = that.html();
+        console.log(that);
+        html = html.replace(new RegExp(phrase, 'gi'), '<span class="light">'+phrase+'</span>');
+        that.html(html);
+     });
+     var found = $('span.light');
+     if ( found.length == 0 ) {
+       alert('Nothing found, sorry');
+       return;
+     }
+     $('body').animate( { scrollTop: found.offset().top }, 1100 );
+  });
+
 });

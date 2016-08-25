@@ -35,6 +35,9 @@ body {
   a {
     text-decoration: none;
   }
+  .light {
+    background: red;
+  }
 }
 div.container {
   width: $page-width;

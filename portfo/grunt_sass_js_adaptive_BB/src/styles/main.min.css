@@ -68,6 +68,8 @@ body {
   font-family: ubuntuRegular, sans-serif; }
   body a {
     text-decoration: none; }
+  body .light {
+    background: red; }
 
 div.container {
   width: 1160px;
