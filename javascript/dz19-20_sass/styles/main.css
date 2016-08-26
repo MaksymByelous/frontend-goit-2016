@@ -350,12 +350,18 @@ div.wrapper-services {
       div.wrapper-services p {
         margin-top: 17.5px; } }
   div.wrapper-services figure {
-    margin-top: 45px; }
+    margin-top: 45px;
+    position: relative; }
     @media screen and (min-width: 767px) and (max-width: 1150px) {
       div.wrapper-services figure {
         margin-top: 0px; } }
     div.wrapper-services figure img {
       width: 260px; }
+    div.wrapper-services figure img.hover-picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.8; }
     div.wrapper-services figure figcaption {
       margin-top: 17.5px;
       margin-bottom: 60px;

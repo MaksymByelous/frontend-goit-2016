@@ -1,5 +1,15 @@
 'use strict';
 $( function() {
+
+  $(document.querySelectorAll('img.hover-picture')).hide();
+  $('img.face-picture').hover(
+    function () {
+      $(this).next('img.hover-picture').show();
+    },
+    function () {
+      $(this).next('img.hover-picture').hide();
+    }
+  );
 //-----acrivate akordeon plugin
   $( "#accordion" ).accordion();
 //----open full text of article

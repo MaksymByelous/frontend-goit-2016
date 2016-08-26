@@ -401,11 +401,18 @@ div.wrapper-services {
   }
   figure {
     margin-top: ($margin-top + 10px);
+    position: relative;
     @media screen and (min-width: 767px) and (max-width: 1150px) {
       margin-top: 0px;
     }
     img {
       width: 260px;
+    }
+    img.hover-picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
     }
     figcaption {
       margin-top: ($margin-top/2);
