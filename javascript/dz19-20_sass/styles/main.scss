@@ -177,6 +177,9 @@ div.wrapper-top {
       text-align: center;
       padding-bottom: 15px;
     }
+    ul.main-menu {
+      float: left;
+    }
     li {
       display: inline-block;
       padding: 20px 0px;
@@ -193,7 +196,7 @@ div.wrapper-top {
         z-index: 1000;
         li {
           display: block;
-          z-index: 1000;
+          z-index: 1001;
         }
       }
       a {
@@ -223,7 +226,7 @@ div.wrapper-top {
     div.header__search {
       position: relative;
       float: right;
-      margin: -$margin-top $margin-right 0px 0px;
+      margin: $margin-top/2 $margin-right 0px 0px;
       @media screen and (min-width: 300px) and (max-width: 766px) {
         float: none;
         margin: 0px;

@@ -124,6 +124,8 @@ div.wrapper-top nav {
     div.wrapper-top nav {
       text-align: center;
       padding-bottom: 15px; } }
+  div.wrapper-top nav ul.main-menu {
+    float: left; }
   div.wrapper-top nav li {
     display: inline-block;
     padding: 20px 0px;
@@ -139,7 +141,7 @@ div.wrapper-top nav {
       z-index: 1000; }
       div.wrapper-top nav li ul.sub-menu li {
         display: block;
-        z-index: 1000; }
+        z-index: 1001; }
     div.wrapper-top nav li a {
       font-size: 14px;
       color: white;
@@ -162,7 +164,7 @@ div.wrapper-top nav {
   div.wrapper-top nav div.header__search {
     position: relative;
     float: right;
-    margin: -35px 40px 0px 0px; }
+    margin: 17.5px 40px 0px 0px; }
     @media screen and (min-width: 300px) and (max-width: 766px) {
       div.wrapper-top nav div.header__search {
         float: none;

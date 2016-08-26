@@ -19,19 +19,4 @@ $( function() {
             $(this).children('.sub-menu').slideUp(200);
         }
   );
-//-------fast truck animation
-  $('.fast-truck').on('click', function() {
-    if ($('img', this).length < 2) {
-    return;
-    };
-    $('img:last', this).animate({
-      'margin-left': '+=50',
-      opacity: 0,
-    },  800,
-      "easeInBounce",
-      function () {
-        $(this).remove();
-      }
-    );
-  });
 });
