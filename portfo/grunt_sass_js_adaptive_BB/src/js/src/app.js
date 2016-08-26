@@ -1,9 +1,9 @@
 'use strict';
 $( function() {
   $('body').click(function () {
+    alert('Hello! This page is done with SASS on HTML5/CSS3. It is adaptive for desktop, tablet and mobile screens. It contains JQuery Plugin (slider), JQuery-UI widget (accordion), drop-down menu with JS, hover and click animation with easing (there are too many yellow trucks...try to click on it!). Search field is alive, you may also try it. Lodash was used too - for news rendering. Project is built with Grunt.'
     );
     $(this).unbind('click');
-    alert('Hello! This page is done with SASS on HTML5/CSS3. It is adaptive for desktop, tablet and mobile screens. It contains JQuery Plugin (slider), JQuery-UI widget (accordion), drop-down menu with JS, hover and click animation with easing (there are too many yellow trucks...try to click on it!). Search field is alive, you may also try it. Lodash was used too - for news rendering. Project is built with Grunt.'
   });
 //-----news template
   var newsTemplate = $('#news-template').html();
@@ -62,5 +62,18 @@ $( function() {
      }
      $('body').animate( { scrollTop: found.offset().top }, 1100 );
   });
+  //-------li mousedown colorise
+    $('.main-menu li').mousedown(
+      function (e) {
+        $(this).addClass('active');
+        return false;
+      }
+    );
+    $('.main-menu li').mouseup(
+      function (e) {
+        $(this).removeClass('active');
+        return false;
+      }
+    );
 
 });

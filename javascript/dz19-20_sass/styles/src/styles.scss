@@ -53,8 +53,10 @@ div.slider,
 div.articles {
   margin-top: $margin-top;
 }
-.clearfix {
-  overflow: hidden;
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
 }
 div.wrapper-top {
   header {
@@ -109,26 +111,29 @@ div.wrapper-top {
     }
     ul.main-menu {
       float: left;
-    }
-    li {
-      display: inline-block;
-      padding: 20px 0px;
-      position: relative;
-      ul {
-        position: absolute;
-        top: 40px;
-        left: 0;
-        width: 150px;
+      @media screen and (min-width: 300px) and (max-width: 766px) {
+        float: none;
       }
+    }
+    li.dropdown {
+      position: relative;
       ul.sub-menu {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 140px;
         display: none;
         background-color: $background-dark;
         z-index: 1000;
         li {
           display: block;
-          z-index: 1001;
+          z-index: 1000;
         }
       }
+    }
+    li {
+      display: inline-block;
+      padding: 20px 0px;
       a {
         font-size: 14px;
         color: $font-color-white;
@@ -141,17 +146,12 @@ div.wrapper-top {
           padding: 20px 30px;
         }
       }
-      a:hover {
-        color: $color-yellow;
-      }
-      a:active {
-        background-color: $color-azur;
-        color: $font-color-white;
+      .dropdown-triangle {
+        margin-left: 5px;
       }
     }
-    li.dropdown>a::after {
-      content: url(../img/arrow-down.png);
-      margin-left: 5px;
+    li.active {
+      background-color: $color-azur;
     }
     div.header__search {
       position: relative;

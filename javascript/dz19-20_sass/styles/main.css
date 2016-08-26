@@ -86,8 +86,10 @@ div.slider,
 div.articles {
   margin-top: 35px; }
 
-.clearfix {
-  overflow: hidden; }
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block; }
 
 div.wrapper-top header div.header__logo {
   float: left; }
@@ -126,22 +128,25 @@ div.wrapper-top nav {
       padding-bottom: 15px; } }
   div.wrapper-top nav ul.main-menu {
     float: left; }
-  div.wrapper-top nav li {
-    display: inline-block;
-    padding: 20px 0px;
+    @media screen and (min-width: 300px) and (max-width: 766px) {
+      div.wrapper-top nav ul.main-menu {
+        float: none; } }
+  div.wrapper-top nav li.dropdown {
     position: relative; }
-    div.wrapper-top nav li ul {
+    div.wrapper-top nav li.dropdown ul.sub-menu {
       position: absolute;
-      top: 40px;
+      top: 55px;
       left: 0;
-      width: 150px; }
-    div.wrapper-top nav li ul.sub-menu {
+      width: 140px;
       display: none;
       background-color: #2a2d32;
       z-index: 1000; }
-      div.wrapper-top nav li ul.sub-menu li {
+      div.wrapper-top nav li.dropdown ul.sub-menu li {
         display: block;
-        z-index: 1001; }
+        z-index: 1000; }
+  div.wrapper-top nav li {
+    display: inline-block;
+    padding: 20px 0px; }
     div.wrapper-top nav li a {
       font-size: 14px;
       color: white;
@@ -153,14 +158,10 @@ div.wrapper-top nav {
       @media screen and (min-width: 300px) and (max-width: 766px) {
         div.wrapper-top nav li a {
           padding: 20px 30px; } }
-    div.wrapper-top nav li a:hover {
-      color: #f4b60d; }
-    div.wrapper-top nav li a:active {
-      background-color: #248cec;
-      color: white; }
-  div.wrapper-top nav li.dropdown > a::after {
-    content: url(../img/arrow-down.png);
-    margin-left: 5px; }
+    div.wrapper-top nav li .dropdown-triangle {
+      margin-left: 5px; }
+  div.wrapper-top nav li.active {
+    background-color: #248cec; }
   div.wrapper-top nav div.header__search {
     position: relative;
     float: right;
