@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS HW 23-24</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" charset="utf-8"></script>
+    <script src="js/lodash.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+
+    <script type="text/template" id="wrapper-template">
+    <div class="wrapper">
+      <ul class="item-list">
+      </ul>
+    <div class="controlls">
+      <input class="item-value" type="text" name="name" value="">
+      <button class="item-add" type="button" name="button">Add</button>
+    </div>
+  </div>
+  </script>
+
+    <script type="text/template" id="list-template">
+      <% for(var i=0; i < data.length; i++) { %>
+        <li> <%= data[i]  %>
+           <span value="<%= data[i] %>" class="item-delete">x</span></li>
+      <% }; %>
+    </script>
+
+  </body>
+</html>
