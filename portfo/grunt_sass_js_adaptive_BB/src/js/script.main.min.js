@@ -1,9 +1,13 @@
 'use strict';
 $( function() {
+//-----information letter
   $('body').click(function () {
-    alert('Hello! This page is done with SASS on HTML5/CSS3. It is adaptive for desktop, tablet and mobile screens. It contains JQuery Plugin (slider), JQuery-UI widget (accordion), drop-down menu with JS, hover and click animation with easing (there are too many yellow trucks...try to click on it!). Search field is alive, you may also try it. Lodash was used too - for news rendering. Project is built with Grunt.'
-    );
+    $('body').append('<div class="modal-overlay"><div class="modal"><h1>Page details</h1> <p>Hello! This page is done with SASS on HTML5/CSS3. It is adaptive for desktop, tablet and mobile screens. It contains JQuery Plugin (slider), JQuery-UI widget (accordion), drop-down menu with JS, hover and click animation with easing (there are too many yellow trucks...try to click on it!). Search field is alive, you may also try it. Lodash was used too - for news rendering. Project is built with Grunt.</p></div></div>');
     $(this).unbind('click');
+
+    $('.modal-overlay').click(function () {
+      $(this).remove();
+    });
   });
 //-----news template
   var newsTemplate = $('#news-template').html();

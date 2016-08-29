@@ -37,10 +37,10 @@ function View(model) {
     self.renderList(model.data);
   };
   self.renderList = function (data) {
-    var list = _.template( $('#list-template').html(), {data: data});
+    var litemplate = $('#list-template').html();
+    var list = _.template(litemplate)({data: data});
     self.elements.listContainer.html(list);
   };
-
   init();
 }
 
@@ -62,7 +62,7 @@ function Controller(model, view) {
 }
 
 $(document).ready(function () {
-  var todolist = ['test1', 'test2', 'test3'];
+  var todolist = ['learn JS', 'learn jquery', 'learn AngularJS'];
 
   var model =  new Model (todolist);
   var view = new View(model);

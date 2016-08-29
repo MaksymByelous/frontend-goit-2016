@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>JS HW 23-24</title>
-
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" charset="utf-8"></script>
+    <script src="js/jquery-1.12.3.min.js" charset="utf-8"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" charset="utf-8"></script> -->
     <script src="js/lodash.min.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
 
   </head>
   <body>
-
     <script type="text/template" id="wrapper-template">
     <div class="wrapper">
       <ul class="item-list">
@@ -25,7 +24,9 @@
     <script type="text/template" id="list-template">
       <% for(var i=0; i < data.length; i++) { %>
         <li> <%= data[i]  %>
-           <span value="<%= data[i] %>" class="item-delete">x</span></li>
+           <input type="button" name="name" value="Del" data-value="<%= data[i] %>">
+           <!-- <span value="<%= data[i] %>" class="item-delete">X</span> -->
+         </li>
       <% }; %>
     </script>
 
