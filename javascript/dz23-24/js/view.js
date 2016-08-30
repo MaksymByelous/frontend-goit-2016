@@ -4,7 +4,6 @@ define( 'view', ['jquery', 'lodash', 'model'], function (model) {
     var self = this;
     function init() {
       var wrapper = _.template($('#wrapper-template').html());
-      console.log(wrapper);
       $('body').append(wrapper);
       self.elements = {
         input: $('.item-value'),
