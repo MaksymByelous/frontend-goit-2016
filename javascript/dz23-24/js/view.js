@@ -1,5 +1,8 @@
-define( 'view', ['jquery', 'lodash', 'model'], function (model) {
-
+define('view', [
+  'jquery',
+  'lodash',
+  'model'
+], function (model) {
   function View(model) {
     var self = this;
     function init() {
@@ -14,12 +17,13 @@ define( 'view', ['jquery', 'lodash', 'model'], function (model) {
     };
     self.renderList = function (data) {
       var litemplate = $('#list-template').html();
-      var list = _.template(litemplate)({data: data});
+      var list = _.template(litemplate) ({
+        data: data
+      });
       self.elements.listContainer.html(list);
     };
     init();
   }
-return new View(model);
-
-  }
+  return new View(model);
+}
 );

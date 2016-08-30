@@ -1,18 +1,25 @@
 requirejs.config({
+  baseUrl: 'js',
   paths: {
-    'jquery': ['https://code.jquery.com/jquery-1.12.4.min'],
-    'lodash': ['lodash']
+    'jquery': [
+      'https://code.jquery.com/jquery-1.12.4.min'
+    ],
+    'lodash': [
+      'lodash'
+    ]
   },
   shim: {
     'jquery': {
-      exports: 'jquery'},
+      exports: 'jquery'
+    },
     'lodash': {
-      exports: 'lodash'}
+      exports: 'lodash'
     }
+  }
 });
-
-require(
-  ['jquery', 'lodash', 'model', 'view', 'controller'],
-  function () {
-
+require(['model',
+'view',
+'controller',
+'jquery',
+'lodash'], function () {
 });

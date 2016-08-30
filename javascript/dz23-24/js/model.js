@@ -1,42 +1,44 @@
-define( 'model', ['jquery'],function (data) {
-// data = ['test1', 'test2', 'test3'];
-function Model(data) {
-  var self = this;
-
-  self.data = data;
-  self.addItem = function (item) {
-    if (item == 0) {
-      return;
-    };
-    self.data.push(item);
-    return self.data;
-  };
-
-  self.removeItem = function (item) {
-    var index = self.data.indexOf(item);
-    if (index === -1) {
-      return;
+define('model', [
+  'jquery'
+], function (data) {
+  function Model(data) {
+    var self = this;
+    self.data = data;
+    if (self.data.length == 0) {
+      alert('where is data?');
     }
-    self.data.splice(index, 1);
-    return self.data;
-  };
-
-  self.editItem = function (item){
-      $('button').attr('disabled',true);
+    self.addItem = function (item) {
+      if (item == 0) {
+        return;
+      };
+      self.data.push(item);
+      return self.data;
+    };
+    self.removeItem = function (item) {
       var index = self.data.indexOf(item);
-      if (index ===-1) {
-          return;
+      if (index === - 1) {
+        return;
       }
-      return [self.data[index],index];
-  };
-  self.saveItem = function (item,index){
-      if (item.length === 0){
-          return;
+      self.data.splice(index, 1);
+      return self.data;
+    };
+    self.editItem = function (item) {
+      $('button').attr('disabled', true);
+      var index = self.data.indexOf(item);
+      if (index === - 1) {
+        return;
+      }
+      return [self.data[index],
+      index];
+    };
+    self.saveItem = function (item, index) {
+      if (item.length === 0) {
+        return;
       }
       $('button').removeAttr('disabled');
-      self.data.splice(index,0,item);
-  };
-}
- return new Model(data);
+      self.data.splice(index, 0, item);
+    };
+  }
+  return new Model(data);
 }
 );
