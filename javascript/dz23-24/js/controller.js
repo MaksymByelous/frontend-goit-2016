@@ -3,7 +3,6 @@ define( 'controller', ['jquery', 'model', 'view'], function (model, view) {
   function Controller(model, view) {
     var self = this;
     var addBtn = $('.add-item');
-    console.log(wrapper);
     view.elements.addBtn.on('click', addItem);
     view.elements.listContainer.on('click', '.item-delete', removeItem);
     view.elements.listContainer.on('click', '.item-edit', editItem)
