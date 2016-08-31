@@ -1,10 +1,12 @@
 define('model', [
   'jQuery'
-], function (data) {
+], function ($) {
 
-  function Model(data) {
+return  function Model(data) {
     var self = this;
-    self.data = data;
+        var todoList = ['Learn JS','Learn HTML','Learn CSS','Learn jQuery'];
+
+    self.data = todoList;
     self.addItem = function (item) {
       if (item == 0) {
         return;
@@ -36,7 +38,7 @@ define('model', [
       $('button').removeAttr('disabled');
       self.data.splice(index, 0, item);
     };
-  }
-  return new Model();
+  };
+  // return new Model();
 }
 );

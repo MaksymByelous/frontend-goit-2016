@@ -1,4 +1,6 @@
-define( 'controller', ['model', 'view'], function (model, view) {
+define( 'controller', [
+  'jQuery'
+], function ($) {
 
   function Controller(model, view) {
     var self = this;

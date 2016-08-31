@@ -23,8 +23,8 @@ require(['jQuery',
 'controller',
 'lodash'], function ($, Model, View, Controller) {
   $(function () {
-    var todoList = ['Learn JS','Learn HTML','Learn CSS','Learn jQuery'];
-    var model = new Model(todoList);
+
+    var model = new Model(data);
     var view = new View(model);
     var controller = new Controller(model, view);
   });

@@ -11,7 +11,7 @@ li {
 input[type=button],
 input[type=button]:active,
 input[type=button]:focus {
-  font-size: 10px;
+  font-size: 12px;
   margin-left: 5px;
   border: 0px;
   border-radius: 5px;

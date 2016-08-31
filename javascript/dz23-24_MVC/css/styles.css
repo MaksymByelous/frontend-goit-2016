@@ -1,7 +1,7 @@
 div.wrapper {
   width: 500px;
   margin: 0 auto;
-  padding: 0 5px 10px 5px;
+  padding: 5px 5px 10px 5px;
   background: lightgrey;
 }
 li {
@@ -11,7 +11,7 @@ li {
 input[type=button],
 input[type=button]:active,
 input[type=button]:focus {
-  font-size: 10px;
+  font-size: 12px;
   margin-left: 5px;
   border: 0px;
   border-radius: 5px;
