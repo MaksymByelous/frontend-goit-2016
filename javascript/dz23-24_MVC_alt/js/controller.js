@@ -1,6 +1,8 @@
-define( 'controller', ['model', 'view'], function (model, view) {
+define( "controller", [
+  'jQuery'
+], function ($) {
 
-  function Controller(model, view) {
+return  function Controller(model, view) {
     var self = this;
     view.elements.addBtn.on('click', addItem);
     view.elements.listContainer.on('click', '.item-delete', removeItem);
@@ -30,10 +32,7 @@ define( 'controller', ['model', 'view'], function (model, view) {
               model.saveItem($('input:text')[0].value,element[1]);
               view.renderList(model.data);
             }
-      })
+      });
     }
   }
-return new Controller(model, view);
-
-}
-);
+});

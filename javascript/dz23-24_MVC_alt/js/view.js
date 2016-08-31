@@ -1,10 +1,9 @@
-define('view', [
+define("view", [
   'jQuery',
-  'lodash',
-  'model'
-], function (model) {
+  'lodash'
+], function ($) {
 
-  function View(model) {
+return  function View(model) {
     var self = this;
     function init() {
       var wrapper = _.template($('#wrapper-template').html());
@@ -25,6 +24,4 @@ define('view', [
     };
     init();
   }
-  return new View(model);
-}
-);
+});

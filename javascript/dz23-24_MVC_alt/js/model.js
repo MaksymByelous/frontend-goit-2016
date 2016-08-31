@@ -1,8 +1,8 @@
-define('model', [
+define("model", [
   'jQuery'
-], function (data) {
+], function ($) {
 
-  function Model(data) {
+return  function Model(data) {
     var self = this;
     self.data = data;
     self.addItem = function (item) {
@@ -36,7 +36,5 @@ define('model', [
       $('button').removeAttr('disabled');
       self.data.splice(index, 0, item);
     };
-  }
-  return new Model();
-}
-);
+  };
+});
