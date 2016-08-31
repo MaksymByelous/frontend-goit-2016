@@ -36,6 +36,5 @@ define( 'controller', [
     }
   }
 return new Controller(model, view);
-
 }
 );
