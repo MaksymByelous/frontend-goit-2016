@@ -25,3 +25,6 @@ input[type=text] {
 .logo img {
   width: 200px;
 }
+div.userGSearch {
+  margin-top: 20px;
+}
