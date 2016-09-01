@@ -25,3 +25,14 @@ input[type=text] {
 .logo img {
   width: 200px;
 }
+figure {
+  width: 200px;
+  height: 200px;
+  margin: 5px 5px 0px 0px;
+}
+ol {
+  overflow: hidden;
+}
+li {
+  float: left;
+}
