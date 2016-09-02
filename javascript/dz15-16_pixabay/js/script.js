@@ -2,7 +2,7 @@
 $(function(){
     $('form').submit(function(){
 
-var urlFull = 'https://pixabay.com/api/?key=3216836-503ab328840d9e6573343da2a&q=' + encodeURIComponent(jQuery('#textField').val()) + '&image_type=photo';
+var urlFull = 'https://pixabay.com/api/?key=3216836-503ab328840d9e6573343da2a&per_page=100&q=' + encodeURIComponent(jQuery('#textField').val()) + '&image_type=photo';
 
         $.ajax({
             // AJAX-specified URL
