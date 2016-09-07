@@ -1,0 +1,421 @@
+//-------------------fonts
+$font_regular: MontR, sans-serif;
+$font_bold: MontB, sans-serif;
+$font_light: RL, sans-serif;
+//--------------------colors
+$font_color_white: white;
+$font_color_black: #333333;
+$font_color_gray: gray;
+$brand_color_red: #ff4e50;
+
+//-----------sizes margins paddings
+$desctop_width: 1440px;
+$tablet_width: 768px;
+$mobile_width: 320px;
+@mixin red_buttons($color) {
+  background-color: $color;
+  border: 0px;
+  color: $font_color_white;
+  font-family: $font_bold;
+  &:active,
+  &:focus {
+    border: 0px;
+    }
+}
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+  font-family: 'RTI';
+  src: url('../fonts/Roboto-ThinItalic.ttf');
+  src: url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RT';
+  src: url('../fonts/Roboto-Thin.ttf');
+  src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RR';
+  src: url('../fonts/Roboto-Regular.ttf');
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RMI';
+  src: url('../fonts/Roboto-MediumItalic.ttf');
+  src: url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RM';
+  src: url('../fonts/Roboto-Medium.ttf');
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RLI';
+  src: url('../fonts/Roboto-LightItalic.ttf');
+  src: url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RL';
+  src: url('../fonts/Roboto-Light.ttf');
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RBI';
+  src: url('../fonts/Roboto-BoldItalic.ttf');
+  src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RB';
+  src: url('../fonts/Roboto-Bold.ttf');
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RBlackI';
+  src: url('../fonts/Roboto-BlackItalic.ttf');
+  src: url('../fonts/Roboto-BlackItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RBlack';
+  src: url('../fonts/Roboto-Black.ttf');
+  src: url('../fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MontR';
+  src: url('../fonts/Montserrat-Regular.ttf');
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MontB';
+  src: url('../fonts/Montserrat-Bold.ttf');
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: white;
+  div,
+  header,
+  footer {
+      max-width: 320px;
+      margin: 0 auto 20px auto;
+  }
+  button {
+    @include red_buttons($brand_color_red);
+    @include radius(20px);
+  }
+  a,
+  a:active,
+  a:focus,
+  a:visited {
+    text-decoration: none;
+  }
+  h1 {
+    font: 30px $font_bold;
+  // desctop  font: 52px $font_bold;
+  }
+  h2,
+  figcaption {
+    font: 22px $font_bold;
+    // text-transform: capitalize;
+  }
+  h2::first-letter,
+  figcaption::first-letter,
+  li::first-letter,
+  h3::first-letter,
+  p::first-letter {
+    text-transform: uppercase;
+  }
+  h3 {
+    font: 14px $font_bold;
+  }
+  p,
+  li {
+    font: 14px $font_light;
+  }
+  .brand_name {
+    text-transform: uppercase;
+  }
+  span.capital {
+    text-transform: capitalize;
+  }
+  //---do with css p:fst-child
+  span.low {
+    text-transform: lowercase;
+  }
+}
+header {
+  background-color: black;
+  background-image: url(../img/header_bg.png);
+  background-size: 360%;
+  background-position: -425px -20px;
+  padding: 10px 10px 140px 10px;
+  text-align: center;
+  color: $font_color_white;
+  h1 {
+    text-transform: uppercase;
+    margin: 40px 0px 20px 0px;
+  }
+  div.header__top {
+    margin-bottom: 105px;
+    div.header__top__login {
+      font-family: $font_bold;
+
+      button.btn_login {
+        background-color: rgba(255, 78, 80, 0);
+        border: 2px solid $font_color_white;
+        padding: 5px 20px;
+        margin-left: 15px;
+        font-family: $font_bold;
+      }
+    }
+  }
+  h2 {
+    font-size: 20px;
+  }
+  button.findHoliday {
+    margin-top: 20px;
+    padding: 10px 50px;
+  }
+}
+
+div.howWork {
+  padding: 10px;
+  h2 {
+    text-align: center;
+    color: $font_color_black;
+  }
+  p {
+    color: lightgray;
+  }
+  div.howWork__step1,
+  div.howWork__step2,
+  div.howWork__step3 {
+    @include radius(5px);
+    padding: 70px 20px 20px 20px;
+    margin: 5px auto;
+    width: 260px;
+    button {
+      font: 10px $font_regular;
+      padding: 5px 15px;
+    }
+    h2 {
+      text-align: left;
+      color: $font_color_white;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+    p {
+      margin-top: 10px;
+      line-height: 0.8;
+    }
+  }
+  div.howWork__step1 {
+    background-image: url(../img/works_step1_mobile.png);
+  }
+  div.howWork__step2 {
+    background-image: url(../img/works_step2_mobile.png);
+  }
+  div.howWork__step3 {
+    background-image: url(../img/works_step3_mobile.png);
+  }
+}
+
+div.partners {
+  padding: 20px 20px 10px 20px;
+  text-align: center;
+  div.partners__item {
+    width: 200px;
+    margin-top: 20px;
+    position: relative;
+    img.partner_foto {
+    }
+    img.partner_label {
+      position: absolute;
+      top: 85px;
+      left: 59%;
+    }
+    h2 {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    p {
+      color: $font_color_gray;
+    }
+  }
+  button {
+    color: $brand_color_red;
+    background: white;
+    font-size: 14px;
+    border: 2px solid $brand_color_red;
+    width: 280px;
+    padding: 10px 0;
+  }
+}
+
+div.ideas {
+  text-align: center;
+  margin-bottom: 40px;
+  h2 {
+    color: $font_color_black;
+  }
+  div.grid {
+    .grid-sizer,
+    .grid-item {
+      width: 100%;
+      height: 125px;
+      text-align: center;
+      img {
+        position: relative;
+        @include radius(5px);
+      }
+      figcaption {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        color: $font_color_white;
+      }
+    }
+  }
+  div.ideas__search {
+    margin-top: 10px;
+    form {
+
+    }
+    input {
+      margin-top: 10px;
+    }
+    input[type="submit"] {
+      @include red_buttons($brand_color_red);
+      @include radius(15px);
+      padding: 10px 0px;
+      width: 280px;
+    }
+    input[type="text"] {
+      color: gray;
+      border: 1px solid lightgray;
+      font: 14px $font_light;
+      padding: 10px 15px;
+      width: 250px;
+      @include radius(5px);
+    }
+    p {
+      color: $font_color_gray;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+}
+footer {
+  text-align: center;
+  border-top: 3px solid $brand_color_red;
+  // text-transform: capitalize;
+  h3 {
+    color: $font_color_black;
+  }
+  .brand_name {
+    color: $brand_color_red;
+  }
+  div.footer__logo {
+    margin: 20px 0px;
+  }
+  div.footer__company {
+    margin-bottom: 20px;
+    li {
+      display: inline-block;
+        a,
+        a:active,
+        a:focus,
+        a:visited {
+          color: $font_color_gray;
+          padding: 0px 5px;
+        }
+      }
+    }
+    div.footer__partners {
+      margin-bottom: 20px;
+    }
+    div.footer__areto_logo {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      h3 {
+        color: $font_color_gray;
+      }
+    }
+}

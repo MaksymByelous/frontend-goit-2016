@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'RTI';
+  src: url("../fonts/Roboto-ThinItalic.ttf");
+  src: url("../fonts/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RT';
+  src: url("../fonts/Roboto-Thin.ttf");
+  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RR';
+  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RMI';
+  src: url("../fonts/Roboto-MediumItalic.ttf");
+  src: url("../fonts/Roboto-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RM';
+  src: url("../fonts/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RLI';
+  src: url("../fonts/Roboto-LightItalic.ttf");
+  src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RL';
+  src: url("../fonts/Roboto-Light.ttf");
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RBI';
+  src: url("../fonts/Roboto-BoldItalic.ttf");
+  src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RB';
+  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RBlackI';
+  src: url("../fonts/Roboto-BlackItalic.ttf");
+  src: url("../fonts/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RBlack';
+  src: url("../fonts/Roboto-Black.ttf");
+  src: url("../fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MontR';
+  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MontB';
+  src: url("../fonts/Montserrat-Bold.ttf");
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background-color: white; }
+  body div,
+  body header,
+  body footer {
+    max-width: 320px;
+    margin: 0 auto 20px auto; }
+  body button {
+    background-color: #ff4e50;
+    border: 0px;
+    color: white;
+    font-family: MontB, sans-serif;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px; }
+    body button:active, body button:focus {
+      border: 0px; }
+  body a,
+  body a:active,
+  body a:focus,
+  body a:visited {
+    text-decoration: none; }
+  body h1 {
+    font: 30px MontB, sans-serif; }
+  body h2,
+  body figcaption {
+    font: 22px MontB, sans-serif; }
+  body h2::first-letter,
+  body figcaption::first-letter,
+  body li::first-letter,
+  body h3::first-letter,
+  body p::first-letter {
+    text-transform: uppercase; }
+  body h3 {
+    font: 14px MontB, sans-serif; }
+  body p,
+  body li {
+    font: 14px RL, sans-serif; }
+  body .brand_name {
+    text-transform: uppercase; }
+  body span.capital {
+    text-transform: capitalize; }
+  body span.low {
+    text-transform: lowercase; }
+
+header {
+  background-color: black;
+  background-image: url(../img/header_bg.png);
+  background-size: 360%;
+  background-position: -425px -20px;
+  padding: 10px 10px 140px 10px;
+  text-align: center;
+  color: white; }
+  header h1 {
+    text-transform: uppercase;
+    margin: 40px 0px 20px 0px; }
+  header div.header__top {
+    margin-bottom: 105px; }
+    header div.header__top div.header__top__login {
+      font-family: MontB, sans-serif; }
+      header div.header__top div.header__top__login button.btn_login {
+        background-color: rgba(255, 78, 80, 0);
+        border: 2px solid white;
+        padding: 5px 20px;
+        margin-left: 15px;
+        font-family: MontB, sans-serif; }
+  header h2 {
+    font-size: 20px; }
+  header button.findHoliday {
+    margin-top: 20px;
+    padding: 10px 50px; }
+
+div.howWork {
+  padding: 10px; }
+  div.howWork h2 {
+    text-align: center;
+    color: #333333; }
+  div.howWork p {
+    color: lightgray; }
+  div.howWork div.howWork__step1,
+  div.howWork div.howWork__step2,
+  div.howWork div.howWork__step3 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    padding: 70px 20px 20px 20px;
+    margin: 5px auto;
+    width: 260px; }
+    div.howWork div.howWork__step1 button,
+    div.howWork div.howWork__step2 button,
+    div.howWork div.howWork__step3 button {
+      font: 10px MontR, sans-serif;
+      padding: 5px 15px; }
+    div.howWork div.howWork__step1 h2,
+    div.howWork div.howWork__step2 h2,
+    div.howWork div.howWork__step3 h2 {
+      text-align: left;
+      color: white;
+      font-size: 24px;
+      margin-top: 10px; }
+    div.howWork div.howWork__step1 p,
+    div.howWork div.howWork__step2 p,
+    div.howWork div.howWork__step3 p {
+      margin-top: 10px;
+      line-height: 0.8; }
+  div.howWork div.howWork__step1 {
+    background-image: url(../img/works_step1_mobile.png); }
+  div.howWork div.howWork__step2 {
+    background-image: url(../img/works_step2_mobile.png); }
+  div.howWork div.howWork__step3 {
+    background-image: url(../img/works_step3_mobile.png); }
+
+div.partners {
+  padding: 20px 20px 10px 20px;
+  text-align: center; }
+  div.partners div.partners__item {
+    width: 200px;
+    margin-top: 20px;
+    position: relative; }
+    div.partners div.partners__item img.partner_label {
+      position: absolute;
+      top: 85px;
+      left: 59%; }
+    div.partners div.partners__item h2 {
+      font-size: 14px;
+      margin: 10px 0; }
+    div.partners div.partners__item p {
+      color: gray; }
+  div.partners button {
+    color: #ff4e50;
+    background: white;
+    font-size: 14px;
+    border: 2px solid #ff4e50;
+    width: 280px;
+    padding: 10px 0; }
+
+div.ideas {
+  text-align: center;
+  margin-bottom: 40px; }
+  div.ideas h2 {
+    color: #333333; }
+  div.ideas div.grid .grid-sizer,
+  div.ideas div.grid .grid-item {
+    width: 100%;
+    height: 125px;
+    text-align: center; }
+    div.ideas div.grid .grid-sizer img,
+    div.ideas div.grid .grid-item img {
+      position: relative;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+    div.ideas div.grid .grid-sizer figcaption,
+    div.ideas div.grid .grid-item figcaption {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      color: white; }
+  div.ideas div.ideas__search {
+    margin-top: 10px; }
+    div.ideas div.ideas__search input {
+      margin-top: 10px; }
+    div.ideas div.ideas__search input[type="submit"] {
+      background-color: #ff4e50;
+      border: 0px;
+      color: white;
+      font-family: MontB, sans-serif;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px;
+      padding: 10px 0px;
+      width: 280px; }
+      div.ideas div.ideas__search input[type="submit"]:active, div.ideas div.ideas__search input[type="submit"]:focus {
+        border: 0px; }
+    div.ideas div.ideas__search input[type="text"] {
+      color: gray;
+      border: 1px solid lightgray;
+      font: 14px RL, sans-serif;
+      padding: 10px 15px;
+      width: 250px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+    div.ideas div.ideas__search p {
+      color: gray;
+      font-size: 18px;
+      margin-top: 10px; }
+
+footer {
+  text-align: center;
+  border-top: 3px solid #ff4e50; }
+  footer h3 {
+    color: #333333; }
+  footer .brand_name {
+    color: #ff4e50; }
+  footer div.footer__logo {
+    margin: 20px 0px; }
+  footer div.footer__company {
+    margin-bottom: 20px; }
+    footer div.footer__company li {
+      display: inline-block; }
+      footer div.footer__company li a,
+      footer div.footer__company li a:active,
+      footer div.footer__company li a:focus,
+      footer div.footer__company li a:visited {
+        color: gray;
+        padding: 0px 5px; }
+  footer div.footer__partners {
+    margin-bottom: 20px; }
+  footer div.footer__areto_logo {
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+    footer div.footer__areto_logo h3 {
+      color: gray; }
+
+/*# sourceMappingURL=main.min.css.map */
