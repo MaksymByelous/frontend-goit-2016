@@ -173,7 +173,7 @@ body {
   div,
   header,
   footer {
-      max-width: 320px;
+      width: $mobile_width;
       margin: 0 auto 20px auto;
   }
   button {
@@ -220,10 +220,8 @@ body {
 }
 header {
   background-color: black;
-  background-image: url(../img/header_bg.png);
-  background-size: 360%;
-  background-position: -425px -20px;
-  padding: 10px 10px 140px 10px;
+  background-image: url(../img/header_bg_mobile.png);
+  padding: 10px 0px 140px 0px;
   text-align: center;
   color: $font_color_white;
   h1 {
@@ -268,7 +266,7 @@ div.howWork {
     @include radius(5px);
     padding: 70px 20px 20px 20px;
     margin: 5px auto;
-    width: 260px;
+    width: $mobile_width*0.81;
     button {
       font: 10px $font_regular;
       padding: 5px 15px;
@@ -299,7 +297,7 @@ div.partners {
   padding: 20px 20px 10px 20px;
   text-align: center;
   div.partners__item {
-    width: 200px;
+    width: $mobile_width*0.62;
     margin-top: 20px;
     position: relative;
     img.partner_foto {
@@ -322,7 +320,7 @@ div.partners {
     background: white;
     font-size: 14px;
     border: 2px solid $brand_color_red;
-    width: 280px;
+    width: $mobile_width*0.875;
     padding: 10px 0;
   }
 }
@@ -340,6 +338,8 @@ div.ideas {
       height: 125px;
       text-align: center;
       img {
+        width: $mobile_width*0.9375;
+        height: 120px;
         position: relative;
         @include radius(5px);
       }
@@ -363,14 +363,14 @@ div.ideas {
       @include red_buttons($brand_color_red);
       @include radius(15px);
       padding: 10px 0px;
-      width: 280px;
+      width: $mobile_width*0.875;
     }
     input[type="text"] {
       color: gray;
       border: 1px solid lightgray;
       font: 14px $font_light;
       padding: 10px 15px;
-      width: 250px;
+      width: $mobile_width*0.78;
       @include radius(5px);
     }
     p {

@@ -31,7 +31,7 @@
           name="button"><span class="capital">sign</span> up</button>
         </div>
       </div>
-      <h2 class="brand_name">uraslaubsgluck</h2>
+      <h2 class="brand_name">urlaubsgluck</h2>
       <h1>share your holyday dreams</h1>
       <p><span class="capital">and</span> find the perfect partner to fullfill it</p>
       <button class="findHoliday" type="button" name="button">
@@ -91,6 +91,16 @@
       <div class="grid">
         <figure class="grid-sizer">
         </figure>
+
+        <script type="text/template" id="ideas_template">
+          <% for( var i = 0; i < hits.length; i++) {%>
+            <figure class="grid-item">
+              <img src="<%= hits[i].webformatURL %>" alt="" />
+              <figcaption><%= hits[i].tags.split(',')[0] %></figcaption>
+            </figure>
+          <% }; %>
+        </script>
+
         <figure class="grid-item ideas__sports">
           <img src="img\ideas_sports_mobile.png" alt="" />
           <figcaption>sports and activity</figcaption>
@@ -125,8 +135,8 @@
         <p>
           hi! What are your holiday interests?
         </p>
-          <form class="search_interest" action="index.html" method="post">
-            <input type="text" placeholder="Enter your interests" value="">
+          <form class="search_interest" action=" " method=" ">
+            <input id="textField" type="text" placeholder="Enter your interests" value="">
             <p>
             </p>
             <input type="submit" value="Search partners">
@@ -136,7 +146,7 @@
 
     <footer>
       <div class="footer__logo">
-        <h3 class="brand_name">uraslaubsgluck</h3>
+        <h3 class="brand_name">urlaubsgluck</h3>
       </div>
       <div class="footer__company">
         <h3>company</h3>

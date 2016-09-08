@@ -128,7 +128,7 @@ body {
   body div,
   body header,
   body footer {
-    max-width: 320px;
+    width: 320px;
     margin: 0 auto 20px auto; }
   body button {
     background-color: #ff4e50;
@@ -171,10 +171,8 @@ body {
 
 header {
   background-color: black;
-  background-image: url(../img/header_bg.png);
-  background-size: 360%;
-  background-position: -425px -20px;
-  padding: 10px 10px 140px 10px;
+  background-image: url(../img/header_bg_mobile.png);
+  padding: 10px 0px 140px 0px;
   text-align: center;
   color: white; }
   header h1 {
@@ -212,7 +210,7 @@ div.howWork {
     border-radius: 5px;
     padding: 70px 20px 20px 20px;
     margin: 5px auto;
-    width: 260px; }
+    width: 259.2px; }
     div.howWork div.howWork__step1 button,
     div.howWork div.howWork__step2 button,
     div.howWork div.howWork__step3 button {
@@ -241,7 +239,7 @@ div.partners {
   padding: 20px 20px 10px 20px;
   text-align: center; }
   div.partners div.partners__item {
-    width: 200px;
+    width: 198.4px;
     margin-top: 20px;
     position: relative; }
     div.partners div.partners__item img.partner_label {
@@ -273,6 +271,8 @@ div.ideas {
     text-align: center; }
     div.ideas div.grid .grid-sizer img,
     div.ideas div.grid .grid-item img {
+      width: 300px;
+      height: 120px;
       position: relative;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -306,7 +306,7 @@ div.ideas {
       border: 1px solid lightgray;
       font: 14px RL, sans-serif;
       padding: 10px 15px;
-      width: 250px;
+      width: 249.6px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
