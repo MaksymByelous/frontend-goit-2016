@@ -115,7 +115,6 @@ body {
   h2,
   figcaption {
     font: 22px $font_bold;
-    // text-transform: capitalize;
   }
   h2::first-letter,
   figcaption::first-letter,
@@ -137,7 +136,6 @@ body {
   span.capital {
     text-transform: capitalize;
   }
-  //---do with css p:fst-child
   span.low {
     text-transform: lowercase;
   }
@@ -307,7 +305,6 @@ div.ideas {
 footer {
   text-align: center;
   border-top: 3px solid $brand_color_red;
-  // text-transform: capitalize;
   h3 {
     color: $font_color_black;
   }

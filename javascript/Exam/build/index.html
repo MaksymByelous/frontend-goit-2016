@@ -67,44 +67,23 @@
     </div>
 
     <div class="partners">
-      <h2>meet a partner fot your best holiday</h2>
-      <div class="partners__item">
-        <img class="partner_foto" src="img/partner4_foto.png" alt="" />
-        <img class="partner_label" src="img/partner4_label.png" alt="" />
-        <h2>Brabley Hunter</h2>
-        <p>
-          based in Chicago.
-           I love playing tennis and loud music.
-        </p>
-      </div>
-      <div class="partners__item">
-        <img class="partner_foto" src="img/partner2_foto.png" alt="" />
-        <img class="partner_label" src="img/partner2_label.png" alt="" />
-        <h2>Lucas Marsha</h2>
-        <p>
-          I get my inspiration from nature and object around me.
-          I have a passion to colours, typography and skateboards.
-        </p>
-      </div>
-      <div class="partners__item">
-        <img class="partner_foto" src="img/partner3_foto.png" alt="" />
-        <img class="partner_label" src="img/partner3_label.png" alt="" />
-        <h2>heather Walker</h2>
-        <p>
-          I'm a happy person that loves cats and climbing on mountains.
-        </p>
-      </div>
-      <div class="partners__item">
-        <img class="partner_foto" src="img/partner1_foto.png" alt="" />
-        <img class="partner_label" src="img/partner1_label.png" alt="" />
-        <h2>Brabley Hunter</h2>
-        <p>
-          based in Chicago.
-           I love playing tennis and loud music.
-        </p>
-      </div>
-      <button type="button" name="button">
+      <h2 id="partners" >meet a partner fot your best holiday</h2>
+
+      <script type="text/template" id="partners_template">
+        <% partnersList.forEach(function(partnersList) { %>
+          <div class="partners__item">
+            <img class="partner_foto" src="<%= partnersList.fotoSrc %>" alt="" />
+            <img class="partner_label" src="<%= partnersList.labelSrc %>" alt="" />
+            <h2><%= partnersList.name %></h2>
+            <p><%= partnersList.massege %></p>
+          </div>
+        <% }); %>
+      </script>
+
+      <button id="show_all_partners" type="button" name="button">
         See other partners</button>
+      <button id="hide" type="button" name="button">
+          Hide other partners</button>
     </div>
 
     <div class="ideas">
