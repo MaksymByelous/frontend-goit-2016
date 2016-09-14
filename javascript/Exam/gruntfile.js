@@ -19,8 +19,9 @@ module.exports = function(grunt) {
       },
       dist: {
         src: ['src/styles/src/variables.scss',
-        'src/styles/src/mixins.scss',
         'src/styles/src/reset.scss',
+        'src/styles/src/mixins.scss',
+        'src/styles/src/jcarousel.basic.scss',
         'src/styles/src/styles.scss'],
         dest: 'src/styles/main.scss'
        }

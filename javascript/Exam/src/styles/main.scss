@@ -12,22 +12,8 @@ $brand_color_red: #ff4e50;
 $desctop_width: 1440px;
 $tablet_width: 768px;
 $mobile_width: 320px;
-@mixin red_buttons($color) {
-  background-color: $color;
-  border: 0px;
-  color: $font_color_white;
-  font-family: $font_bold;
-  &:active,
-  &:focus {
-    border: 0px;
-    }
-}
-@mixin radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
+
+$padding_desctop: 250px;
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -75,6 +61,80 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+@mixin red_buttons($color) {
+  background-color: $color;
+  border: 0px;
+  color: $font_color_white;
+  font-family: $font_bold;
+  &:active,
+  &:focus {
+    border: 0px;
+    }
+}
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+.jcarousel-wrapper {
+    margin: 10px;
+    position: relative;
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+       width: 235px;
+       margin: 5px;
+       float: left;
+    }
+    @media screen and (min-width: 1440px) {
+       width: 300px;
+       margin: 5px;
+       margin-right: 15px;
+       float: left;
+    }
+}
+div.last {
+  @media screen and (min-width: 1440px) {
+     margin-left: 0px;
+     margin-right: 0px;
+  }
+}
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    float: left;
+}
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 10px;
+    @media screen and (min-width: 1440px) {
+      top: 150px;
+    }
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+      top: 40px;
+    }
+}
+
+.jcarousel-control-prev {
+    left: 15px;
+}
+
+.jcarousel-control-next {
+    right: 25px;
 }
 @font-face {
   font-family: 'RTI';
@@ -170,12 +230,7 @@ table {
 
 body {
   background-color: white;
-  div,
-  header,
-  footer {
-      width: $mobile_width;
-      margin: 0 auto 20px auto;
-  }
+
   button {
     @include red_buttons($brand_color_red);
     @include radius(20px);
@@ -188,7 +243,9 @@ body {
   }
   h1 {
     font: 30px $font_bold;
-  // desctop  font: 52px $font_bold;
+    @media screen and (min-width: 760px) {
+      font-size: 52px;
+    }
   }
   h2,
   figcaption {
@@ -217,26 +274,95 @@ body {
   span.low {
     text-transform: lowercase;
   }
+  .tablet,
+  .desctop {
+    display: none;
+  }
+  .tablet {
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+      display: block;
+    }
+  }
+  .mobile {
+    @media screen and (min-width: 760px) {
+       display: none;
+    }
+  }
+  .desctop {
+    @media screen and (min-width: 1440px) {
+      display: block;
+    }
+  }
 }
 header {
+  width: $mobile_width;
+  @media screen and (min-width: 1440px) {
+    width: $desctop_width;
+    padding: 10px 0px 237px 0px;
+  }
+  @media screen and (min-width: 760px) and (max-width: 1439px) {
+     width: $tablet_width;
+     padding-bottom: 240px;
+  }
+  margin: 0 auto 20px auto;
   background-color: black;
   background-image: url(../img/header_bg_mobile.png);
-  padding: 10px 0px 140px 0px;
+  padding: 10px 0px 78px 0px;
   text-align: center;
   color: $font_color_white;
+  @media screen and (min-width: 760px) {
+    background-image: url(../img/header_bg.png);
+  }
+  div.header__content {
+    margin: 0 auto;
+    @media screen and (min-width: 1440px) {
+      width: $desctop_width*0.4;
+    }
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+       width: $tablet_width*0.7;
+    }
+    p {
+      @media screen and (min-width: 760px) {
+         font-size: 24px;
+      }
+    }
+  }
+
   h1 {
     text-transform: uppercase;
     margin: 40px 0px 20px 0px;
   }
   div.header__top {
-    margin-bottom: 105px;
+    margin-top: 30px;
+    margin-bottom: 140px;
+    overflow: hidden;
+    @media screen and (min-width: 1440px) {
+      width: $desctop_width*0.6528;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+      width: ($tablet_width - 20);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div.header__top__name {
+      margin-top: 5px;
+      display: none;
+      @media screen and (min-width: 760px) {
+        display: block;
+        float: left;
+      }
+    }
     div.header__top__login {
       font-family: $font_bold;
-
+      @media screen and (min-width: 760px) {
+        float: right;
+      }
       button.btn_login {
         background-color: rgba(255, 78, 80, 0);
         border: 2px solid $font_color_white;
-        padding: 5px 20px;
+        padding: 7px 18px;
         margin-left: 15px;
         font-family: $font_bold;
       }
@@ -246,15 +372,26 @@ header {
     font-size: 20px;
   }
   button.findHoliday {
-    margin-top: 20px;
-    padding: 10px 50px;
+    margin-top: 35px;
+    padding: 10px 30px;
   }
 }
 
+
 div.howWork {
-  padding: 10px;
+  width: $mobile_width;
+  padding-top: 75px;
+  overflow: hidden;
+  @media screen and (min-width: 1440px) {
+    width: $desctop_width*0.6528;
+  }
+  @media screen and (min-width: 760px) and (max-width: 1439px) {
+     width: ($tablet_width - 20);
+  }
+  margin: 0 auto 20px auto;
   h2 {
     text-align: center;
+    margin-bottom: 30px;
     color: $font_color_black;
   }
   p {
@@ -264,12 +401,21 @@ div.howWork {
   div.howWork__step2,
   div.howWork__step3 {
     @include radius(5px);
-    padding: 70px 20px 20px 20px;
-    margin: 5px auto;
-    width: $mobile_width*0.81;
+    padding: 70px 0px 0px 20px;
+    margin-right: 20px;
+    width: $mobile_width*0.853;
+    height: $mobile_width*0.5563;
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+      width: $tablet_width*0.2773;
+      height: $tablet_width*0.26;
+      padding-top: 200px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding-top: 225px;
+    }
     button {
       font: 10px $font_regular;
-      padding: 5px 15px;
+      padding: 5px 20px;
     }
     h2 {
       text-align: left;
@@ -280,26 +426,74 @@ div.howWork {
     p {
       margin-top: 10px;
       line-height: 0.8;
+      @media screen and (min-width: 1440px) {
+        line-height: 1.2;
+      }
     }
   }
   div.howWork__step1 {
     background-image: url(../img/works_step1_mobile.png);
+    background-repeat: no-repeat;
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    background-image: url(../img/works_step1_tab.png);
+    }
+    @media screen and (min-width: 1440px) {
+    background-image: url(../img/works_step1.png);
+    }
+
   }
   div.howWork__step2 {
     background-image: url(../img/works_step2_mobile.png);
+    background-repeat: no-repeat;
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    background-image: url(../img/works_step2_tab.png);
+    }
+    @media screen and (min-width: 1440px) {
+    background-image: url(../img/works_step2.png);
+    }
   }
   div.howWork__step3 {
     background-image: url(../img/works_step3_mobile.png);
+    background-repeat: no-repeat;
+    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    background-image: url(../img/works_step3_tab.png);
+    }
+    @media screen and (min-width: 1440px) {
+    background-image: url(../img/works_step3.png);
+    }
   }
 }
 
 div.partners {
-  padding: 20px 20px 10px 20px;
+  width: $mobile_width;
+  @media screen and (min-width: 1440px) {
+    width: $desctop_width*0.6528;
+    margin-top: 85px;
+  }
+  @media screen and (min-width: 760px) and (max-width: 1439px) {
+     width: ($tablet_width - 20);
+  }
+  margin: 0 auto 20px auto;
   text-align: center;
+  #partners {
+    overflow: hidden;
+  }
   div.partners__item {
     width: $mobile_width*0.62;
-    margin-top: 20px;
+    margin: 30px auto 0 auto;
     position: relative;
+    @media screen and (min-width: 760px) and (max-width: 1439px){
+      float: left;
+      height: 250px;
+      width: 30%;
+      padding: 0 70px;
+    }
+    @media screen and (min-width: 1440px) {
+      float: left;
+      height: 250px;
+      width: 22.8%;
+      padding: 0 10px;
+    }
     img.partner_foto {
     }
     img.partner_label {
@@ -309,7 +503,7 @@ div.partners {
     }
     h2 {
       font-size: 14px;
-      margin: 10px 0;
+      margin: 15px 0;
     }
     p {
       color: $font_color_gray;
@@ -321,31 +515,60 @@ div.partners {
     font-size: 14px;
     border: 2px solid $brand_color_red;
     width: $mobile_width*0.875;
+    @media screen and (min-width: 1440px) {
+      width: $desctop_width*0.132;
+    }
     padding: 10px 0;
+    margin-top: 23px;
   }
 }
 
 div.ideas {
+  width: $mobile_width;
+  @media screen and (min-width: 1440px) {
+    width: $desctop_width*0.6528;
+    margin-top: 100px;
+  }
+  @media screen and (min-width: 760px) and (max-width: 1439px) {
+     width: ($tablet_width - 20);
+  }
+  margin: 0 auto 20px auto;
   text-align: center;
   margin-bottom: 40px;
   h2 {
     color: $font_color_black;
+    margin-bottom: 30px;
   }
   div.grid {
     .grid-sizer,
     .grid-item {
       width: 100%;
-      height: 125px;
+      margin: 0 5px;
+      @media screen and (min-width: 760px) {
+        width: 31.9%;
+        height: 320px;
+      }
       text-align: center;
       img {
         width: $mobile_width*0.9375;
         height: 120px;
+        @media screen and (min-width: 760px) {
+          width: $tablet_width*0.306;
+          height: $tablet_width*0.39;
+        }
+        @media screen and (min-width: 1440px) {
+          width: $desctop_width*0.208;
+          height: $desctop_width*0.2153;
+        }
         position: relative;
         @include radius(5px);
       }
       figcaption {
         position: absolute;
         top: 30%;
+        @media screen and (min-width: 1440px) {
+          top: 45%;
+        }
         width: 100%;
         color: $font_color_white;
       }
@@ -353,17 +576,32 @@ div.ideas {
   }
   div.ideas__search {
     margin-top: 10px;
+    @media screen and (min-width: 760px) {
+      margin-top: 85px;
+      margin-bottom: 100px;
+    }
     form {
-
+      p {
+        @media screen and (min-width: 760px) {
+          display: none;
+        }
+      }
     }
     input {
       margin-top: 10px;
+      @media screen and (min-width: 760px) {
+        margin-top: 35px;
+      }
     }
     input[type="submit"] {
       @include red_buttons($brand_color_red);
       @include radius(15px);
-      padding: 10px 0px;
+      padding: 11px 0px;
       width: $mobile_width*0.875;
+      @media screen and (min-width: 760px) {
+        width: $desctop_width*0.1125;
+        margin-left: 5px;
+      }
     }
     input[type="text"] {
       color: gray;
@@ -371,6 +609,9 @@ div.ideas {
       font: 14px $font_light;
       padding: 10px 15px;
       width: $mobile_width*0.78;
+      @media screen and (min-width: 760px) {
+        width: $desctop_width*0.1451;
+      }
       @include radius(5px);
     }
     p {
@@ -381,6 +622,32 @@ div.ideas {
   }
 }
 footer {
+  width: $mobile_width;
+  margin: 0 auto 20px auto;
+  @media screen and (min-width: 1440px) {
+    width: $desctop_width;
+  }
+  @media screen and (min-width: 760px) and (max-width: 1439px) {
+     width: ($tablet_width);
+  }
+  @media screen and (min-width: 760px) {
+    overflow: hidden;
+  }
+  div.footer__logo,
+  div.footer__company,
+  div.footer__partners,
+  div.footer__areto_logo {
+    @media screen and (min-width: 760px) {
+      float: left;
+      width: 10%;
+      margin-top: 35px;
+      text-align: left;
+      margin-left: 95px;
+    }
+    @media screen and (min-width: 760px) and (max-width: 1439px){
+      width: 16%;
+    }
+  }
   text-align: center;
   border-top: 3px solid $brand_color_red;
   h3 {
@@ -388,14 +655,33 @@ footer {
   }
   .brand_name {
     color: $brand_color_red;
+    @media screen and (min-width: 760px) {
+      font-size: 16px;
+    }
   }
   div.footer__logo {
-    margin: 20px 0px;
+
+    @media screen and (min-width: 1440px) {
+    margin-left: $padding_desctop;
+    }
+    @media screen and (min-width: 760px) and (max-width: 1439px){
+    margin-left: 40px;
+    }
   }
   div.footer__company {
     margin-bottom: 20px;
+    ul {
+      @media screen and (min-width: 760px) {
+        margin-left: -5px;
+      }
+    }
     li {
       display: inline-block;
+      text-transform: capitalize;
+      @media screen and (min-width: 760px) {
+        display: flex;
+        margin-top: 7px;
+      }
         a,
         a:active,
         a:focus,
@@ -407,12 +693,30 @@ footer {
     }
     div.footer__partners {
       margin-bottom: 20px;
+      @media screen and (min-width: 760px) {
+        margin-left: 17px;
+      }
     }
     div.footer__areto_logo {
       margin-bottom: 20px;
       text-transform: uppercase;
+      @media screen and (min-width: 760px) and (max-width: 1439px){
+        text-align: right;
+      }
+      @media screen and (min-width: 1440px) {
+        text-align: right;
+        margin-right: $desctop_width*0.1736;
+        float: right;
+      }
+      @media screen and (min-width: 760px) and (max-width: 1439px){
+       margin-right: 20px;
+      }
       h3 {
         color: $font_color_gray;
+        @media screen and (min-width: 760px) {
+          font-size: 10px;
+          margin-bottom: 7px;
+        }
       }
     }
 }

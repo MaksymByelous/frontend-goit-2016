@@ -27,8 +27,8 @@ var partnersList = [
     {
       name: "Brabley Hunter",
       massege: "based in Chicago. I love playing tennis and loud music.",
-      fotoSrc: "//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
-      labelSrc: "Beijing"
+      fotoSrc: "img/partner4_foto.png",
+      labelSrc: "img/partner4_label.png"
     },
     {
       name: "Brabley Hunter",
@@ -46,6 +46,8 @@ var partnersList = [
 
 $(document).ready(function () {
 
+
+//-----
   $('#hide').hide();
 //--------partners rendering with template
   var partnersTemplate = $('#partners_template').html();
