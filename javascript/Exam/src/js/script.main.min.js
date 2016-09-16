@@ -7,16 +7,16 @@ var partnersList = [
       labelSrc: "img/partner4_label.png"
     },
     {
-      name: "Lucas Marsha",
-      massege: "I get my inspiration from nature and object around me. I have a passion to colours, typography and skateboards.",
-      fotoSrc: "img/partner2_foto.png",
-      labelSrc: "img/partner2_label.png"
-    },
-    {
       name: "Heather Walker",
       massege: "I'm a happy person that loves cats and climbing on mountains.",
       fotoSrc: "img/partner3_foto.png",
       labelSrc: "img/partner3_label.png"
+    },
+    {
+      name: "Lucas Marsha",
+      massege: "I get my inspiration from nature and object around me. I have a passion to colours, typography and skateboards.",
+      fotoSrc: "img/partner2_foto.png",
+      labelSrc: "img/partner2_label.png"
     },
     {
       name: "Brabley Hunter",

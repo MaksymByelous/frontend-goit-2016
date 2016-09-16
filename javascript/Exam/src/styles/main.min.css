@@ -48,19 +48,18 @@ table {
 .jcarousel-wrapper {
   margin: 10px;
   position: relative; }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     .jcarousel-wrapper {
       width: 235px;
       margin: 5px;
       float: left; } }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     .jcarousel-wrapper {
       width: 300px;
-      margin: 5px;
-      margin-right: 15px;
+      margin: 4px 15px 5px 5px;
       float: left; } }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 960px) {
   div.last {
     margin-left: 0px;
     margin-right: 0px; } }
@@ -85,11 +84,11 @@ table {
 .jcarousel-control-next {
   position: absolute;
   top: 10px; }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     .jcarousel-control-prev,
     .jcarousel-control-next {
       top: 150px; } }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     .jcarousel-control-prev,
     .jcarousel-control-next {
       top: 40px; } }
@@ -224,13 +223,13 @@ body {
   body .tablet,
   body .desctop {
     display: none; }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     body .tablet {
       display: block; } }
   @media screen and (min-width: 760px) {
     body .mobile {
       display: none; } }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     body .desctop {
       display: block; } }
 
@@ -242,23 +241,23 @@ header {
   padding: 10px 0px 78px 0px;
   text-align: center;
   color: white; }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     header {
       width: 1440px;
       padding: 10px 0px 237px 0px; } }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     header {
       width: 768px;
-      padding-bottom: 240px; } }
+      padding-bottom: 237px; } }
   @media screen and (min-width: 760px) {
     header {
       background-image: url(../img/header_bg.png); } }
   header div.header__content {
     margin: 0 auto; }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       header div.header__content {
         width: 576px; } }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       header div.header__content {
         width: 537.6px; } }
     @media screen and (min-width: 760px) {
@@ -271,12 +270,12 @@ header {
     margin-top: 30px;
     margin-bottom: 140px;
     overflow: hidden; }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       header div.header__top {
-        width: 940.032px;
+        width: 940.00032px;
         margin-left: auto;
         margin-right: auto; } }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       header div.header__top {
         width: 748px;
         margin-left: auto;
@@ -310,10 +309,11 @@ div.howWork {
   padding-top: 75px;
   overflow: hidden;
   margin: 0 auto 20px auto; }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     div.howWork {
-      width: 940.032px; } }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+      width: 940.00032px;
+      padding-left: 80px; } }
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     div.howWork {
       width: 748px; } }
   div.howWork h2 {
@@ -329,22 +329,23 @@ div.howWork {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    padding: 70px 0px 0px 20px;
+    padding: 70px 7px 0px 20px;
     margin-right: 20px;
     width: 272.96px;
     height: 178.016px; }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       div.howWork div.howWork__step1,
       div.howWork div.howWork__step2,
       div.howWork div.howWork__step3 {
         width: 212.9664px;
         height: 199.68px;
         padding-top: 200px; } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       div.howWork div.howWork__step1,
       div.howWork div.howWork__step2,
       div.howWork div.howWork__step3 {
-        padding-top: 225px; } }
+        padding-top: 230px;
+        width: 280.032px; } }
     div.howWork div.howWork__step1 button,
     div.howWork div.howWork__step2 button,
     div.howWork div.howWork__step3 button {
@@ -357,41 +358,47 @@ div.howWork {
       color: white;
       font-size: 24px;
       margin-top: 10px; }
+      @media screen and (min-width: 960px) {
+        div.howWork div.howWork__step1 h2,
+        div.howWork div.howWork__step2 h2,
+        div.howWork div.howWork__step3 h2 {
+          margin-bottom: 25px; } }
     div.howWork div.howWork__step1 p,
     div.howWork div.howWork__step2 p,
     div.howWork div.howWork__step3 p {
       margin-top: 10px;
       line-height: 0.8; }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 960px) {
         div.howWork div.howWork__step1 p,
         div.howWork div.howWork__step2 p,
         div.howWork div.howWork__step3 p {
+          margin-top: 0px;
           line-height: 1.2; } }
   div.howWork div.howWork__step1 {
     background-image: url(../img/works_step1_mobile.png);
     background-repeat: no-repeat; }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       div.howWork div.howWork__step1 {
         background-image: url(../img/works_step1_tab.png); } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       div.howWork div.howWork__step1 {
         background-image: url(../img/works_step1.png); } }
   div.howWork div.howWork__step2 {
     background-image: url(../img/works_step2_mobile.png);
     background-repeat: no-repeat; }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       div.howWork div.howWork__step2 {
         background-image: url(../img/works_step2_tab.png); } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       div.howWork div.howWork__step2 {
         background-image: url(../img/works_step2.png); } }
   div.howWork div.howWork__step3 {
     background-image: url(../img/works_step3_mobile.png);
     background-repeat: no-repeat; }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       div.howWork div.howWork__step3 {
         background-image: url(../img/works_step3_tab.png); } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       div.howWork div.howWork__step3 {
         background-image: url(../img/works_step3.png); } }
 
@@ -399,26 +406,27 @@ div.partners {
   width: 320px;
   margin: 0 auto 20px auto;
   text-align: center; }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     div.partners {
-      width: 940.032px;
-      margin-top: 85px; } }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+      width: 940.00032px;
+      margin-top: 80px;
+      padding-left: 90px; } }
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     div.partners {
       width: 748px; } }
   div.partners #partners {
     overflow: hidden; }
   div.partners div.partners__item {
     width: 198.4px;
-    margin: 30px auto 0 auto;
+    margin: 33px auto 0 auto;
     position: relative; }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       div.partners div.partners__item {
         float: left;
         height: 250px;
         width: 30%;
         padding: 0 70px; } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       div.partners div.partners__item {
         float: left;
         height: 250px;
@@ -430,7 +438,7 @@ div.partners {
       left: 59%; }
     div.partners div.partners__item h2 {
       font-size: 14px;
-      margin: 15px 0; }
+      margin: 13px 0; }
     div.partners div.partners__item p {
       color: gray; }
   div.partners button {
@@ -439,9 +447,9 @@ div.partners {
     font-size: 14px;
     border: 2px solid #ff4e50;
     width: 280px;
-    padding: 10px 0;
+    padding: 9px 0;
     margin-top: 23px; }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       div.partners button {
         width: 190.08px; } }
 
@@ -450,26 +458,27 @@ div.ideas {
   margin: 0 auto 20px auto;
   text-align: center;
   margin-bottom: 40px; }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     div.ideas {
-      width: 940.032px;
-      margin-top: 100px; } }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+      width: 986.016px;
+      margin-top: 95px;
+      padding-left: 137px; } }
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     div.ideas {
       width: 748px; } }
   div.ideas h2 {
     color: #333333;
-    margin-bottom: 30px; }
+    margin-bottom: 35px; }
   div.ideas div.grid .grid-sizer,
   div.ideas div.grid .grid-item {
     width: 100%;
-    margin: 0 5px;
+    margin-right: 5px;
     text-align: center; }
     @media screen and (min-width: 760px) {
       div.ideas div.grid .grid-sizer,
       div.ideas div.grid .grid-item {
         width: 31.9%;
-        height: 320px; } }
+        height: 330px; } }
     div.ideas div.grid .grid-sizer img,
     div.ideas div.grid .grid-item img {
       width: 300px;
@@ -484,7 +493,7 @@ div.ideas {
         div.ideas div.grid .grid-item img {
           width: 235.008px;
           height: 299.52px; } }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 960px) {
         div.ideas div.grid .grid-sizer img,
         div.ideas div.grid .grid-item img {
           width: 299.52px;
@@ -495,16 +504,17 @@ div.ideas {
       top: 30%;
       width: 100%;
       color: white; }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 960px) {
         div.ideas div.grid .grid-sizer figcaption,
         div.ideas div.grid .grid-item figcaption {
-          top: 45%; } }
+          top: 42%; } }
   div.ideas div.ideas__search {
     margin-top: 10px; }
     @media screen and (min-width: 760px) {
       div.ideas div.ideas__search {
-        margin-top: 85px;
-        margin-bottom: 100px; } }
+        margin: 74px 0px 100px -45px; } }
+    div.ideas div.ideas__search h2 {
+      margin-bottom: 33px; }
     @media screen and (min-width: 760px) {
       div.ideas div.ideas__search form p {
         display: none; } }
@@ -528,7 +538,7 @@ div.ideas {
         border: 0px; }
       @media screen and (min-width: 760px) {
         div.ideas div.ideas__search input[type="submit"] {
-          width: 162px;
+          width: 162.048px;
           margin-left: 5px; } }
     div.ideas div.ideas__search input[type="text"] {
       color: gray;
@@ -542,7 +552,7 @@ div.ideas {
       border-radius: 5px; }
       @media screen and (min-width: 760px) {
         div.ideas div.ideas__search input[type="text"] {
-          width: 208.944px; } }
+          width: 208.992px; } }
     div.ideas div.ideas__search p {
       color: gray;
       font-size: 18px;
@@ -553,10 +563,11 @@ footer {
   margin: 0 auto 20px auto;
   text-align: center;
   border-top: 3px solid #ff4e50; }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     footer {
-      width: 1440px; } }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+      width: 960px;
+      padding: 0 240px; } }
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     footer {
       width: 768px; } }
   @media screen and (min-width: 760px) {
@@ -568,11 +579,11 @@ footer {
     footer div.footer__partners,
     footer div.footer__areto_logo {
       float: left;
-      width: 10%;
+      width: 15%;
       margin-top: 35px;
       text-align: left;
       margin-left: 95px; } }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     footer div.footer__logo,
     footer div.footer__company,
     footer div.footer__partners,
@@ -585,14 +596,20 @@ footer {
     @media screen and (min-width: 760px) {
       footer .brand_name {
         font-size: 16px; } }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     footer div.footer__logo {
-      margin-left: 250px; } }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+      margin-left: 10px; } }
+  @media screen and (min-width: 760px) and (max-width: 959px) {
     footer div.footer__logo {
       margin-left: 40px; } }
   footer div.footer__company {
     margin-bottom: 20px; }
+    @media screen and (min-width: 960px) {
+      footer div.footer__company {
+        margin-left: 95px; } }
+    @media screen and (min-width: 960px) {
+      footer div.footer__company h2 {
+        margin-bottom: 10px; } }
     @media screen and (min-width: 760px) {
       footer div.footer__company ul {
         margin-left: -5px; } }
@@ -617,15 +634,15 @@ footer {
   footer div.footer__areto_logo {
     margin-bottom: 20px;
     text-transform: uppercase; }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       footer div.footer__areto_logo {
         text-align: right; } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       footer div.footer__areto_logo {
         text-align: right;
-        margin-right: 249.984px;
+        margin-right: 10px;
         float: right; } }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       footer div.footer__areto_logo {
         margin-right: 20px; } }
     footer div.footer__areto_logo h3 {
@@ -633,6 +650,6 @@ footer {
       @media screen and (min-width: 760px) {
         footer div.footer__areto_logo h3 {
           font-size: 10px;
-          margin-bottom: 7px; } }
+          margin-bottom: 10px; } }
 
 /*# sourceMappingURL=main.min.css.map */

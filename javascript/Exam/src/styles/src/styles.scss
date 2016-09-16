@@ -141,7 +141,7 @@ body {
     display: none;
   }
   .tablet {
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       display: block;
     }
   }
@@ -151,18 +151,18 @@ body {
     }
   }
   .desctop {
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       display: block;
     }
   }
 }
 header {
   width: $mobile_width;
-  @media screen and (min-width: 1440px) {
-    width: $desctop_width;
+  @media screen and (min-width: 960px) {
+    width: 1440px;
     padding: 10px 0px 237px 0px;
   }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
      width: $tablet_width;
      padding-bottom: 237px;
   }
@@ -177,10 +177,10 @@ header {
   }
   div.header__content {
     margin: 0 auto;
-    @media screen and (min-width: 1440px) {
-      width: $desctop_width*0.4;
+    @media screen and (min-width: 960px) {
+      width: $desctop_width*0.6;
     }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
        width: $tablet_width*0.7;
     }
     p {
@@ -198,12 +198,12 @@ header {
     margin-top: 30px;
     margin-bottom: 140px;
     overflow: hidden;
-    @media screen and (min-width: 1440px) {
-      width: $desctop_width*0.6528;
+    @media screen and (min-width: 960px) {
+      width: $desctop_width*0.979167;
       margin-left: auto;
       margin-right: auto;
     }
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       width: ($tablet_width - 20);
       margin-left: auto;
       margin-right: auto;
@@ -244,10 +244,11 @@ div.howWork {
   width: $mobile_width;
   padding-top: 75px;
   overflow: hidden;
-  @media screen and (min-width: 1440px) {
-    width: $desctop_width*0.6528;
+  @media screen and (min-width: 960px) {
+    width: $desctop_width*0.979167;
+    padding-left: 80px;
   }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
      width: ($tablet_width - 20);
   }
   margin: 0 auto 20px auto;
@@ -263,17 +264,18 @@ div.howWork {
   div.howWork__step2,
   div.howWork__step3 {
     @include radius(5px);
-    padding: 70px 0px 0px 20px;
+    padding: 70px 7px 0px 20px;
     margin-right: 20px;
     width: $mobile_width*0.853;
     height: $mobile_width*0.5563;
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
       width: $tablet_width*0.2773;
       height: $tablet_width*0.26;
       padding-top: 200px;
     }
-    @media screen and (min-width: 1440px) {
-      padding-top: 225px;
+    @media screen and (min-width: 960px) {
+      padding-top: 230px;
+      width: $desctop_width*0.2917;
     }
     button {
       font: 10px $font_regular;
@@ -284,11 +286,15 @@ div.howWork {
       color: $font_color_white;
       font-size: 24px;
       margin-top: 10px;
+      @media screen and (min-width: 960px){
+        margin-bottom: 25px;
+      }
     }
     p {
       margin-top: 10px;
       line-height: 0.8;
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 960px) {
+        margin-top: 0px;
         line-height: 1.2;
       }
     }
@@ -296,10 +302,10 @@ div.howWork {
   div.howWork__step1 {
     background-image: url(../img/works_step1_mobile.png);
     background-repeat: no-repeat;
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
     background-image: url(../img/works_step1_tab.png);
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
     background-image: url(../img/works_step1.png);
     }
 
@@ -307,20 +313,20 @@ div.howWork {
   div.howWork__step2 {
     background-image: url(../img/works_step2_mobile.png);
     background-repeat: no-repeat;
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
     background-image: url(../img/works_step2_tab.png);
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
     background-image: url(../img/works_step2.png);
     }
   }
   div.howWork__step3 {
     background-image: url(../img/works_step3_mobile.png);
     background-repeat: no-repeat;
-    @media screen and (min-width: 760px) and (max-width: 1439px) {
+    @media screen and (min-width: 760px) and (max-width: 959px) {
     background-image: url(../img/works_step3_tab.png);
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
     background-image: url(../img/works_step3.png);
     }
   }
@@ -328,11 +334,12 @@ div.howWork {
 
 div.partners {
   width: $mobile_width;
-  @media screen and (min-width: 1440px) {
-    width: $desctop_width*0.6528;
-    margin-top: 85px;
+  @media screen and (min-width: 960px) {
+    width: $desctop_width*0.979167;
+    margin-top: 80px;
+    padding-left: 90px;
   }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
      width: ($tablet_width - 20);
   }
   margin: 0 auto 20px auto;
@@ -342,15 +349,15 @@ div.partners {
   }
   div.partners__item {
     width: $mobile_width*0.62;
-    margin: 30px auto 0 auto;
+    margin: 33px auto 0 auto;
     position: relative;
-    @media screen and (min-width: 760px) and (max-width: 1439px){
+    @media screen and (min-width: 760px) and (max-width: 959px){
       float: left;
       height: 250px;
       width: 30%;
       padding: 0 70px;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 960px) {
       float: left;
       height: 250px;
       width: 22.8%;
@@ -365,7 +372,7 @@ div.partners {
     }
     h2 {
       font-size: 14px;
-      margin: 15px 0;
+      margin: 13px 0;
     }
     p {
       color: $font_color_gray;
@@ -377,21 +384,22 @@ div.partners {
     font-size: 14px;
     border: 2px solid $brand_color_red;
     width: $mobile_width*0.875;
-    @media screen and (min-width: 1440px) {
-      width: $desctop_width*0.132;
+    @media screen and (min-width: 960px) {
+      width: $desctop_width*0.198;
     }
-    padding: 10px 0;
+    padding: 9px 0;
     margin-top: 23px;
   }
 }
 
 div.ideas {
   width: $mobile_width;
-  @media screen and (min-width: 1440px) {
-    width: $desctop_width*0.6528;
-    margin-top: 100px;
+  @media screen and (min-width: 960px) {
+    width: $desctop_width*1.0271;
+    margin-top: 95px;
+    padding-left: 137px;
   }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
+  @media screen and (min-width: 760px) and (max-width: 959px) {
      width: ($tablet_width - 20);
   }
   margin: 0 auto 20px auto;
@@ -399,16 +407,16 @@ div.ideas {
   margin-bottom: 40px;
   h2 {
     color: $font_color_black;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   div.grid {
     .grid-sizer,
     .grid-item {
       width: 100%;
-      margin: 0 5px;
+      margin-right: 5px;
       @media screen and (min-width: 760px) {
         width: 31.9%;
-        height: 320px;
+        height: 330px;
       }
       text-align: center;
       img {
@@ -418,9 +426,9 @@ div.ideas {
           width: $tablet_width*0.306;
           height: $tablet_width*0.39;
         }
-        @media screen and (min-width: 1440px) {
-          width: $desctop_width*0.208;
-          height: $desctop_width*0.2153;
+        @media screen and (min-width: 960px) {
+          width: $desctop_width*0.312;
+          height: $desctop_width*0.32295;
         }
         position: relative;
         @include radius(5px);
@@ -428,8 +436,8 @@ div.ideas {
       figcaption {
         position: absolute;
         top: 30%;
-        @media screen and (min-width: 1440px) {
-          top: 45%;
+        @media screen and (min-width: 960px) {
+          top: 42%;
         }
         width: 100%;
         color: $font_color_white;
@@ -439,8 +447,10 @@ div.ideas {
   div.ideas__search {
     margin-top: 10px;
     @media screen and (min-width: 760px) {
-      margin-top: 85px;
-      margin-bottom: 100px;
+      margin: 74px 0px 100px -45px;
+    }
+    h2 {
+      margin-bottom: 33px;
     }
     form {
       p {
@@ -461,7 +471,7 @@ div.ideas {
       padding: 11px 0px;
       width: $mobile_width*0.875;
       @media screen and (min-width: 760px) {
-        width: $desctop_width*0.1125;
+        width: $desctop_width*0.1688;
         margin-left: 5px;
       }
     }
@@ -472,7 +482,7 @@ div.ideas {
       padding: 10px 15px;
       width: $mobile_width*0.78;
       @media screen and (min-width: 760px) {
-        width: $desctop_width*0.1451;
+        width: $desctop_width*0.2177;
       }
       @include radius(5px);
     }
@@ -486,11 +496,12 @@ div.ideas {
 footer {
   width: $mobile_width;
   margin: 0 auto 20px auto;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 960px) {
     width: $desctop_width;
+    padding: 0 ( (1440-$desctop_width)/2 );
   }
-  @media screen and (min-width: 760px) and (max-width: 1439px) {
-     width: ($tablet_width);
+  @media screen and (min-width: 760px) and (max-width: 959px) {
+     width: $tablet_width;
   }
   @media screen and (min-width: 760px) {
     overflow: hidden;
@@ -501,12 +512,12 @@ footer {
   div.footer__areto_logo {
     @media screen and (min-width: 760px) {
       float: left;
-      width: 10%;
+      width: 15%;
       margin-top: 35px;
       text-align: left;
       margin-left: 95px;
     }
-    @media screen and (min-width: 760px) and (max-width: 1439px){
+    @media screen and (min-width: 760px) and (max-width: 959px){
       width: 16%;
     }
   }
@@ -523,15 +534,23 @@ footer {
   }
   div.footer__logo {
 
-    @media screen and (min-width: 1440px) {
-    margin-left: $padding_desctop;
+    @media screen and (min-width: 960px) {
+    margin-left: 10px;
     }
-    @media screen and (min-width: 760px) and (max-width: 1439px){
+    @media screen and (min-width: 760px) and (max-width: 959px){
     margin-left: 40px;
     }
   }
   div.footer__company {
     margin-bottom: 20px;
+    @media screen and (min-width: 960px) {
+      margin-left: 95px;
+    }
+    h2 {
+      @media screen and (min-width: 960px) {
+        margin-bottom: 10px;
+      }
+    }
     ul {
       @media screen and (min-width: 760px) {
         margin-left: -5px;
@@ -562,22 +581,22 @@ footer {
     div.footer__areto_logo {
       margin-bottom: 20px;
       text-transform: uppercase;
-      @media screen and (min-width: 760px) and (max-width: 1439px){
+      @media screen and (min-width: 760px) and (max-width: 959px){
         text-align: right;
       }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 960px) {
         text-align: right;
-        margin-right: $desctop_width*0.1736;
+        margin-right: 10px;
         float: right;
       }
-      @media screen and (min-width: 760px) and (max-width: 1439px){
+      @media screen and (min-width: 760px) and (max-width: 959px){
        margin-right: 20px;
       }
       h3 {
         color: $font_color_gray;
         @media screen and (min-width: 760px) {
           font-size: 10px;
-          margin-bottom: 7px;
+          margin-bottom: 10px;
         }
       }
     }
