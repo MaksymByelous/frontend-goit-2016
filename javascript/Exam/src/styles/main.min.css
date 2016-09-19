@@ -47,7 +47,8 @@ table {
 
 .jcarousel-wrapper {
   margin: 10px;
-  position: relative; }
+  position: relative;
+  width: 300px; }
   @media screen and (min-width: 760px) and (max-width: 959px) {
     .jcarousel-wrapper {
       width: 235px;
@@ -100,69 +101,9 @@ table {
   right: 25px; }
 
 @font-face {
-  font-family: 'RTI';
-  src: url("../fonts/Roboto-ThinItalic.ttf");
-  src: url("../fonts/Roboto-ThinItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RT';
-  src: url("../fonts/Roboto-Thin.ttf");
-  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RR';
-  src: url("../fonts/Roboto-Regular.ttf");
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RMI';
-  src: url("../fonts/Roboto-MediumItalic.ttf");
-  src: url("../fonts/Roboto-MediumItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RM';
-  src: url("../fonts/Roboto-Medium.ttf");
-  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RLI';
-  src: url("../fonts/Roboto-LightItalic.ttf");
-  src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'RL';
   src: url("../fonts/Roboto-Light.ttf");
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RBI';
-  src: url("../fonts/Roboto-BoldItalic.ttf");
-  src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RB';
-  src: url("../fonts/Roboto-Bold.ttf");
-  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RBlackI';
-  src: url("../fonts/Roboto-BlackItalic.ttf");
-  src: url("../fonts/Roboto-BlackItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'RBlack';
-  src: url("../fonts/Roboto-Black.ttf");
-  src: url("../fonts/Roboto-Black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -220,6 +161,16 @@ body {
     text-transform: capitalize; }
   body span.low {
     text-transform: lowercase; }
+  body div.container {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 320px; }
+    @media screen and (min-width: 960px) {
+      body div.container {
+        width: 960px; } }
+    @media screen and (min-width: 760px) and (max-width: 959px) {
+      body div.container {
+        width: 768px; } }
   body .tablet,
   body .desctop {
     display: none; }
@@ -234,32 +185,29 @@ body {
       display: block; } }
 
 header {
-  width: 320px;
+  background: url(../img/header_bg.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0 auto 20px auto;
-  background-color: black;
-  background-image: url(../img/header_bg_mobile.png);
   padding: 10px 0px 78px 0px;
   text-align: center;
   color: white; }
   @media screen and (min-width: 960px) {
     header {
-      width: 1440px;
       padding: 10px 0px 237px 0px; } }
   @media screen and (min-width: 760px) and (max-width: 959px) {
     header {
-      width: 768px;
       padding-bottom: 237px; } }
-  @media screen and (min-width: 760px) {
-    header {
-      background-image: url(../img/header_bg.png); } }
   header div.header__content {
     margin: 0 auto; }
     @media screen and (min-width: 960px) {
       header div.header__content {
-        width: 576px; } }
+        width: 52%; } }
     @media screen and (min-width: 760px) and (max-width: 959px) {
       header div.header__content {
-        width: 537.6px; } }
+        width: 65%; } }
     @media screen and (min-width: 760px) {
       header div.header__content p {
         font-size: 24px; } }
@@ -272,12 +220,13 @@ header {
     overflow: hidden; }
     @media screen and (min-width: 960px) {
       header div.header__top {
-        width: 940.00032px;
+        width: 97.92%;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto; } }
     @media screen and (min-width: 760px) and (max-width: 959px) {
       header div.header__top {
-        width: 748px;
+        width: 86.98%;
         margin-left: auto;
         margin-right: auto; } }
     header div.header__top div.header__top__name {
@@ -305,17 +254,16 @@ header {
     padding: 10px 30px; }
 
 div.howWork {
-  width: 320px;
   padding-top: 75px;
   overflow: hidden;
   margin: 0 auto 20px auto; }
   @media screen and (min-width: 960px) {
     div.howWork {
-      width: 940.00032px;
-      padding-left: 80px; } }
+      width: 97.92%;
+      max-width: 1200px; } }
   @media screen and (min-width: 760px) and (max-width: 959px) {
     div.howWork {
-      width: 748px; } }
+      width: 95%; } }
   div.howWork h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -375,42 +323,41 @@ div.howWork {
           margin-top: 0px;
           line-height: 1.2; } }
   div.howWork div.howWork__step1 {
-    background-image: url(../img/works_step1_mobile.png);
+    background-image: url(../img/works_step1_mobile.jpg);
     background-repeat: no-repeat; }
     @media screen and (min-width: 760px) and (max-width: 959px) {
       div.howWork div.howWork__step1 {
-        background-image: url(../img/works_step1_tab.png); } }
+        background-image: url(../img/works_step1_tab.jpg); } }
     @media screen and (min-width: 960px) {
       div.howWork div.howWork__step1 {
-        background-image: url(../img/works_step1.png); } }
+        background-image: url(../img/works_step1.jpg); } }
   div.howWork div.howWork__step2 {
-    background-image: url(../img/works_step2_mobile.png);
+    background-image: url(../img/works_step2_mobile.jpg);
     background-repeat: no-repeat; }
     @media screen and (min-width: 760px) and (max-width: 959px) {
       div.howWork div.howWork__step2 {
-        background-image: url(../img/works_step2_tab.png); } }
+        background-image: url(../img/works_step2_tab.jpg); } }
     @media screen and (min-width: 960px) {
       div.howWork div.howWork__step2 {
-        background-image: url(../img/works_step2.png); } }
+        background-image: url(../img/works_step2.jpg); } }
   div.howWork div.howWork__step3 {
-    background-image: url(../img/works_step3_mobile.png);
+    background-image: url(../img/works_step3_mobile.jpg);
     background-repeat: no-repeat; }
     @media screen and (min-width: 760px) and (max-width: 959px) {
       div.howWork div.howWork__step3 {
-        background-image: url(../img/works_step3_tab.png); } }
+        background-image: url(../img/works_step3_tab.jpg); } }
     @media screen and (min-width: 960px) {
       div.howWork div.howWork__step3 {
-        background-image: url(../img/works_step3.png); } }
+        background-image: url(../img/works_step3.jpg); } }
 
 div.partners {
-  width: 320px;
   margin: 0 auto 20px auto;
   text-align: center; }
   @media screen and (min-width: 960px) {
     div.partners {
-      width: 940.00032px;
-      margin-top: 80px;
-      padding-left: 90px; } }
+      width: 97.92%;
+      max-width: 1200px;
+      margin-top: 80px; } }
   @media screen and (min-width: 760px) and (max-width: 959px) {
     div.partners {
       width: 748px; } }
@@ -454,17 +401,19 @@ div.partners {
         width: 190.08px; } }
 
 div.ideas {
-  width: 320px;
   margin: 0 auto 20px auto;
   text-align: center;
   margin-bottom: 40px; }
   @media screen and (min-width: 960px) {
     div.ideas {
-      width: 986.016px;
-      margin-top: 95px;
-      padding-left: 137px; } }
+      width: 97.92%;
+      max-width: 1200px;
+      margin-top: 95px; } }
   @media screen and (min-width: 760px) and (max-width: 959px) {
     div.ideas {
+      width: 94%; } }
+  @media screen and (min-width: 760px) and (max-width: 959px) {
+    div.ideas div.container {
       width: 748px; } }
   div.ideas h2 {
     color: #333333;
@@ -512,7 +461,7 @@ div.ideas {
     margin-top: 10px; }
     @media screen and (min-width: 760px) {
       div.ideas div.ideas__search {
-        margin: 74px 0px 100px -45px; } }
+        margin: 74px 0px 100px 0px; } }
     div.ideas div.ideas__search h2 {
       margin-bottom: 33px; }
     @media screen and (min-width: 760px) {
@@ -559,17 +508,9 @@ div.ideas {
       margin-top: 10px; }
 
 footer {
-  width: 320px;
   margin: 0 auto 20px auto;
   text-align: center;
   border-top: 3px solid #ff4e50; }
-  @media screen and (min-width: 960px) {
-    footer {
-      width: 960px;
-      padding: 0 240px; } }
-  @media screen and (min-width: 760px) and (max-width: 959px) {
-    footer {
-      width: 768px; } }
   @media screen and (min-width: 760px) {
     footer {
       overflow: hidden; } }
