@@ -9,7 +9,6 @@
       $(document).ready(function(){
         $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
             var form_data = $(this).serialize(); //собераем все данные из формы
-            console.log(form_data);
             $.ajax({
             type: "POST", //Метод отправки
             url: "send.php", //путь до php фаила отправителя
@@ -19,7 +18,6 @@
                    alert("Ваше сообщение отпрaвлено!");
             }
           });
-
         });
       });
     </script>
