@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+    <script src="jquery-1.12.3.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            console.log(form_data);
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрaвлено!");
+            }
+          });
+
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+    <form id="form">
+        <input type="text" name="name" placeholder="name" required="required"/>
+        <input type="text" name="phone" placeholder="phone" required="required"/>
+        <input type="submit" value="Заказать звонок"/>
+    </form>
+
+  </body>
+</html>
