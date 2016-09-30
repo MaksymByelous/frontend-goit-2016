@@ -3,25 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>form</title>
-    <script src="jquery-1.12.3.min.js" charset="utf-8"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
-            var form_data = $(this).serialize(); //собераем все данные из формы
-            $.ajax({
-            type: "POST", //Метод отправки
-            url: "send.php", //путь до php фаила отправителя
-            data: form_data,
-            success: function() {
-                   //код в этом блоке выполняется при успешной отправке сообщения
-                   alert("Ваше сообщение отпрaвлено!");
-            }
-          });
-        });
-      });
-    </script>
-
+    <!-- <script src="jquery-1.12.3.min.js" charset="utf-8"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="script.js" charset="utf-8"></script>
   </head>
   <body>
     <form id="form">
