@@ -6628,6 +6628,8 @@ section.welcome {
         padding-left: 0px; } }
   section.welcome .navbar-default .navbar-toggle {
     border: 2px solid white; }
+    section.welcome .navbar-default .navbar-toggle .icon-bar {
+      background-color: white; }
   section.welcome div.welcome_moto_text {
     margin-top: 100px; }
     @media screen and (max-width: 767px) {

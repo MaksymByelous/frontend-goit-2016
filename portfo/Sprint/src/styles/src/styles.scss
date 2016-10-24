@@ -64,6 +64,9 @@ section.welcome {
   }
   .navbar-default .navbar-toggle {
     border: 2px solid white;
+    .icon-bar {
+      background-color: white;
+    }
   }
   div.welcome_moto_text {
     margin-top: 100px;
