@@ -1,0 +1,209 @@
+body {
+  font-family: 'Lato', sans-serif !important;
+  color: #333333;
+  .navbar-default {
+    border: 0px;
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 18px;
+  }
+  .navbar-default .navbar-nav>li>a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  .wrapper {
+    max-width: 1000px;
+    padding: 40px 10px 0px;
+    margin: 0 auto;
+  }
+  .btn-blue {
+    background: #00A8E7;
+    border-color: #00A8E7;
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: white;
+  }
+  .clearfix:after {
+      content: '';
+      clear: both;
+      display: block;
+  }
+  section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  p {
+  color: #66717E;
+  }
+}
+header {
+  font-size: 17px;
+  background-color: #333333;
+  padding: 10px 0 5px 0;
+  a {
+    text-decoration: underline;
+    color: #6282f8;
+  }
+  p {
+    color: #efeae1;
+  }
+}
+section.welcome {
+  min-height: 600px;
+  background: url(../img/hero_min.jpg);
+  background-size: cover;
+  background-position: top center;
+  div.logo-color {
+    margin-top: 15px;
+    @media screen and (max-width: 350px) {
+      padding-left: 0px;
+    }
+  }
+  .navbar-default .navbar-toggle {
+    border: 2px solid white;
+  }
+  div.welcome_moto_text {
+    margin-top: 100px;
+    @media screen and (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
+  p.welcome_moto {
+    color: white;
+    font-weight: 700;
+    font-size: 4em;
+    color: white;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    @media screen and (max-width: 767px) {
+      font-size: 3em;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 2em;
+    }
+  }
+}
+section#about_us {
+  font-size: 22px;
+  padding-bottom: 30px;
+  article.about_us_intro {
+    width: 80%;
+    max-width: 650px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  article.about_us_whoWE {
+    h1 {
+      @media screen and (min-width: 768px) {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+section#what_we_do {
+  div.head {
+    margin-bottom: 30px;
+    p {
+      font-size: 22px;
+    }
+  }
+  div.competences {
+    padding-bottom: 30px;
+    span {
+      color: #00A8E7
+    }
+    article {
+      p {
+        @media screen and (min-width: 400px) and (max-width: 767px) {
+          padding: 0 20%;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 16px;
+  }
+}
+section.careers {
+  background: #F2F2F2;
+  padding: 0px 10px;
+}
+section#join_us {
+  .section-heading h1 {
+    font-weight: 700;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+  .section-heading p {
+    color: #66717E;
+    margin-bottom: 50px;
+  }
+  .job-section {
+    border-top: 1px solid #ccc;
+    p {
+      color: #333;
+    }
+  }
+  .job-section a i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: table;
+    right: 0;
+    margin: auto;
+    color: #333;
+  }
+  .job-section .heading {
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+  }
+  .job-posting-heading {
+    padding: 40px 0;
+    margin-bottom: 0;
+    border-top: 1px solid #ccc;
+    p {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.1em;
+      float: left;
+    }
+    a {
+      display: block;
+      float: right;
+      position: relative;
+    }
+  }
+  .last {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 100px;
+  }
+}
+section.project_proposal {
+  padding: 70px 0px;
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+footer {
+  background-color: #66717E;
+  padding-bottom: 40px;
+  .brandLogo {
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  p {
+    color: white;
+  }
+  img {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'ubuntuLight';
+  src: url('../fonts/ubuntu-light.eot');
+  src: url('../fonts/ubuntu-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ubuntu-light.woff2') format('woff2'),
+    url('../fonts/ubuntu-light.woff') format('woff'),
+    url('../fonts/ubuntu-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ubuntuMedium';
+  src: url('../fonts/ubuntu-medium.eot');
+  src: url('../fonts/ubuntu-medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ubuntu-medium.woff2') format('woff2'),
+    url('../fonts/ubuntu-medium.woff') format('woff'),
+    url('../fonts/ubuntu-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ubuntuRegular';
+  src: url('../fonts/ubuntu-condensed.eot');
+  src: url('../fonts/ubuntu-condensed.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ubuntu-condensed.woff2') format('woff2'),
+      url('../fonts/ubuntu-condensed.woff') format('woff'),
+      url('../fonts/ubuntu-condensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: lightgrey;
+  div.wrapper {
+    max-width: 1120px;
+    padding: 10px 10px 30px 10px;
+    background: white;
+  }
+  .navbar-default {
+    border: 0px;
+    background-color: white;
+  }
+  div.ads {
+    text-align: center;
+    padding: 25px 0px;
+    border-top: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+  }
+  .section_head {
+    border-bottom: 3px solid red;
+    position: relative;
+    a {
+      position: absolute;
+      right: 0;
+      color: white;
+      padding: 5px;
+      background-color: red;
+      font-size: 11px;
+    }
+  }
+  a.read_more {
+    font-size: 12px;
+  }
+}
+header {
+  div.brand_logo {
+    margin-top: 20px;
+  }
+  div.header_menu {
+    .navbar-default {
+      margin-top: 45px;
+      margin-bottom: 0px;
+      li {
+        border-right: 1px solid black;
+      }
+      li a {
+        color: red;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
+  }
+}
+div.category {
+  nav.category_menu {
+    margin: 15px;
+    ul.nav {
+      li {
+        a {
+          font-weight: bold;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+//------central content
+div.main_content {
+  section {
+    margin-bottom: 10px;
+  }
+}
+div.second_content {
+  section {
+    margin-bottom: 10px;
+    div.col-xs-12 {
+      padding-right: 15px;
+    }
+    article {
+      border-bottom: 1px dotted grey;
+      margin-bottom: 10px;
+    }
+    a.more_articles {
+      color: white;
+      padding: 5px;
+      margin-left: 15px;
+      background-color: red;
+      font-size: 11px;
+    }
+  }
+}
+
+
+//-----right side content
+div.side_content {
+  div {
+    margin-top: 15px;
+  }
+  div#ads_aside {
+    padding: 0px;
+    // img {
+    //   width: 100%;
+    // }
+  }
+  div.newsletter {
+    background-color: lightgrey;
+    padding: 10px;
+  }
+}
+
+footer {
+  margin-top: 15px;
+  nav.category_menu {
+    max-width: 860px;
+    li a {
+      border-right: 1px solid grey;
+      font-weight: normal;
+      padding: 0 20px;
+    }
+  }
+  div.copyringht {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
