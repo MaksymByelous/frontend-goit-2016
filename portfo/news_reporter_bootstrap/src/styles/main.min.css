@@ -6620,105 +6620,156 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-@font-face {
-  font-family: 'ubuntuLight';
-  src: url("../fonts/ubuntu-light.eot");
-  src: url("../fonts/ubuntu-light.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-light.woff2") format("woff2"), url("../fonts/ubuntu-light.woff") format("woff"), url("../fonts/ubuntu-light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ubuntuMedium';
-  src: url("../fonts/ubuntu-medium.eot");
-  src: url("../fonts/ubuntu-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-medium.woff2") format("woff2"), url("../fonts/ubuntu-medium.woff") format("woff"), url("../fonts/ubuntu-medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ubuntuRegular';
-  src: url("../fonts/ubuntu-condensed.eot");
-  src: url("../fonts/ubuntu-condensed.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-condensed.woff2") format("woff2"), url("../fonts/ubuntu-condensed.woff") format("woff"), url("../fonts/ubuntu-condensed.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-body {
-  background: lightgrey; }
-  body div.wrapper {
-    max-width: 1120px;
-    padding: 10px 10px 30px 10px;
-    background: white; }
-  body .navbar-default {
-    border: 0px;
-    background-color: white; }
-  body div.ads {
-    text-align: center;
-    padding: 25px 0px;
-    border-top: 1px dotted grey;
-    border-bottom: 1px dotted grey; }
-  body .section_head {
-    border-bottom: 3px solid red;
-    position: relative; }
-    body .section_head a {
-      position: absolute;
-      right: 0;
-      color: white;
-      padding: 5px;
-      background-color: red;
-      font-size: 11px; }
-  body a.read_more {
-    font-size: 12px; }
+.connected-carousels .stage {
+  width: 620px;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative; }
 
-header div.brand_logo {
-  margin-top: 20px; }
-header div.header_menu .navbar-default {
-  margin-top: 45px;
-  margin-bottom: 0px; }
-  header div.header_menu .navbar-default li {
-    border-right: 1px solid black; }
-  header div.header_menu .navbar-default li a {
-    color: red;
-    padding-top: 0px;
-    padding-bottom: 0px; }
+.connected-carousels .photo-credits {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+  opacity: .66; }
 
-div.category nav.category_menu {
-  margin: 15px; }
-  div.category nav.category_menu ul.nav li a {
-    font-weight: bold;
-    padding: 10px; }
+.connected-carousels .photo-credits a {
+  color: #fff; }
 
-div.main_content section {
-  margin-bottom: 10px; }
+/** Navigation container **/
+.connected-carousels .navigation {
+  width: 600px;
+  margin: 20px auto;
+  position: relative; }
 
-div.second_content section {
-  margin-bottom: 10px; }
-  div.second_content section div.col-xs-12 {
-    padding-right: 15px; }
-  div.second_content section article {
-    border-bottom: 1px dotted grey;
-    margin-bottom: 10px; }
-  div.second_content section a.more_articles {
-    color: white;
-    padding: 5px;
-    margin-left: 15px;
-    background-color: red;
-    font-size: 11px; }
+/** Shared carousel styles **/
+.connected-carousels .carousel {
+  overflow: hidden;
+  position: relative; }
 
-div.side_content div {
-  margin-top: 15px; }
-div.side_content div#ads_aside {
-  padding: 0px; }
-div.side_content div.newsletter {
-  background-color: lightgrey;
-  padding: 10px; }
+.connected-carousels .carousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
-footer {
-  margin-top: 15px; }
-  footer nav.category_menu {
-    max-width: 860px; }
-    footer nav.category_menu li a {
-      border-right: 1px solid grey;
-      font-weight: normal;
-      padding: 0 20px; }
-  footer div.copyringht {
-    text-align: center;
-    margin-top: 20px; }
+.connected-carousels .carousel li {
+  float: left; }
+
+/** Stage carousel specific styles **/
+.connected-carousels .carousel-stage {
+  height: 400px;
+  border: 10px solid #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999; }
+  .connected-carousels .carousel-stage img {
+    width: 600px; }
+  .connected-carousels .carousel-stage iframe {
+    width: 600px;
+    height: 380px; }
+
+/** Navigation carousel specific styles **/
+.connected-carousels .carousel-navigation {
+  width: 600px;
+  background: #fff;
+  border: 10px solid #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999; }
+
+.connected-carousels .carousel-navigation li {
+  cursor: pointer; }
+
+.connected-carousels .carousel-navigation li iframe {
+  display: block;
+  border: 5px solid #fff;
+  width: 100px;
+  height: 80px; }
+
+.connected-carousels .carousel-navigation li.active iframe {
+  border-color: #ccc; }
+
+/** Stage carousel controls **/
+.connected-carousels .prev-stage,
+.connected-carousels .next-stage {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 410px;
+  color: #fff; }
+
+.connected-carousels .prev-stage {
+  left: 0; }
+
+.connected-carousels .next-stage {
+  right: 0; }
+
+.connected-carousels .prev-stage.inactive,
+.connected-carousels .next-stage.inactive {
+  display: none; }
+
+.connected-carousels .prev-stage span,
+.connected-carousels .next-stage span {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #4E443C;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 1px #000;
+  font: 24px/27px Arial, sans-serif;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999; }
+
+.connected-carousels .prev-stage span {
+  left: 20px; }
+
+.connected-carousels .next-stage span {
+  right: 20px; }
+
+.connected-carousels .prev-stage:hover span,
+.connected-carousels .next-stage:hover span {
+  display: block; }
+
+/** Navigation carousel controls **/
+.connected-carousels .prev-navigation,
+.connected-carousels .next-navigation {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #4E443C;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 1px #000;
+  font: 16px/29px Arial, sans-serif;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999; }
+
+.connected-carousels .prev-navigation {
+  left: -15px;
+  top: 35px;
+  text-indent: 6px; }
+
+.connected-carousels .next-navigation {
+  right: -15px;
+  top: 35px;
+  text-indent: 20px; }
+
+.connected-carousels .prev-navigation.inactive,
+.connected-carousels .next-navigation.inactive {
+  opacity: .5;
+  cursor: default; }
 
 .jssocials-shares {
   margin: 0.2em 0; }
@@ -7076,3 +7127,120 @@ img.jssocials-share-logo {
   -moz-border-radius-bottomright: 0px;
   -moz-border-radius-bottomleft: 4px;
   border-radius: 4px 0px 0px 4px; }
+
+@font-face {
+  font-family: 'ubuntuLight';
+  src: url("../fonts/ubuntu-light.eot");
+  src: url("../fonts/ubuntu-light.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-light.woff2") format("woff2"), url("../fonts/ubuntu-light.woff") format("woff"), url("../fonts/ubuntu-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntuMedium';
+  src: url("../fonts/ubuntu-medium.eot");
+  src: url("../fonts/ubuntu-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-medium.woff2") format("woff2"), url("../fonts/ubuntu-medium.woff") format("woff"), url("../fonts/ubuntu-medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntuRegular';
+  src: url("../fonts/ubuntu-condensed.eot");
+  src: url("../fonts/ubuntu-condensed.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-condensed.woff2") format("woff2"), url("../fonts/ubuntu-condensed.woff") format("woff"), url("../fonts/ubuntu-condensed.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background: lightgrey; }
+  body div.wrapper {
+    max-width: 1120px;
+    padding: 10px 10px 30px 10px;
+    background: white; }
+  body .navbar-default {
+    border: 0px;
+    background-color: white; }
+  body div.ads {
+    text-align: center;
+    padding: 25px 0px;
+    border-top: 1px dotted grey;
+    border-bottom: 1px dotted grey; }
+  body .section_head {
+    border-bottom: 3px solid red;
+    position: relative; }
+    body .section_head a {
+      position: absolute;
+      right: 0;
+      color: white;
+      padding: 5px;
+      background-color: red;
+      font-size: 11px; }
+  body a.read_more {
+    font-size: 12px; }
+
+header div.brand_logo {
+  margin-top: 20px; }
+header div.header_menu .navbar-default {
+  margin-top: 45px;
+  margin-bottom: 0px; }
+  header div.header_menu .navbar-default li {
+    border-right: 1px solid black; }
+  header div.header_menu .navbar-default li a {
+    color: red;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+
+div.category nav.category_menu {
+  margin: 15px; }
+  div.category nav.category_menu ul.nav li a {
+    font-weight: bold;
+    padding: 10px; }
+
+div.main_content section {
+  margin-bottom: 10px; }
+
+div.second_content section {
+  margin-bottom: 10px; }
+  div.second_content section div.col-xs-12 {
+    padding-right: 15px; }
+  div.second_content section article {
+    border-bottom: 1px dotted grey;
+    margin-bottom: 10px; }
+  div.second_content section a.more_articles {
+    color: white;
+    padding: 5px;
+    margin-left: 15px;
+    background-color: red;
+    font-size: 11px; }
+
+div.side_content div {
+  margin-top: 15px; }
+div.side_content div#ads_aside {
+  padding: 0px; }
+div.side_content div.newsletter {
+  background-color: lightgrey;
+  padding: 10px; }
+div.side_content section.most_popular article {
+  border-bottom: 1px dotted grey;
+  margin-bottom: 10px; }
+  div.side_content section.most_popular article h5 {
+    font-weight: bold;
+    margin-top: 0px; }
+  div.side_content section.most_popular article a {
+    font-size: 0.8em; }
+  div.side_content section.most_popular article p {
+    font-style: italic;
+    margin-bottom: 0px; }
+div.side_content section.most_popular a.more_articles {
+  color: white;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: red;
+  font-size: 11px; }
+
+footer {
+  margin-top: 15px; }
+  footer nav.category_menu {
+    max-width: 860px; }
+    footer nav.category_menu li a {
+      border-right: 1px solid grey;
+      font-weight: normal;
+      padding: 0 20px; }
+  footer div.copyringht {
+    text-align: center;
+    margin-top: 20px; }

@@ -19,9 +19,10 @@ module.exports = function(grunt) {
       },
       dist: {
         src: ['src/styles/src/variables.scss', 'src/styles/src/reset.scss',
-        'src/styles/src/bootstrap.scss', 'src/styles/src/styles.scss',
+        'src/styles/src/bootstrap.scss', 'src/styles/src/jcarousel.scss',
         'src/styles/src/jssocials.scss', 'src/styles/src/jssocials-theme-flat.scss',
-        'src/styles/src/searchMeme.scss'],
+        'src/styles/src/searchMeme.scss',
+        'src/styles/src/styles.scss'],
         dest: 'src/styles/main.scss'
        }
       },

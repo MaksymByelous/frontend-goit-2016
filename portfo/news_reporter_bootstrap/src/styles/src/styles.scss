@@ -136,6 +136,30 @@ div.side_content {
     background-color: lightgrey;
     padding: 10px;
   }
+  section.most_popular {
+    article {
+      border-bottom: 1px dotted grey;
+      margin-bottom: 10px;
+      h5 {
+        font-weight: bold;
+        margin-top: 0px;
+      }
+      a {
+        font-size: 0.8em;
+      }
+      p {
+        font-style: italic;
+        margin-bottom: 0px;
+      }
+    }
+    a.more_articles {
+      color: white;
+      padding: 5px;
+      margin-left: 15px;
+      background-color: red;
+      font-size: 11px;
+    }
+  }
 }
 
 footer {

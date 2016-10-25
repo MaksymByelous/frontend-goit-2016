@@ -16,6 +16,10 @@ $( function() {
             }
             , buttonPlacement: 'left', button: 'red'
   });
+//----jcarousel plugin activate
+$('.jcarousel').jcarousel({
+animation: 'slow'
+});
 
 
 });
