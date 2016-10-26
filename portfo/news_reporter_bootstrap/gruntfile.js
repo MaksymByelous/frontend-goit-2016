@@ -95,5 +95,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.registerTask('default', ['concat_css', 'sass', 'autoprefixer','cssmin', 'concat', 'uglify', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['concat_css', 'sass', 'autoprefixer','cssmin',
+  'concat', 'uglify', 'browserSync', 'watch']);
 };

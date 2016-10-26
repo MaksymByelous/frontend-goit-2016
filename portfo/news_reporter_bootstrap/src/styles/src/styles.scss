@@ -77,6 +77,9 @@ header {
         color: red;
         padding-top: 0px;
         padding-bottom: 0px;
+        @media screen and (max-width: 768px) {
+          padding: 0px 10px;
+        }
       }
     }
   }
@@ -94,6 +97,28 @@ div.category {
     }
   }
 }
+
+//-----video section
+section.video_zone {
+  div.youtube_video {
+    background: lightgrey;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+  div.sidebar_video {
+    padding-right: 0px;
+    overflow-y: scroll;
+    max-height: 550px;
+    @media screen and (max-width: 880px) {
+      max-height: 510px;
+    }
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
 //------central content
 div.main_content {
   section {
@@ -128,15 +153,24 @@ div.side_content {
   }
   div#ads_aside {
     padding: 0px;
-    // img {
-    //   width: 100%;
-    // }
+    @media screen and (min-width: 750px) and (max-width: 991px) {
+      width: 33.3%;
+      float: left;
+    }
   }
   div.newsletter {
     background-color: lightgrey;
     padding: 10px;
+    @media screen and (min-width: 750px) and (max-width: 991px) {
+      width: 33.3%;
+      float: left;
+    }
   }
   section.most_popular {
+    @media screen and (min-width: 750px) and (max-width: 991px) {
+      width: 33.3%;
+      float: left;
+    }
     article {
       border-bottom: 1px dotted grey;
       margin-bottom: 10px;

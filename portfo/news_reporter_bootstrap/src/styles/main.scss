@@ -6813,7 +6813,10 @@ button.close {
   }
 }
 .connected-carousels .stage {
-    width: 620px;
+    width: 618px;
+    @media screen and (max-width: 880px) {
+      width: 520px;
+    }
     margin: 0 auto;
     margin-top: 10px;
     position: relative;
@@ -6833,6 +6836,9 @@ button.close {
 /** Navigation container **/
 .connected-carousels .navigation {
     width: 600px;
+    @media screen and (max-width: 880px) {
+      width: 480px;
+    }
     margin: 20px auto;
     position: relative;
 }
@@ -6854,6 +6860,9 @@ button.close {
 /** Stage carousel specific styles **/
 .connected-carousels .carousel-stage {
     height: 400px;
+    @media screen and (max-width: 880px) {
+      height: 360px;
+    }
     border: 10px solid #fff;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
@@ -6861,17 +6870,21 @@ button.close {
     -webkit-box-shadow: 0 0 2px #999;
        -moz-box-shadow: 0 0 2px #999;
             box-shadow: 0 0 2px #999;
-    img {
-      width: 600px;
-    }
     iframe {
       width: 600px;
       height: 380px;
+      @media screen and (max-width: 880px) {
+        width: 540px;
+        height: 340px;
+      }
     }
 }
 /** Navigation carousel specific styles **/
 .connected-carousels .carousel-navigation {
     width: 600px;
+    @media screen and (max-width: 880px) {
+      width: 480px;
+    }
     background: #fff;
     border: 10px solid #fff;
     -webkit-border-radius: 5px;
@@ -6883,6 +6896,17 @@ button.close {
 }
 .connected-carousels .carousel-navigation li {
     cursor: pointer;
+}
+li.navLi {
+  position: relative;
+  span.mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+  }
 }
 .connected-carousels .carousel-navigation li iframe {
     display: block;
@@ -6898,9 +6922,9 @@ button.close {
 .connected-carousels .next-stage {
     display: block;
     position: absolute;
-    top: 0;
-    width: 200px;
-    height: 410px;
+    top: 30%;
+    width: 100px;
+    height: 100px;
     color: #fff;
 }
 .connected-carousels .prev-stage {
@@ -7406,6 +7430,9 @@ header {
         color: red;
         padding-top: 0px;
         padding-bottom: 0px;
+        @media screen and (max-width: 768px) {
+          padding: 0px 10px;
+        }
       }
     }
   }
@@ -7423,6 +7450,28 @@ div.category {
     }
   }
 }
+
+//-----video section
+section.video_zone {
+  div.youtube_video {
+    background: lightgrey;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+  div.sidebar_video {
+    padding-right: 0px;
+    overflow-y: scroll;
+    max-height: 550px;
+    @media screen and (max-width: 880px) {
+      max-height: 510px;
+    }
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
 //------central content
 div.main_content {
   section {
@@ -7457,15 +7506,24 @@ div.side_content {
   }
   div#ads_aside {
     padding: 0px;
-    // img {
-    //   width: 100%;
-    // }
+    @media screen and (min-width: 750px) and (max-width: 991px) {
+      width: 33.3%;
+      float: left;
+    }
   }
   div.newsletter {
     background-color: lightgrey;
     padding: 10px;
+    @media screen and (min-width: 750px) and (max-width: 991px) {
+      width: 33.3%;
+      float: left;
+    }
   }
   section.most_popular {
+    @media screen and (min-width: 750px) and (max-width: 991px) {
+      width: 33.3%;
+      float: left;
+    }
     article {
       border-bottom: 1px dotted grey;
       margin-bottom: 10px;

@@ -6621,10 +6621,13 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .connected-carousels .stage {
-  width: 620px;
+  width: 618px;
   margin: 0 auto;
   margin-top: 10px;
   position: relative; }
+  @media screen and (max-width: 880px) {
+    .connected-carousels .stage {
+      width: 520px; } }
 
 .connected-carousels .photo-credits {
   position: absolute;
@@ -6643,6 +6646,9 @@ button.close {
   width: 600px;
   margin: 20px auto;
   position: relative; }
+  @media screen and (max-width: 880px) {
+    .connected-carousels .navigation {
+      width: 480px; } }
 
 /** Shared carousel styles **/
 .connected-carousels .carousel {
@@ -6666,11 +6672,16 @@ button.close {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 2px #999;
   box-shadow: 0 0 2px #999; }
-  .connected-carousels .carousel-stage img {
-    width: 600px; }
+  @media screen and (max-width: 880px) {
+    .connected-carousels .carousel-stage {
+      height: 360px; } }
   .connected-carousels .carousel-stage iframe {
     width: 600px;
     height: 380px; }
+    @media screen and (max-width: 880px) {
+      .connected-carousels .carousel-stage iframe {
+        width: 540px;
+        height: 340px; } }
 
 /** Navigation carousel specific styles **/
 .connected-carousels .carousel-navigation {
@@ -6680,9 +6691,22 @@ button.close {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 2px #999;
   box-shadow: 0 0 2px #999; }
+  @media screen and (max-width: 880px) {
+    .connected-carousels .carousel-navigation {
+      width: 480px; } }
 
 .connected-carousels .carousel-navigation li {
   cursor: pointer; }
+
+li.navLi {
+  position: relative; }
+  li.navLi span.mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100; }
 
 .connected-carousels .carousel-navigation li iframe {
   display: block;
@@ -6698,9 +6722,9 @@ button.close {
 .connected-carousels .next-stage {
   display: block;
   position: absolute;
-  top: 0;
-  width: 200px;
-  height: 410px;
+  top: 30%;
+  width: 100px;
+  height: 100px;
   color: #fff; }
 
 .connected-carousels .prev-stage {
@@ -7184,12 +7208,30 @@ header div.header_menu .navbar-default {
     color: red;
     padding-top: 0px;
     padding-bottom: 0px; }
+    @media screen and (max-width: 768px) {
+      header div.header_menu .navbar-default li a {
+        padding: 0px 10px; } }
 
 div.category nav.category_menu {
   margin: 15px; }
   div.category nav.category_menu ul.nav li a {
     font-weight: bold;
     padding: 10px; }
+
+section.video_zone div.youtube_video {
+  background: lightgrey; }
+  @media screen and (max-width: 500px) {
+    section.video_zone div.youtube_video {
+      display: none; } }
+section.video_zone div.sidebar_video {
+  padding-right: 0px;
+  overflow-y: scroll;
+  max-height: 550px; }
+  @media screen and (max-width: 880px) {
+    section.video_zone div.sidebar_video {
+      max-height: 510px; } }
+  section.video_zone div.sidebar_video iframe {
+    width: 100%; }
 
 div.main_content section {
   margin-bottom: 10px; }
@@ -7212,9 +7254,21 @@ div.side_content div {
   margin-top: 15px; }
 div.side_content div#ads_aside {
   padding: 0px; }
+  @media screen and (min-width: 750px) and (max-width: 991px) {
+    div.side_content div#ads_aside {
+      width: 33.3%;
+      float: left; } }
 div.side_content div.newsletter {
   background-color: lightgrey;
   padding: 10px; }
+  @media screen and (min-width: 750px) and (max-width: 991px) {
+    div.side_content div.newsletter {
+      width: 33.3%;
+      float: left; } }
+@media screen and (min-width: 750px) and (max-width: 991px) {
+  div.side_content section.most_popular {
+    width: 33.3%;
+    float: left; } }
 div.side_content section.most_popular article {
   border-bottom: 1px dotted grey;
   margin-bottom: 10px; }
