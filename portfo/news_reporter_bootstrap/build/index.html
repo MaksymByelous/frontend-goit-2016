@@ -417,16 +417,16 @@
             <p>
               Sign up to receive our free newsletter!
             </p>
-            <form class="" action="php/newsletter.php" method="post">
+            <form action="php/newsletter.php" method="post" accept-charset="utf-8">
               <div class="form-group">
                  <label for="email">Email:</label>
-                 <input type="email" class="form-control" name="email" placeholder="Enter email">
+                 <input type="text" class="form-control" name="email" placeholder="Enter email">
                </div>
              <div class="form-group">
                 <label for="name">Name:</label>
                  <input type="text" class="form-control" name="name" placeholder="Enter name">
                </div>
-               <button type="submit" class="btn btn-danger">Submit</button>
+               <input type="submit" class="btn btn-danger" name="submit" value="Submit">
             </form>
             <p class="text-danger">
               <small>We do not spam. We value your privacy.</small>
