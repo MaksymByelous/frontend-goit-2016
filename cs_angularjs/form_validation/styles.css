@@ -1,0 +1,24 @@
+form {
+  text-align: left;
+}
+.col-md-6 {
+  background: lightgrey;
+  float: none;
+  margin: 0 auto;
+  padding: 10px;
+
+}
+
+form .ng-invalid-email {
+  background: black;
+}
+form .ng-valid.ng-dirty {
+  background: lightgreen;
+}
+form .ng-invalid.ng-dirty {
+  background: red;
+}
+
+input:required {
+  border: 1px solid red;
+}

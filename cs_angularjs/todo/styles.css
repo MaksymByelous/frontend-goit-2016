@@ -1,0 +1,10 @@
+.container {
+  padding: 30px;
+}
+div {
+  margin-top: 10px;
+}
+.table-cont,
+.description {
+  float: left;
+}

@@ -1,0 +1,8 @@
+body {
+  padding: 30px;
+}
+.container {
+  background: grey;
+  width: 600px;
+  height: 800px;
+}

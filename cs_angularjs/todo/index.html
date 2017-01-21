@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app='toDos'>
+<head>
+    <title>ToDo List (Task2)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="todo.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller = 'toDosCtrl'>
+
+    <div class="container">
+        <h3>ToDo List</h3>
+        <div class="clearfix">
+        <div class="table-cont col-md-7">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <!-- <th>Description</th> -->
+                    <th>Date</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tr ng-repeat = 'todo in todos'>
+                <td>{{todo.name}}</td>
+                <!-- <td>{{todo.description}}</td> -->
+                <td>{{todo.duedate}}</td>
+                <td><span ng-if='todo.completed'>completed</span></td>
+                <td><button ng-click='showDetails($index)' class="btn btn-success">description</button></td>
+                <td><button ng-click='removeItem($index)' class="btn btn-danger">delete</button></td>
+            </tr>
+        </table>
+        </div>
+        <div class="description">
+          {{data}}
+        </div>
+        <ng-include src="url"></ng-include>
+
+        </div>
+        <div class="col-md-7">
+            <!-- Форма для добавления новых задач -->
+            <form role="form" ng-submit='newToDo(name, duedate, description, completed)'>
+              <div class="form-group">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" ng-model='name' placeholder="text the name">
+              </div>
+              <div class="form-group">
+                <label for="inputDate">Due Date</label>
+                <input type="text" class="form-control" id="inputDate" ng-model='duedate' placeholder="what a dead line">
+              </div>
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" ng-model='description' placeholder="what do you mean">
+              </div>
+              <div class="checkbox">
+                <label>
+                      <input type="checkbox" ng-model='completed'>Completed
+                    </label>
+              </div>
+              <button type="submit" class="btn btn-default">Add</button>
+            </form>
+        </div>
+        <div class="col-md-7">
+        <div>
+          <button class="btn btn-success" ng-click='save()'>save</button>
+        </div>
+        <div>
+          <button class="btn btn-primary" g-click='read()'>read</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

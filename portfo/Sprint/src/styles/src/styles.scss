@@ -52,10 +52,32 @@ header {
   }
 }
 section.welcome {
+  position: relative;
+  overflow: hidden;
   min-height: 600px;
-  background: url(../img/hero_min.jpg);
+  // background: url(../img/hero_min.jpg);
   background-size: cover;
   background-position: top center;
+  .header__video-wrapp  {
+      position:absolute;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+  }
+  .header__video-box {
+     position: absolute;
+     top:0;
+     left: 50%;
+     height: 100%;
+  }
+  .header__video {
+    display: inline-block;
+    height: 100%;
+    transform: translateX(-50%);
+    // min-height: 768px;
+}
   div.logo-color {
     margin-top: 15px;
     @media screen and (max-width: 350px) {
@@ -69,6 +91,7 @@ section.welcome {
     }
   }
   div.welcome_moto_text {
+    position: relative;
     margin-top: 100px;
     @media screen and (max-width: 767px) {
       margin-top: 40px;

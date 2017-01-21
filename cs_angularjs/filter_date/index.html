@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app='dayly'>
+  <head>
+    <meta charset="utf-8">
+    <title>simple filter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="angular-locale_de-de.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="calc col-md-6" ng-controller='daylyCtrl'>
+      <h2>INPUT SOME TASK</h2>
+      <form ng-submit='addNew()' method="post">
+        <label for="task">input task</label>
+        <input ng-model='task' type="text" id='task'>
+
+        <label for="date">input date</label>
+        <input ng-model='date' type="number" id='date'>
+        <br>
+        <button type="submit"  name="button">add new</button>
+      </form>
+      <div class="">
+        <p>
+          choose sort method
+        </p>
+        <label for="bydate">by date</label>
+        <input type="checkbox" ng-click='setDateFilter()' id='bydate'>
+
+        <label for="bylimit">by limit</label>
+        <select ng-model='limited' class="" name="" id='bylimit'>
+          <option  value="3">3</option>
+          <option  value="5">5</option>
+          <option  value="10">10</option>
+          <option  value="">all</option>
+        </select>
+      </div>
+
+      <ul ng-repeat='item in tasks | orderBy: byDate | limitTo: limited' >
+        <li>{{item.task}}, deadline is {{item.date | currency}}</li>
+      </ul>
+
+    </div>
+
+  </body>
+</html>

@@ -6617,10 +6617,29 @@ header {
     color: #efeae1; }
 
 section.welcome {
+  position: relative;
+  overflow: hidden;
   min-height: 600px;
-  background: url(../img/hero_min.jpg);
   background-size: cover;
   background-position: top center; }
+  section.welcome .header__video-wrapp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden; }
+  section.welcome .header__video-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%; }
+  section.welcome .header__video {
+    display: inline-block;
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
   section.welcome div.logo-color {
     margin-top: 15px; }
     @media screen and (max-width: 350px) {
@@ -6631,6 +6650,7 @@ section.welcome {
     section.welcome .navbar-default .navbar-toggle .icon-bar {
       background-color: white; }
   section.welcome div.welcome_moto_text {
+    position: relative;
     margin-top: 100px; }
     @media screen and (max-width: 767px) {
       section.welcome div.welcome_moto_text {

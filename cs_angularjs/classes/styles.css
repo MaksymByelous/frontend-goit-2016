@@ -1,0 +1,14 @@
+.text {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.green {
+  background: green;
+}

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app='test'>
+<head>
+    <title>Test list</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="test.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller = 'testCtrl'>
+
+
+
+  <div ng-switch on="qmode.value" class="container">
+    <h2>Test</h2>
+    <div class="radio-group">
+
+      <div class="radio">
+        <label>
+          <input ng-model='qmode' type="radio" name="optionsRadios" id="optionsRadios1" value="question1">
+            question 1
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input ng-model='qmode' type="radio" name="optionsRadios" id="optionsRadios2" value="question2">
+          question 2
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input ng-model='qmode' type="radio" name="optionsRadios" id="optionsRadios3" value="question3">
+          question 3
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input ng-model='qmode' type="radio" name="optionsRadios" id="optionsRadios4" value="question4">
+          question 4
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input ng-model='qmode' type="radio" name="optionsRadios" id="optionsRadios5" value="question5">
+          question 5
+        </label>
+      </div>
+
+    </div>
+    <div class="" ng-switch='qmode'>
+
+        <select ng-model='test1'  ng-change='addSelected(0, test1)' ng-switch-when='question1' class="form-control">
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+            <option>option4</option>
+          </select>
+
+          <select ng-model='test2'  ng-change='addSelected(1, test2)' ng-switch-when='question2' class="form-control">
+            <option>option2</option>
+            <option>option3</option>
+            <option>option4</option>
+            <option>option1</option>
+          </select>
+
+          <select ng-model='test3'  ng-change='addSelected(2, test3)' ng-switch-when='question3' class="form-control">
+            <option>option3</option>
+            <option>option4</option>
+            <option>option1</option>
+            <option>option2</option>
+          </select>
+
+          <select ng-model='test4'  ng-change='addSelected(3, test4)' ng-switch-when='question4' class="form-control">
+            <option>option4</option>
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+          </select>
+
+          <select ng-model='test5'  ng-change='addSelected(4, test5)' ng-switch-when='question5' class="form-control">
+            <option>option5</option>
+            <option>option2</option>
+            <option>option3</option>
+            <option>option4</option>
+          </select>
+        </div>
+        <button type="submit" name="button" ng-click='showSelected()' ng-disabled="answers.length != 5">compile selected</button>
+  </div>
+  <p>
+
+    {{answers.length}}
+  </p>
+<div ng-if='showResult' ng-repeat= 'answer in answers'class="">
+  <p>
+    {{answer.name}} : {{answer.answer}}
+  </p>
+</div>
+
+<!-- <div class="results">
+  <ng-include src='url'></ng-include>
+</div> -->
+
+</body>
+</html>

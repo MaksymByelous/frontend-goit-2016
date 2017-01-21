@@ -1,0 +1,24 @@
+
+body {
+  padding: 30px;
+}
+div {
+  padding: 5px;
+}
+  .calc {
+    padding: 30px;
+    border: 1px solid grey;
+  }
+  .calcCtrl2 {
+    border: 1px solid black;
+  }
+  .calcCtrl3 {
+    border: 1px solid green;
+  }
+  .calcCtrl4 {
+    border: 1px solid red;
+  }
+label[for=num1],
+label[for=num2] {
+  width: 160px;
+}

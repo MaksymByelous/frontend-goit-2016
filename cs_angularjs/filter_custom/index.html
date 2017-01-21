@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='dayly'>
+  <head>
+    <meta charset="utf-8">
+    <title>custom filter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+
+    <div class="calc col-md-6" ng-controller='daylyCtrl'>
+
+      <h2>sorted figures</h2>
+      <ul ng-repeat='item in figures | sortFunc' >
+        <li>{{item}}</li>
+      </ul>
+      <!-- <button type="button" ng-click='sortFunc(figures)' name="button">btn</button> -->
+    </div>
+
+  </body>
+</html>

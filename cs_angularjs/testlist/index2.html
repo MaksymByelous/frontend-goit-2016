@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app='test'>
+<head>
+    <title>Test list</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="test.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller = 'testCtrl'>
+
+  <div ng-switch on="qmode.value" class="container">
+    <h2>Test</h2>
+    <div class="radio-group">
+      <div ng-repeat='question in questions' class="radio">
+        <label>
+          <input ng-model='qmode' type="radio" name="optionsRadios" id="optionsRadios1" value="{{question.title}}">
+            {{question.title}}
+        </label>
+      </div>
+    </div>
+    <div ng-switch='qmode'>
+      <div ng-repeat='question in questions'>
+        <select  ng-switch-when='{{question.title}}' ng-options='option in question.options'  class="form-control">
+          <!-- <option ng-repeat='option in options' >{{option}}</option> -->
+        </select>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>
