@@ -1,0 +1,9 @@
+{
+  "appSettings": {
+    "DEV": true,
+    "API": {
+      "HOST": ""
+    },
+    "WULIAN_OEM_ID_LENGTH": 12
+  }
+}

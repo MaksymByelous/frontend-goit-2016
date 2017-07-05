@@ -1,0 +1,21 @@
+
+.content
+  h2 form step 3
+
+  p Check entered information!
+  p Sum: {{main.formData.sum}}
+  p Period: {{main.formData.period}}
+  p Surname: {{main.formData.surname}}
+  p Name: {{main.formData.name}}
+  p INN: {{main.formData.inn}}
+  p City: {{main.formData.city}}
+
+  form.contact-form(ng-submit="maxForm.$valid && main.formSubmit()", name='maxForm', novalidate='')
+    p
+      button(ui-sref='landing.home') step 1
+      button(ui-sref='landing.page2', ng-show='main.showStep2') step 2
+      button(ui-sref='landing.page3',  ng-show='main.showStep3') step 3
+
+    .form-group
+      button.btn.btn-success(type="submit") Submit
+      button.btn.btn-success(ui-sref='landing.page2') back
