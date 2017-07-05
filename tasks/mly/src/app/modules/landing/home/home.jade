@@ -1,0 +1,77 @@
+
+
+.home
+  md-sidenav.md-sidenav-left.md-whiteframe-4dp(md-is-open='vm.menuIsOpen')
+    .navigation-item(ui-sref="landing.home({targetSectionName: 'about'})") about
+    .navigation-item(ui-sref="landing.page2", ng-click='vm.menuIsOpen = false;') page2
+    .navigation-item(ui-sref="landing.page3", ng-click='vm.menuIsOpen = false;') page3
+
+  .critical
+    #main.first-screen
+      .content(style='overflow: hidden;')
+        .navigation-bar(style='float: right')
+          .navbar-content.centered
+            a(ng-click='vm.scrollTo(0); vm.menuIsOpen = false;')
+            .menu.min-lg
+              ul.nav.navbar-nav.pull-right
+                    li.nav-item.main-menu
+                      a.nav-link.main-menu(role="menuitem", ng-click="vm.scrollTo(1)") about
+                    li.nav-item.main-menu
+                      a.nav-link.main-menu(role="menuitem", ui-sref="landing.page2") page2
+                    li.nav-item.main-menu
+                      a.nav-link.main-menu(role="menuitem",ui-sref="landing.page3") page3
+            .mobile-menu-icon
+              //img(ng-click='vm.toggleMobileMenu()', ng-src="/img/{{vm.menuIsOpen ? 'close-mobile-menu@2x.png' : 'mobile-menu-icon@2x.png'}}")
+              span.glyphicon.glyphicon-menu-hamburger(ng-click='vm.toggleMobileMenu()', ng-show='!vm.menuIsOpen')
+              span.glyphicon.glyphicon-remove(ng-click='vm.toggleMobileMenu()', ng-show='vm.menuIsOpen')
+
+      .content
+        h2 Spell Check for Facts
+        .text We are living in the era of information society. The amount of data that we deal with daily is so enormous, that it makes it very difficult to know what is actually true.
+        .text Facts verification enables us to sort through a tidal wave of massive information and communication. Our tool counteracts the proliferation of fake news, hoaxes, propaganda, fraud, and inaccuracies.
+        .buttons
+            a.btn(ng-click='vm.scrollTo(1)', ng-mouseenter='vm.arrowDown = true', ng-mouseleave='vm.arrowDown = false') Read more
+
+
+  #about
+   .content(style='text-align: center;')
+      h2 About us
+      .text We are the team of enthusiasts who wants to make this world better. Our team unites professionals from different spheres: business, journalism, software development and engineering. We have gathered because we are united by one aim - using state-of-the-art Natural Language Processing to create an automated system that identifies facts and claims and instantly searches databases to verify or invalidate.
+    .green-line
+      .character
+        h5 research directions
+
+    .content
+      div.directions
+       ul
+         li Sources management: create database of curated information useful to the interest and needs of potential customers and users
+         li Claim detection: highlighting the text that represents a checkable assertion
+         li Claim representation: translating claims into machine-readable form
+         li Claim verification: true or false
+
+    .green-line
+      .character
+        h5 short-term goals
+    .content
+      .short-term.text To create a basic facts knowledge base and develop claims detection algorithms, as well as create various ways of claims representation and verification.
+
+    .green-line
+      .character
+        h5 long-term goals
+    .content
+      .long-term-item(style='margin-top: 40px;')
+        .step.col-sm-2
+          .btn stage 1
+        .description.col-sm-10 Approach it as an IR problem: detect claims and find relevant content among the already created documents (news, fact databases).
+
+      .long-term-item
+        .step.col-sm-2
+          .btn stage 2
+        .description.col-sm-10 Determine claim validity by matching with the relevant sources and applying resolution strategies according to source trustworthiness.
+
+      .long-term-item
+        .step.col-sm-2
+          .btn stage 3
+        .description.col-sm-10 Handling of indirect quotes and complicated claims using an abstract representation invariant to paraphrasing and other distortions.
+
+  include ../footer

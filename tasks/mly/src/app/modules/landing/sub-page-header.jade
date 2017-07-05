@@ -1,0 +1,23 @@
+md-sidenav.md-sidenav-left.md-whiteframe-4dp(md-is-open='vm.menuIsOpen')
+      .navigation-item(ui-sref="landing.home({targetSectionName: 'about'})") about
+      .navigation-item(ui-sref="landing.page2", ng-click='vm.menuIsOpen = false;') page2
+      .navigation-item(ui-sref="landing.page3", ng-click='vm.menuIsOpen = false;') page3
+.critical
+    .first-screen.sub-page
+
+        .navigation-bar
+          .navbar-content.centered
+            a(ng-click='vm.scrollTo(0); vm.menuIsOpen = false;')
+            .menu.min-lg
+              ul.nav.navbar-nav.pull-right
+                    li.nav-item.main-menu
+                      a.nav-link.main-menu(role="menuitem", ui-sref="landing.home({targetSectionName: 'about'})") about
+                    li.nav-item.main-menu
+                      a.nav-link.main-menu(role="menuitem", ui-sref="landing.page2") page2
+                    li.nav-item.main-menu
+                      a.nav-link.main-menu(role="menuitem", ui-sref="landing.page3") page3
+            //.mobile-menu-icon
+              //img(ng-click='vm.toggleMobileMenu()', ng-src="/img/{{vm.menuIsOpen ? 'close-mobile-menu@2x.png' : 'mobile-menu-icon@2x.png'}}")
+            .mobile-menu-icon
+              span.glyphicon.glyphicon-menu-hamburger(ng-click='vm.toggleMobileMenu()', ng-show='!vm.menuIsOpen')
+              span.glyphicon.glyphicon-remove(ng-click='vm.toggleMobileMenu()', ng-show='vm.menuIsOpen')

@@ -1,0 +1,14 @@
+#login
+  .content
+
+      h2 Login Page
+
+      form.form( ng-submit="vm.formSubmit()", style='overflow: hidden;')
+        .col-md-4
+          .form-group
+            input.form-control(type="text", ng-model="vm.username", placeholder="username", required="")
+          .form-group
+            input.form-control(type="password", ng-model="vm.password", placeholder="password", required="")
+          .form-group
+            button.btn.btn-success(type="submit") Login
+            span.text-danger {{ vm.error }}

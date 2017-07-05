@@ -1,0 +1,193 @@
+.landing {
+  #news {
+    .main {
+      overflow: hidden;
+      position: relative;
+      height: 700px;
+      padding-bottom: 50px;
+      @media (max-width: 700px) {
+        height: 550px;
+        padding-top: 60px;
+      }
+    }
+    .hidden-xs {
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+    h2.mob {
+      background: white;
+      @media (min-width: 700px) {
+        display: none;
+      }
+    }
+    .news-head {
+      position: absolute;
+      top: 150px;
+      width: 28%;
+      padding: 130px 0;
+      background: white;
+      z-index: 100;
+      text-align: center;
+      @media (max-width: 700px) {
+        display: none;
+      }
+      @media (min-width: 1700px) {
+        text-align: right;
+      }
+      h2 {
+        text-transform: capitalize;
+      }
+
+    }
+    .green {
+      padding-bottom: 80px;
+      .shot {
+        height: 90px;
+      }
+      .long {
+        height: 90px;
+        border-bottom: 3px solid white;
+      }
+    }
+    .arrows {
+      padding: 510px 0 0 400px;
+      @media (max-width: 960px) {
+        padding-left: 200px;
+      }
+      @media (max-width: 700px) {
+        padding: 310px 0 0 35%;
+      }
+      .arrow {
+        width: 32px;
+      }
+    }
+    .news-item-detailed {
+      padding: 25px 0;
+      .arrow {
+        width: 32px;
+        margin-top: 35px;
+      }
+      .date {
+          text-align: center;
+          color: white;
+          background: $gray-super-light;
+          padding: 5px;
+          .day {
+            line-height: 1;
+            font-weight: 700;
+            font-size: $font-size-slogan;
+          }
+          .month {
+            font-size: 1rem;
+          }
+          .year {
+            font-size: 1rem;
+          }
+      }
+      .description {
+          width: 80%;
+          margin: 0 auto;
+          padding: 25px 25px 0 25px;
+          h5 {
+            margin-bottom: 15px;
+            text-align: center;
+          }
+          .foto {
+            width: 65%;
+            margin: 0 auto;
+            img {
+              width: 100%;
+            }
+          }
+          .text {
+            color: $gray-very-light;
+            padding: 10px 0;
+            font-size: 16px;
+          }
+      }
+    }
+    .news-list {
+      overflow: hidden;
+      position: absolute;
+      top: 150px;
+      padding: 15px;
+      @media (max-width: 700px) {
+        top: 115px;
+      }
+      .news-item {
+        width: 350px;
+        height: 260px;
+        float: left;
+        margin-right: 40px;
+        background: white;
+        -webkit-box-shadow: 0px 0px 10px 10px rgba(133,131,131,0.15);
+        -moz-box-shadow: 0px 0px 10px 10px rgba(133,131,131,0.15);
+        box-shadow: 0px 0px 10px 10px rgba(133,131,131,0.15);
+        @media (max-width: 700px) {
+          width: 300px;
+        }
+        .title {
+          padding-top: 15px;
+        }
+        .date {
+          text-align: center;
+          color: white;
+          background: $gray-super-light;
+          padding: 5px;
+          .day {
+            line-height: 1;
+            font-weight: 700;
+            font-size: $font-size-slogan;
+          }
+          .month {
+            font-size: 1rem;
+          }
+          .year {
+            font-size: 1rem;
+          }
+        }
+        .title-foto {
+          width: 32%;
+          float: left;
+          img {
+            width: 100%;
+          }
+        }
+        .description {
+          width: 68%;
+          float: left;
+          height: 110px;
+          padding-left: 10px;
+          font-size: 13px;
+          line-height: 1.4;
+          @media (max-width: 700px) {
+            font-size: 12px;
+          }
+        }
+        .read-more {
+          text-align: right;
+          padding: 0 10px;
+          a {
+            text-decoration: underline;
+          }
+          a:hover {
+            color: $brand-primary;
+          }
+        }
+        .desc {
+          @media (max-width: 700px) {
+            display: none;
+          }
+        }
+        .mob {
+          display: none;
+          @media (max-width: 700px) {
+            display: block;
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+include ../sub-page-header
+
+#team
+  .content
+    h2 Core team
+    .top-management
+          .item.col-lg-3.col-sm-6(ng-repeat='(itemId, item) in vm.directors')
+            .col-lg-12(style='padding: 2px;')
+              img.foto(src="/img/team/top/{{item.image}}", style='width: 140px; height: 140px;')
+            .col-lg-12(style='padding: 0;')
+              h4.top-name {{item.name}}
+              p.top-position {{item.position}}
+  .staff
+    .content
+      h2 Research team
+      .item.col-sm-6(ng-repeat='(itemId, item) in vm.staff')
+        .col-lg-12(style='padding: 8px; text-align: center;')
+          img.foto(src="/img/team/{{item.image}}", style='width: 140px; height: 140px;')
+        .col-lg-12
+          h5.staff-name {{item.name}}
+          p.staff-position {{item.position}}
+
+include ../footer

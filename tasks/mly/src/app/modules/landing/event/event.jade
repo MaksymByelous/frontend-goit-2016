@@ -1,0 +1,15 @@
+
+.event-details.content
+    .news-item-detailed
+      div(style='overflow: hidden;')
+        .col-xs-9
+          h5 {{vm.event.title}}
+        .col-xs-3.date
+          .day {{vm.event.day}}
+          .month {{vm.event.month}}
+          .year {{vm.event.year}}
+      .description
+
+        .text {{vm.event.detailedDescription.paragraph1}}
+
+        .text {{vm.event.detailedDescription.paragraph2}}

@@ -1,0 +1,48 @@
+include ../sub-page-header
+
+#news
+  .main(ng-hide='vm.detailedNewsOpened')
+    h2.visible-xs.mob(style='text-align:center;') Our News
+
+    .news-head
+      h2 our news
+
+    .col-sm-4.hidden-xs
+    .col-sm-8.green
+      div.col-xs-1.hidden-xs.shot(ng-hide='vm.detailedNewsOpened')
+      div.col-xs-11.long.hidden-xs(ng-hide='vm.detailedNewsOpened')
+      .arrows(ng-hide='vm.detailedNewsOpened')
+
+    .news-list(style='left:{{vm.newsLeftOut}}px; width:{{vm.newsListWidth}}px;')
+          .news-item(ng-repeat='(itemId, item) in vm.news')
+            div(style='overflow: hidden; min-height: 106px;')
+              .col-xs-8.title
+                h5 {{item.title}}
+              .col-xs-4.date
+                .day {{item.day}}
+                .month {{item.month}}
+                .year {{item.year}}
+            div(style='overflow: hidden; padding: 5px 15px;')
+              .title-foto
+              .description {{item.description}}
+            .read-more.desc
+              a(ng-click='vm.newsDetalsToggle(); vm.openNews=vm.news[itemId]') Read more...
+            .read-more.mob
+              a(ui-sref='landing.event({eventIndex: itemId})' ) Read more...
+
+
+  .news-item-detailed(ng-show='vm.detailedNewsOpened')
+    .content
+      div(style='overflow: hidden;')
+        .col-xs-10
+        .col-xs-2.date
+          .day {{vm.openNews.day}}
+          .month {{vm.openNews.month}}
+          .year {{vm.openNews.year}}
+      .description
+        h5 {{vm.openNews.title}}
+        .text {{vm.openNews.detailedDescription.paragraph1}}
+        .foto
+        .text {{vm.openNews.detailedDescription.paragraph2}}
+
+include ../footer

@@ -1,0 +1,53 @@
+.landing {
+  .event-details {
+    .news-item-detailed {
+      background: white;
+      h5 {
+        color: $brand-primary;
+        padding-top: 20px;
+      }
+      .fa {
+        padding: 30px 30px 30px 0;
+      }
+      .date {
+          text-align: center;
+          color: white;
+          background: $gray-super-light;
+          padding: 5px;
+          .day {
+            line-height: 1;
+            font-weight: 700;
+            font-size: $font-size-slogan;
+          }
+          .month {
+            font-size: 1rem;
+          }
+          .year {
+            font-size: 1rem;
+          }
+      }
+      .description {
+          padding: 25px 25px 0 25px;
+          .foto {
+            img {
+              width: 100%;
+            }
+          }
+          .text {
+            color: $gray-very-light;
+            padding: 10px 0;
+          }
+      }
+      .arrow-back {
+        text-align: center;
+        width: 32px;
+        margin: 0 auto;
+        .arrow {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
