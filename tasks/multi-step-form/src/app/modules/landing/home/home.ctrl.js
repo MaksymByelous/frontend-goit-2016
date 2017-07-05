@@ -4,9 +4,9 @@
 
 
   LandingHomeController.$inject = ['$document', '$scope', '$window', 'WindowEventsService',
-    'HomeService', '$stateParams', '$timeout', 'TeamService'];
+    'HomeService', '$stateParams', '$timeout'];
   function LandingHomeController($document, $scope, $window, WindowEventsService,
-                                 HomeService, $stateParams, $timeout, TeamService) {
+                                 HomeService, $stateParams, $timeout) {
     var vm = this;
 
     vm.scrollTo = scrollTo;
@@ -18,9 +18,7 @@
       }, 100);
     }
 
-    function getElementsHeight() {
-      vm.eventsGridHeight = angular.element(document.getElementById('events-grid'))[0].clientHeight;
-    }
+
 
   }
 
