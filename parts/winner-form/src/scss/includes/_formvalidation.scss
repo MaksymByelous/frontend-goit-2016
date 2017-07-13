@@ -1,0 +1,70 @@
+.ng-valid {
+  border-color: $border-healthy;
+  &.not-required, .ui-select-search {
+    border-color: $border-pristine;
+  }
+}
+
+.ng-pristine {
+  &.ng-invalid {
+    border-color: $border-pristine;
+  }
+}
+
+.ng-dirty {
+  &.ng-invalid {
+    border-color: $border-threat;
+  }
+}
+
+.ng-submitted {
+  .ng-invalid {
+    border-color: $border-threat;
+  }
+  .ng-valid {
+    //&.not-required {
+    //  border-color: $border-healthy;
+    //}
+  }
+}
+
+.ng-untouched, .not-required {
+  border-color: $border-pristine;
+}
+
+
+.ui-select-container {
+  &.ng-invalid {
+    span {
+      &.ui-select-toggle {
+        border-color: $border-pristine;
+      }
+    }
+  }
+  &.ng-valid {
+    span {
+      &.ui-select-toggle {
+        border-color: $border-healthy;
+      }
+    }
+  }
+  &.not-required {
+    span {
+      &.ui-select-toggle {
+        border-color: $border-pristine;
+      }
+    }
+  }
+}
+
+.ng-submitted {
+  .ui-select-container {
+    &.ng-invalid {
+      span {
+        &.ui-select-toggle {
+          border-color: $border-threat;
+        }
+      }
+    }
+  }
+}

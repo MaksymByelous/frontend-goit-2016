@@ -1,0 +1,52 @@
+
+.home
+
+  .content
+    .wrapper
+      .winner.pull-left Winner: &nbsp;{{vm.winner}}
+      button.btn.btn-primary.pull-right(ng-disabled="", ng-click='vm.findWinner()') New Winner
+
+    .wrapper
+      h2 Registration form
+
+      form.contact-form(ng-submit="winForm.$valid && vm.addRegistered()", name='winForm', novalidate='')
+        .form-group
+          label Name:
+          input.form-control(type="text", ng-model="vm.formData.name", name='name', pattern='[A-Za-zА]{2,}', ng-model-options="{ updateOn: 'blur' }", placeholder="max", ng-required='true')
+          .error-message(ng-class="{'active': (winForm.$submitted || winForm.name.$dirty) && !winForm.name.$valid, '': winForm.name.$valid}")
+            p required, wait for letters A-Z
+        .form-group
+          label Surname:
+          input.form-control(type="text", ng-model="vm.formData.surname", name='surname', pattern='[A-Za-zА]{2,}', ng-model-options="{ updateOn: 'blur' }", placeholder="bels", ng-required='true')
+          .error-message(ng-class="{'active': (winForm.$submitted || winForm.surname.$dirty) && !winForm.surname.$valid, '': winForm.surname.$valid}")
+            p required, wait for letters A_Z
+
+        .form-group
+          label Email:
+          input.form-control(type="email", ng-model="vm.formData.email", name='email', ng-model-options="{ updateOn: 'blur' }", placeholder="email@mail.com", ng-required='true')
+          .error-message(ng-class="{'active': (winForm.$submitted || winForm.email.$dirty) && !winForm.email.$valid, '': winForm.email.$valid}")
+            p required, wait for email
+
+        .form-group
+          label Phone:
+          input.form-control(type="number", ng-model="vm.formData.phone", name='phone', ng-maxlength="12", ng-minlength="12", ng-model-options="{ updateOn: 'blur' }", placeholder='380111111111')
+          .error-message(ng-class="{'active': (winForm.$submitted || winForm.phone.$dirty) && !winForm.phone.$valid, '': winForm.phone.$valid}")
+            p wait for 12 numbers
+
+        button.btn.btn-success.pull-right(ng-disabled="!winForm.name.$valid || !winForm.surname.$valid || !winForm.email.$valid") Save
+
+    .wrapper-table
+      table.table
+        tr
+          th Name
+          th Surname
+          th Email
+          th Phone
+          th 
+        tr(ng-repeat='(registeredId, registered) in vm.registered track by $index')
+          td {{registered.name}}
+          td {{registered.surname}}
+          td {{registered.email}}
+          td {{registered.phone}}
+          td
+            a(ng-click='vm.deleteRegistered(registeredId)') del

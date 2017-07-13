@@ -1,0 +1,8 @@
+doctype html
+html(xmlns:ng="http://angularjs.org" id="ng-app" lang="en" ng-app="app")
+  block head
+    include templates/include/head
+  body(ng-cloak='', ngsf-fullscreen='')
+    ui-view
+    block scripts
+      include templates/include/scripts
