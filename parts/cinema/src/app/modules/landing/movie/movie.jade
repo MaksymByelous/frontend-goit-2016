@@ -1,0 +1,25 @@
+
+.movie-detailed(ng-show='vm.details')
+    .content
+      .back.pull-left
+        a(ng-click='vm.details = false')
+          i.fa.fa-chevron-left
+          span Back to list
+      .next.pull-right
+        a(ng-click='vm.nextMovieDetails()')
+          span Next movie
+          i.fa.fa-chevron-right
+      .clearfix
+      .description
+        .col-sm-3.col-xs-5
+          img(ng-src='http://image.tmdb.org/t/p/w342{{vm.movieDetails.poster_path}}')
+        .col-sm-9.col-xs-7
+          .title {{vm.movieDetails.original_title}}
+          .scores
+            .score Score: {{vm.movieDetails.vote_average}}
+            .rating Rating: {{vm.movieDetails.vote_average}}
+            .reliase Release date: {{vm.movieDetails.release_date}}
+            .overview {{vm.movieDetails.overview}}
+        .clearfix
+        .title-mob {{vm.movieDetails.original_title}}
+        .overview-mob {{vm.movieDetails.overview}}

@@ -1,0 +1,54 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                   supported by Chrome and Opera */
+}
+
+.landing {
+  .home {
+    background: #f1f3f4;
+    .movies {
+      position: relative;
+      h3 {
+        text-transform: capitalize;
+      }
+    }
+    .movies-grid {
+      ul {
+        overflow: hidden;
+        padding-left: 0;
+        .movie-item {
+          padding: 10px 5px;
+          list-style: none;
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+      }
+      .pagination {
+        display: block;
+        text-align: center;
+        a {
+          border-width: 1px 0px 1px 1px;
+          border-style: solid;
+          border-color: lightgrey;
+          padding: 5px 10px;
+          text-transform: capitalize;
+        }
+        a.last {
+          border-right-width: 1px;
+        }
+        a.active {
+          color: #32b891;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
