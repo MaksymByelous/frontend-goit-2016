@@ -1,0 +1,8 @@
+.vs
+Thumbs.db
+public/*
+!public/sitemap.xml
+!public/robots.txt
+bower_components
+node_modules
+npm-debug.log

@@ -1,0 +1,38 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "~1.6.1",
+    "angular-cookies": "~1.4.x",
+    "angular-material": "~0.11.0",
+    "angular-messages": "^1.5.8",
+    "angular-resource": "~1.4.4",
+    "angular-sanitize": "~1.4.1",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-static-files": "~2.7.2",
+    "angular-translate-storage-cookie": "~2.7.2",
+    "angular-translate-storage-local": "~2.7.2",
+    "angular-ui-router": "~0.3.2",
+    "angular-loading-bar": "~0.8.0",
+    "json-formatter": "~0.4.0",
+    "angular-bootstrap": "~1.1.2",
+    "bootstrap": "~3.3.6",
+    "angular-carousel": "~1.0.1",
+    "angular-touch": "~1.5.8",
+    "angular-scroll": "~1.0.0",
+    "underscore": "~1.8.3",
+    "ngmap": "~1.17.8",
+    "angular-animate": "~1.6.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "^1.6.1"
+  },
+  "devDependencies": {}
+}

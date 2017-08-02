@@ -15,7 +15,7 @@
     'angular-carousel',
     'ngMaterial',
     'duScroll',
-    'angular-underscore',
+    'angular-underscore'
   ])
     .value('duScrollDuration', 1000)
     .value('duScrollOffset', 100)
@@ -24,12 +24,13 @@
     .config(configure)
     .run(runBlock);
 
-  configure.$inject = ['$urlRouterProvider', '$locationProvider', '$httpProvider'];
+  configure.$inject = ['$urlRouterProvider', '$locationProvider', '$httpProvider', '$sceProvider'];
 
-  function configure($urlRouterProvider, $locationProvider, $httpProvider) {
+  function configure($urlRouterProvider, $locationProvider, $httpProvider, $sceProvider) {
     $httpProvider.defaults.withCredentials = true;
     $locationProvider.html5Mode({enabled: true, requireBase: false});
     $urlRouterProvider.otherwise('/404');
+    $sceProvider.enabled(false);
   }
 
   runBlock.$inject = ['$rootScope','$state'];

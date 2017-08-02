@@ -23,19 +23,26 @@
         overflow: hidden;
         padding-left: 0;
         .movie-item {
+          height: 212px;
           padding: 10px 5px;
           list-style: none;
+          @media screen and (max-width: 750px) {
+            height: 272px;
+          }
           img {
             width: 100%;
+            height: 100%;
             border-radius: 5px;
           }
         }
       }
-      .pagination {
+      .paginate {
         display: block;
         text-align: center;
+        margin-bottom: 1rem;
         a {
-          border-width: 1px 0px 1px 1px;
+          display: inline-block;
+          border-width: 0.5px 0.5px 0.5px 0.5px;
           border-style: solid;
           border-color: lightgrey;
           padding: 5px 10px;
@@ -43,6 +50,9 @@
         }
         a.last {
           border-right-width: 1px;
+        }
+        a.first {
+          border-left-width: 1px;
         }
         a.active {
           color: #32b891;

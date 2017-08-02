@@ -10,13 +10,13 @@
         ul
           li.movie-item.col-xs-6.col-md-2(ng-repeat='(movieId, movie) in vm.activePage')
             a(ng-click='vm.findMovieIndex(movieId); vm.details = true')
-              img(ng-src='http://image.tmdb.org/t/p/w342{{movie.poster_path}}')
-        .pagination
-          a.active(ng-click='vm.activatePage(0)') first
+              img(ng-src='http://image.tmdb.org/t/p/w342{{movie.poster_path}}', onerror="this.src='img/no-poster.png'")
+        .paginate
+          a.first.active(ng-click='vm.activatePage(0)') first
           a(ng-click='vm.activatePage( (vm.pageIndex - 1) )') Prev
           a(ng-repeat='(pageId, page) in vm.pages | limitTo: vm.showAllPagination ? 10000 : 3', ng-click='vm.activatePage(pageId)', ng-class="{'active': pageId === vm.pageIndex}") {{page}}
           a(ng-click='vm.showAllPagination = !vm.showAllPagination') ...
           a(ng-click='vm.activatePage( (vm.pageIndex + 1) )') next
-          a.last.active(ng-click='vm.activatePage( (vm.maxPages - 1) )') Last
+          a.last.active(ng-click='vm.activatePage( (vm.pages.length - 1) )') Last
     include ../movie/movie
   include ../footer

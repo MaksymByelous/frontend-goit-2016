@@ -44,7 +44,7 @@
           padding-right: 15px;
           @media screen and (max-width: 750px) {
             display: block;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
           }
         }
         .rating {
@@ -55,6 +55,12 @@
           @media screen and (max-width: 750px) {
             padding-left: 0;
             border: 0;
+          }
+        }
+        span {
+          @media screen and (max-width: 750px) {
+            display: block;
+            font-size: 1.1rem;
           }
         }
       }

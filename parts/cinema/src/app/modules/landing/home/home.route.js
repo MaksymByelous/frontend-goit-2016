@@ -7,7 +7,7 @@
     $stateProvider.state('landing.home', {
       url: '/',
       templateUrl: '/view/modules/landing/home/home.html',
-      controller: 'LandingController',
+      controller: 'LandingHomeController',
       controllerAs: 'vm',
       data: {
         title: 'test task'
