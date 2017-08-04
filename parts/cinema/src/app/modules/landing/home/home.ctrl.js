@@ -19,7 +19,6 @@
     vm.movieDetails = vm.movies[vm.movieDetailedIndex];
     vm.details = false;
     vm.nextMovieDetails = nextMovieDetails;
-    vm.pageQuatityCoef = 20/12;
 
     function getPages() {
       $http.jsonp("http://api.themoviedb.org/3/movie/now_playing?api_key=ebea8cfca72fdff8d2624ad7bbf78e4c").then(function(response) {
@@ -30,7 +29,8 @@
     vm.getPages();
 
     function makePagination(max) {
-      for (var i = 0; i < (max*vm.pageQuatityCoef - 1); i++) {
+      vm.pagesBy12 = Math.round( ((max - 1) * 20)/ 12 );
+      for (var i = 0; i < vm.pagesBy12; i++) {
         vm.pages[i] = i + 1;
       }
     }
