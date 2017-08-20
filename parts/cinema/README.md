@@ -1,24 +1,4 @@
-test task
+This page use API https://www.themoviedb.org/documentation/api to get latest releases and show movies list and details if needed.
 
-## Development
-
-```
-cp src/config/prod.json src/config/local.json
-
-npm install
-
-npm start
-```
-
-## Production
-
-```
-npm install
-
-npm run build
-```
-
-Site will be in `public` folder
-
-
-gulp pub --env=dev - to build version that uses dev.json
+Run Index from Public folder on localhost to check how it works.
+In src you check code.
